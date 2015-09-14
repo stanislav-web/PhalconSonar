@@ -27,10 +27,9 @@
     },
     "autoload": {
       "psr-4": {
-        "Deliveries\\": "src/Deliveries"
+        "Deliveries\\": "src/Octopussy"
       }
     },
-    "bin": ["bin/xmail"],
     "suggest": {
         "stanislav-web/zf2-websocket-server-factory": "ZF2 WebSockets. You can organize a chat, monitor live site visit, you can create real-time statistics and save it to DB (MySQL, Mongo..etc), you can organize the postal service in the likeness of Google. Yes, anything!",
         "stanislav-web/phalcon-searcher": "Phalcon Database Searcher. This is the search service is designed to search multiple SQL tables. Convenient to use autocomplete, search documents, search the whole site.",
