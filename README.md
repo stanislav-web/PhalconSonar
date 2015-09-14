@@ -12,7 +12,6 @@ Octopussy is the site visitors grabber. Build in Phalcon & MongoDb
 
 ## System requirements
 
-* System based on Unix
 * PHP 5.6.x
 * MongoDB
 
