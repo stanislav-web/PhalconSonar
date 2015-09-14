@@ -1,7 +1,7 @@
 <?php
 namespace Octopussy\Services;
 
-use Ratchet\App;
+use Ratchet\App as Look;
 use Octopussy\PushCollector;
 use Ratchet\Server\EchoServer;
 
@@ -19,56 +19,27 @@ use Ratchet\Server\EchoServer;
 class LocatorService {
 
     /**
-     * Module configuration
+     * Look server (load lazy)
      *
-     * @var array $config
+     * @var Look $look
      */
-    private $config = [];
-
-    /**
-     * Initial module configuration params
-     *
-     * @param array $config
-     */
-    public function __construct(array $config) {
-
-        if(empty($this->config) === true) {
-            $this->config = $config;
-        }
-    }
-
-    /**
-     * Get configurations
-     *
-     * @return object
-     */
-    public function getConfig()
-    {
-        return (object)$this->config;
-    }
-
-    /**
-     * Set configurations
-     *
-     * @param array $config
-     * @return LocatorService
-     */
-    public function setConfig($config)
-    {
-        $this->config = $config;
-        return $this;
-    }
+    private $look;
 
     /**
      * Run the server application through the WebSocket protocol
      *
+     * @param string $host
+     * @param string $port
      * @return null
      */
-    public function run() {
+    public function run($storage, $host, $port) {
 
-        $app = new App($this->getConfig()->host, $this->getConfig()->port);
-        $app->route('/chat', new PushCollector);
-        $app->route('/echo', new EchoServer);
-        $app->run();
+        if(!$this->look) {
+            $this->look = new Look($host, $port);
+        }
+
+        $this->look->route('/chat', new PushCollector);
+        $this->look->route('/echo', new EchoServer);
+        $this->look->run();
     }
 }
