@@ -1,0 +1,41 @@
+{
+    "name": "stanislav-web/octopussy",
+    "description": "The site visitors grabber. Build in Phalcon & MongoDb",
+    "type": "library",
+    "keywords" : [
+        "site visitor",
+        "site visitor grabber",
+        "user's monitor",
+        "phalcon mongo",
+        "mongo visitor's grabber"
+    ],
+    "support": {
+        "issues": "https://github.com/stanislav-web/octopussy/issues"
+    },
+    "minimum-stability": "dev",
+    "homepage" : "https://github.com/stanislav-web/octopussy",
+    "license" : "MIT",
+    "authors" : [{
+        "name": "Stanislav WEB",
+        "email": "stanisov@gmail.com",
+        "homepage": "http://reds.com",
+        "role": "Developer"
+    }],
+
+    "require" : {
+        "php" : ">=5.6.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Deliveries\\": "src/Deliveries"
+      }
+    },
+    "bin": ["bin/xmail"],
+    "suggest": {
+        "stanislav-web/zf2-websocket-server-factory": "ZF2 WebSockets. You can organize a chat, monitor live site visit, you can create real-time statistics and save it to DB (MySQL, Mongo..etc), you can organize the postal service in the likeness of Google. Yes, anything!",
+        "stanislav-web/phalcon-searcher": "Phalcon Database Searcher. This is the search service is designed to search multiple SQL tables. Convenient to use autocomplete, search documents, search the whole site.",
+        "stanislav-web/phalcon-ulogin": "Phalcon ULogin. The authorization form uLogin through social networks",
+        "stanislav-web/phalcon-uploader": "Phalcon files uploader. Handling and downloading files for Phalcon projects. Allowed multiple files download, filters etc...",
+        "stanislav-web/phalcon-translate": "Phalcon Translate Service. Simple way to translate your costom part of templates :-)"
+    }
+}
