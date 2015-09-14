@@ -5,9 +5,9 @@
     "keywords" : [
         "site visitor",
         "site visitor grabber",
-        "user's monitor",
+        "users monitor",
         "phalcon mongo",
-        "mongo visitor's grabber"
+        "mongo visitors grabber"
     ],
     "support": {
         "issues": "https://github.com/stanislav-web/octopussy/issues"
