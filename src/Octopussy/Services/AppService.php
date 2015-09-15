@@ -1,6 +1,7 @@
 <?php
-
 namespace Octopussy\Services;
+
+use Octopussy\Exceptions\AppException;
 
 /**
  * AppService class. Application Service
@@ -16,25 +17,18 @@ namespace Octopussy\Services;
 class AppService {
 
     /**
-     * Module configuration
+     * Application configuration
      *
-     * @var array $config
+     * @var \Phalcon\Config $config
      */
     private $config;
 
     /**
-     * Locator Service
+     * Socket service
      *
-     * @var \Octopussy\Services\LocatorService $locatorService
+     * @var \Octopussy\Services\SocketService $socketService
      */
-    private $locatorService;
-
-    /**
-     * Storage service
-     *
-     * @var \Octopussy\Services\StorageService $storageService
-     */
-    private $storageService;
+    private $socketService;
 
     /**
      * Initial module configuration params
@@ -44,44 +38,22 @@ class AppService {
     public function __construct(\Phalcon\Config $config) {
 
         if(!$this->config) {
-            $this->setConfig($config);
+            $this->config = $config;
         }
 
-        if(!$this->storageService) {
-            $this->storageService = new StorageService($this->config->storage);
-        }
+        if(!$this->socketService) {
 
-        if(!$this->locatorService) {
-            $this->locatorService = new LocatorService();
+            if(isset($this->config->socket) === false) {
+                throw new AppException('There is no option `socket` in your configurations');
+            }
+            $this->socketService = new SocketService($this->config->socket);
         }
     }
 
     /**
-     * Get configurations
-     *
-     * @return object
-     */
-    public function getConfig()
-    {
-        return $this->config;
-    }
-
-    /**
-     * Set configurations
-     *
-     * @param array $config
-     * @return LocatorService
-     */
-    public function setConfig(array $config)
-    {
-        $this->config = $config;
-        return $this;
-    }
-
-    /**
-     * Run service
+     * Run socket server
      */
     public function run() {
-        $this->locatorService->run($this->storageService, $this->config->host, $this->config->port);
+        $this->socketService->run();
     }
 }

@@ -28,7 +28,7 @@
     },
     "autoload": {
       "psr-4": {
-        "Deliveries\\": "src/Octopussy"
+        "Octopussy\\": "src/Octopussy"
       }
     },
     "suggest": {

@@ -3,18 +3,19 @@ namespace Octopussy;
 
 use Ratchet\MessageComponentInterface;
 use Ratchet\ConnectionInterface;
+use Octopussy\Services\StorageService;
 
 /**
- * PushCollector class. WebSocket bridge
+ * Receiver class. WebSocket bridge
  *
  * @package Octopussy
  * @since PHP >=5.6
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Octopussy/PushCollector.php
+ * @filesource /Octopussy/Receiver.php
  */
-class PushCollector implements MessageComponentInterface {
+class Receiver implements MessageComponentInterface {
 
     /**
      * Client's storage
@@ -24,10 +25,18 @@ class PushCollector implements MessageComponentInterface {
     protected $clients;
 
     /**
+     * Storage service
+     *
+     * @var \Octopussy\Services\StorageService $storageService
+     */
+    private $storageService;
+
+    /**
      * Initialize client's storage
      */
-    public function __construct() {
+    public function __construct(StorageService $storageService) {
         $this->clients = new \SplObjectStorage;
+        $this->storageService = $storageService;
     }
 
     /**

@@ -21,4 +21,14 @@ Octopussy is the site visitors grabber. Build in Phalcon & MongoDb
 
 ##[Issues](https://github.com/stanislav-web/octopussy/issues "Issues")
 
+config: [
+ octopussy:
+    locator : host,
+            : port,
 
+    storage : host,
+          : port,
+          : user,
+          : password,
+          : db : octopussy
+]
