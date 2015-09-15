@@ -1,5 +1,6 @@
 <?php
 namespace Octopussy\System\Tasks;
+
 use Phalcon\Logger\Adapter\File as FileAdapter;
 use Phalcon\CLI\Task;
 use Octopussy\Services\AppService as Application;
@@ -10,13 +11,13 @@ use Octopussy\Exceptions\AppException;
  *
  * @package Octopussy
  * @subpackage Octopussy\System\Tasks
- * @since PHP >=5.6
+ * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
  * @filesource /Octopussy/System/Tasks/GrabberTask.php
  */
-class ReceiverTask extends Task
+class GrabberTask extends Task
 {
     /**
      * Task configuration
@@ -43,7 +44,7 @@ class ReceiverTask extends Task
      * Setup current task configurations
      *
      * @param \Phalcon\Config $config
-     * @return \Octopussy\System\Tasks\ReceiverTask
+     * @return \Octopussy\System\Tasks\GrabberTask
      */
     public function setConfig(\Phalcon\Config $config)  {
 
@@ -64,7 +65,7 @@ class ReceiverTask extends Task
     /**
      * Setup file logger
      *
-     * @return \Octopussy\System\Tasks\ReceiverTask
+     * @return \Octopussy\System\Tasks\GrabberTask
      */
     public function setLogger() {
 

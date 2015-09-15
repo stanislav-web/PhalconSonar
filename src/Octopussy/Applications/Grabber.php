@@ -12,7 +12,7 @@ use Octopussy\System\Messenger;
  *
  * @package Octopussy
  * @subpackage Octopussy\Applications
- * @since PHP >=5.6
+ * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
@@ -57,6 +57,7 @@ class Grabber implements MessageComponentInterface {
 
         // Write client to storage
         $this->storageService->save(['ip' => $this->getIpAddress($conn), 'ua' => $this->getUserAgent($conn), 'time' => (new Request())->getServer('REQUEST_TIME')]);
+
         echo Messenger::open($this->getIpAddress($conn));
     }
 

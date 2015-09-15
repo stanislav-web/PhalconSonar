@@ -6,7 +6,7 @@ use Phalcon\Mvc\Collection;
  *
  * @package Octopussy
  * @subpackage Octopussy\Models
- * @since PHP >=5.6
+ * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB

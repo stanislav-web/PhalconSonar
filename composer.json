@@ -26,7 +26,7 @@
         "php" : ">=5.5.0",
         "ext-mongo" : "*",
         "cboden/ratchet": "dev-master",
-        "phalcon/devtools": "dev-master"
+        "phalcon/devtools": ">=2.0.1"
     },
     "autoload": {
       "psr-4": {

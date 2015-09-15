@@ -8,7 +8,7 @@ use \Phalcon\Script\Color;
  *
  * @package Octopussy
  * @subpackage Octopussy\System
- * @since PHP >=5.6
+ * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB

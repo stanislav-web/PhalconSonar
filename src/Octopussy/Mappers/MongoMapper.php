@@ -7,7 +7,7 @@ use Octopussy\Exceptions\StorageException;
  *
  * @package Octopussy
  * @subpackage Octopussy\Mappers
- * @since PHP >=5.6
+ * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB

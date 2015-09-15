@@ -6,7 +6,7 @@ namespace Octopussy\Exceptions;
  *
  * @package Octopussy
  * @subpackage Octopussy\Exceptions
- * @since PHP >=5.6
+ * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
