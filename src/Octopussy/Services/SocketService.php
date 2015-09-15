@@ -1,10 +1,13 @@
 <?php
 namespace Octopussy\Services;
 
-use Ratchet\App as Server;
-use Ratchet\Server\EchoServer;
-use Octopussy\Receiver;
+use Ratchet\Server\IoServer as Server;
+use Ratchet\WebSocket\WsServer;
+use Ratchet\Http\HttpServer;
+use React\Socket\ConnectionException;
+use Octopussy\Applications\Grabber;
 use Octopussy\Exceptions\AppException;
+use Octopussy\Exceptions\SocketException;
 
 /**
  * SocketService class. Client bridge service for locate incoming messages
@@ -45,20 +48,33 @@ class SocketService {
     /**
      * Run the server application through the WebSocket protocol
      *
+     * @throws \Octopussy\Exceptions\AppException
+     * @throws \Octopussy\Exceptions\SocketException
      * @return null
      */
     public function run() {
 
         if(!$this->server) {
-            $this->server = new Server($this->config->socket->host, $this->config->socket->port);
+
+            try {
+
+                $this->server = Server::factory(new HttpServer(new WsServer(
+                    new Grabber(new StorageService($this->config->storage))
+                )), $this->config->socket->port);
+
+            }
+            catch(ConnectionException $e) {
+                throw new SocketException($e->getMessage());
+            }
+            catch (\RuntimeException $e) {
+                throw new SocketException($e->getMessage());
+            }
         }
 
         if(isset($this->config->storage) === false) {
             throw new AppException('There is no option `storage` in your configurations');
         }
 
-        $this->server->route('/chat', new Receiver(new StorageService($this->config->storage)));
-        $this->server->route('/echo', new EchoServer);
         $this->server->run();
     }
 }

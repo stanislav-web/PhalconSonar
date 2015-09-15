@@ -17,13 +17,6 @@ use Octopussy\Mappers\MongoMapper;
 class StorageService {
 
     /**
-     * Storage configuration
-     *
-     * @var \Phalcon\Config $config
-     */
-    private $config;
-
-    /**
      * @var \Octopussy\Mappers\MongoMapper $mapper
      */
     private $mapper;
@@ -34,7 +27,12 @@ class StorageService {
      * @param \Phalcon\Config $config $config
      */
     public function __construct(\Phalcon\Config $config) {
-        $this->config = $config;
-        $this->mapper = new MongoMapper($this->config);
+
+        $this->mapper = new MongoMapper($config);
+    }
+
+    public function save(array $data) {
+
+        print_r($data);
     }
 }

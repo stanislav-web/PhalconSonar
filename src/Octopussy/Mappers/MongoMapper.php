@@ -1,5 +1,6 @@
 <?php
 namespace Octopussy\Mappers;
+use Octopussy\Exceptions\StorageException;
 
 /**
  * MongoMapper class. Mongo DB Mapper
@@ -14,7 +15,6 @@ namespace Octopussy\Mappers;
  */
 class MongoMapper {
 
-
     /**
      * MongoDB client connection
      *
@@ -26,12 +26,19 @@ class MongoMapper {
      * Implement configurations for MongoDB connection
      *
      * @param \Phalcon\Config $config
+     * @throws \Octopussy\Exceptions\StorageException
      */
     public function __construct(\Phalcon\Config $config) {
 
         $uri = "mongodb://".$config['user'].":".$config['password']."@".$config['host'].":".$config['port']."/".$config['dbname'];
 
-        $this->connection = new \MongoClient($uri);
-        $this->connection->selectDB($config['dbname']);
+        try {
+
+            $this->connection = new \MongoClient($uri);
+            $this->connection->selectDB($config['dbname']);
+        }
+        catch(\MongoConnectionException $e) {
+            throw new StorageException('Could not connect to mongoDb server');
+        }
     }
 }

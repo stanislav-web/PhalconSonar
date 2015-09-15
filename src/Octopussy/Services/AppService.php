@@ -2,6 +2,7 @@
 namespace Octopussy\Services;
 
 use Octopussy\Exceptions\AppException;
+use Octopussy\Exceptions\SocketException;
 
 /**
  * AppService class. Application Service
@@ -34,6 +35,7 @@ class AppService {
      * Initial module configuration params
      *
      * @param \Phalcon\Config $config
+     * @throws \Octopussy\Exceptions\AppException
      */
     public function __construct(\Phalcon\Config $config) {
 
@@ -46,6 +48,7 @@ class AppService {
             if(isset($this->config->socket) === false) {
                 throw new AppException('There is no option `socket` in your configurations');
             }
+
             $this->socketService = new SocketService($this->config);
         }
     }
@@ -54,6 +57,12 @@ class AppService {
      * Run socket server
      */
     public function run() {
-        $this->socketService->run();
+
+        try {
+            $this->socketService->run();
+        }
+        catch(SocketException $e) {
+            throw new AppException($e->getMessage());
+        }
     }
 }
