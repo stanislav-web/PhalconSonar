@@ -46,7 +46,7 @@ class AppService {
             if(isset($this->config->socket) === false) {
                 throw new AppException('There is no option `socket` in your configurations');
             }
-            $this->socketService = new SocketService($this->config->socket);
+            $this->socketService = new SocketService($this->config);
         }
     }
 

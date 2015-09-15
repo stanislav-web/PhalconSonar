@@ -1,6 +1,8 @@
 <?php
 namespace Octopussy\Services;
 
+use Octopussy\Mappers\MongoMapper;
+
 /**
  * StorageService class. Database service
  *
@@ -15,7 +17,24 @@ namespace Octopussy\Services;
 class StorageService {
 
     /**
+     * Storage configuration
+     *
+     * @var \Phalcon\Config $config
+     */
+    private $config;
+
+    /**
      * @var \Octopussy\Mappers\MongoMapper $mapper
      */
     private $mapper;
+
+    /**
+     * Implement configurations
+     *
+     * @param \Phalcon\Config $config $config
+     */
+    public function __construct(\Phalcon\Config $config) {
+        $this->config = $config;
+        $this->mapper = new MongoMapper($this->config);
+    }
 }
