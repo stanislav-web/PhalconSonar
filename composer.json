@@ -29,7 +29,6 @@
         "phalcon/devtools": ">=2.0.1",
         "mobiledetect/mobiledetectlib": "^2.8",
         "donatj/phpuseragentparser": "dev-master",
-        "react/promise" : "dev-master"
     },
     "autoload": {
       "psr-4": {

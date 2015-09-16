@@ -1,10 +1,10 @@
 <?php
+
 namespace Octopussy\Services;
 
 use Octopussy\Mappers\Mongo\VisitorMapper;
 use Octopussy\Exceptions\StorageException;
 use Octopussy\Exceptions\VisitorMapperException;
-
 /**
  * StorageService class. Database service
  *

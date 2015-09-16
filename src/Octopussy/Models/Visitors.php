@@ -45,6 +45,13 @@ class Visitors {
     private $browser;
 
     /**
+     * User preferred language (by browser)
+     *
+     * @var string $language
+     */
+    private $language;
+
+    /**
      * User OS type
      *
      * @var string $platform
@@ -66,11 +73,18 @@ class Visitors {
     private $tablet = 0;
 
     /**
-     * is client from pc
+     * Is client from pc
      *
      * @var int $isPc
      */
     private $pc   =   0;
+
+    /**
+     * Current page
+     *
+     * @var string $page
+     */
+    private $page   =   '';
 
     /**
      * Request time
@@ -86,7 +100,6 @@ class Visitors {
      */
     private $detector;
 
-
     /**
      * Initialize model & validate client data
      *
@@ -98,7 +111,12 @@ class Visitors {
         $this->detector = new Mobile_Detect(null, $data['ua']);
 
         // validate client data
-        $this->setIp($data['ip'])->setTime($data['time'])->setUa()->deviceDetect();
+        $this->setPage($data['page'])
+                    ->setIp($data['ip'])
+                        ->setTime($data['time'])
+                            ->setLanguage($data['language'])
+                                ->setUa()
+                                    ->deviceDetect();
     }
 
     /**
@@ -181,6 +199,17 @@ class Visitors {
     }
 
     /**
+     * Set user language
+     *
+     * @return Visitors
+     */
+    private function setLanguage($language)
+    {
+        $this->language = trim($language);
+        return $this;
+    }
+
+    /**
      * Set user OS platform
      *
      * @return Visitors
@@ -198,6 +227,19 @@ class Visitors {
     public function getTime()
     {
         return $this->time;
+    }
+
+    /**
+     * Set current page
+     *
+     * @param int $page
+     * @return Visitors
+     */
+    public function setPage($page)
+    {
+        $this->page = trim(strip_tags($page));
+
+        return $this;
     }
 
     /**

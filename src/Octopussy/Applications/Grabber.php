@@ -1,6 +1,7 @@
 <?php
 namespace Octopussy\Applications;
 
+use Phalcon\Http\Request;
 use Ratchet\MessageComponentInterface;
 use Ratchet\ConnectionInterface;
 use Octopussy\Services\StorageService;
@@ -56,9 +57,11 @@ class Grabber implements MessageComponentInterface {
 
         // add client to storage
         $this->storageService->add([
-            'ip' => $this->getIpAddress($conn),
-            'ua' => $this->getUserAgent($conn),
-            'time' => time()
+            'ip'        => $this->getIpAddress($conn),
+            'ua'        => $this->getUserAgent($conn),
+            'language'  => $this->getLanguage($conn),
+            'page'      => $this->getCurrentPage($conn),
+            'time'      => time()
         ]);
 
         echo Messenger::open($this->getIpAddress($conn));
@@ -108,13 +111,7 @@ class Grabber implements MessageComponentInterface {
     private function getUserAgent(ConnectionInterface $conn) {
 
         $userAgent = $conn->WebSocket->request->getHeader('User-Agent')->toArray();
-
-        if(empty($userAgent) === false) {
-            return $userAgent[0];
-        }
-        return $conn->WebSocket->request->getHeaders()->toArray();
-
-        return 'Unknown';
+        return (empty($userAgent[0]) === false) ? $userAgent[0] : 'Unknown';
     }
 
     /**
@@ -125,9 +122,33 @@ class Grabber implements MessageComponentInterface {
      */
     private function getIpAddress(ConnectionInterface $conn) {
 
-        $userIp = $conn->WebSocket->request->getHeader('x-forwarded-for');
-        $ip = !empty($userIp) ? $userIp : $conn->remoteAddress;
-
-        return $ip;
+        $userIp = $conn->WebSocket->request->getHeader('X-Forwarded-For');
+        return (empty($userIp) === false) ? $userIp : $conn->remoteAddress;
     }
+
+    /**
+     * Get visitor IP address
+     *
+     * @param ConnectionInterface $conn
+     * @return string
+     */
+    private function getLanguage(ConnectionInterface $conn) {
+
+        $language = $conn->WebSocket->request->getHeader('Accept-Language');
+        $language = trim(strtoupper(substr($language, 0, 2)));
+
+        return (empty($language) === false) ? $language :'Unknown';
+    }
+
+    /**
+     * Get current page
+     *
+     * @param ConnectionInterface $conn
+     * @return string
+     */
+    private function getCurrentPage(ConnectionInterface $conn) {
+        $query = $conn->WebSocket->request->getQuery();
+        return $query->get('page');
+    }
+
 }

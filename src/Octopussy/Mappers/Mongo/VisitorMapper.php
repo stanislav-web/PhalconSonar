@@ -70,9 +70,10 @@ class VisitorMapper {
     public function add(array $data) {
 
         try {
-            $this->collection->insert((new Visitors($data))->toArray(), ['safe' => true]);
+
+            $this->collection->insert((new Visitors($data))->toArray(), ['w' => true]);
         }
-        catch(\MongoException $e) {
+        catch(\MongoCursorException $e) {
             throw new VisitorMapperException($e->getMessage());
         }
     }
