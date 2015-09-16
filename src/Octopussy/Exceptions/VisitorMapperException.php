@@ -2,7 +2,7 @@
 namespace Octopussy\Exceptions;
 
 /**
- * StorageException class. Storage exception class
+ * VisitorMapperException class. VisitorMapper exception class
  *
  * @package Octopussy
  * @subpackage Octopussy\Exceptions
@@ -10,9 +10,9 @@ namespace Octopussy\Exceptions;
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Octopussy/Exceptions/StorageException.php
+ * @filesource /Octopussy/Exceptions/VisitorMapperException.php
  */
-class StorageException extends \DomainException {
+class VisitorMapperException extends \RuntimeException {
 
     /**
      * @const CODE exception code

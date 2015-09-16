@@ -3,7 +3,6 @@ namespace Octopussy\Applications;
 
 use Ratchet\MessageComponentInterface;
 use Ratchet\ConnectionInterface;
-use Phalcon\Http\Request;
 use Octopussy\Services\StorageService;
 use Octopussy\System\Messenger;
 
@@ -52,11 +51,15 @@ class Grabber implements MessageComponentInterface {
      */
     public function onOpen(ConnectionInterface $conn) {
 
-        // Store the new connection
+        // store the new connection
         $this->clients->attach($conn);
 
-        // Write client to storage
-        $this->storageService->add(['ip' => $this->getIpAddress($conn), 'ua' => $this->getUserAgent($conn), 'time' => (new Request())->getServer('REQUEST_TIME')]);
+        // add client to storage
+        $this->storageService->add([
+            'ip' => $this->getIpAddress($conn),
+            'ua' => $this->getUserAgent($conn),
+            'time' => time()
+        ]);
 
         echo Messenger::open($this->getIpAddress($conn));
     }
@@ -64,19 +67,11 @@ class Grabber implements MessageComponentInterface {
     /**
      * Push to task event
      *
+     * @deprecated
      * @param ConnectionInterface $from
      * @param string              $msg
      */
     public function onMessage(ConnectionInterface $from, $msg) {
-
-        echo Messenger::message($from->remoteAddress, $msg);
-
-        // The sender is not the receiver, send to each client connected
-        foreach ($this->clients as $client) {
-            if ($from != $client) {
-                $client->send($msg);
-            }
-        }
     }
 
     /**
@@ -117,6 +112,7 @@ class Grabber implements MessageComponentInterface {
         if(empty($userAgent) === false) {
             return $userAgent[0];
         }
+        return $conn->WebSocket->request->getHeaders()->toArray();
 
         return 'Unknown';
     }

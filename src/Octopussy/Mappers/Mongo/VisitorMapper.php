@@ -1,11 +1,11 @@
 <?php
-namespace Octopussy\Mappers;
+namespace Octopussy\Mappers\Mongo;
 
 use Octopussy\Exceptions\StorageException;
 use Octopussy\Models\Visitors;
 
 /**
- * MongoMapper class. Mongo DB Mapper
+ * VisitorMapper class. Mongo DB Mapper
  *
  * @package Octopussy
  * @subpackage Octopussy\Mappers
@@ -13,9 +13,9 @@ use Octopussy\Models\Visitors;
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Octopussy/Mappers/MongoMapper.php
+ * @filesource /Octopussy/Mappers/VisitorMapper.php
  */
-class MongoMapper {
+class VisitorMapper {
 
     /**
      * MongoDB client connection
@@ -50,9 +50,11 @@ class MongoMapper {
 
         try {
 
-            $this->client = new \MongoClient($uri);
-            $this->db = $this->client->selectDB($config['dbname']);
-            $this->collection = $this->db->selectCollection(Visitors::COLLECTION);
+            if(!$this->collection) {
+                $this->client = new \MongoClient($uri);
+                $this->db = $this->client->selectDB($config['dbname']);
+                $this->collection = $this->db->selectCollection(Visitors::COLLECTION);
+            }
         }
         catch(\MongoConnectionException $e) {
             throw new StorageException($e->getMessage());
@@ -68,10 +70,10 @@ class MongoMapper {
     public function add(array $data) {
 
         try {
-            $this->collection->insert($data, ['safe' => true]);
+            $this->collection->insert((new Visitors($data))->toArray(), ['safe' => true]);
         }
         catch(\MongoException $e) {
-            throw new StorageException($e->getMessage());
+            throw new VisitorMapperException($e->getMessage());
         }
     }
 }

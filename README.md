@@ -36,8 +36,16 @@ Octopussy is the site visitors grabber. Build in Phalcon & MongoDb
 
 2. Add task to cli.php registerNamespaces
 
-        DOCUMENT_ROOT.'/vendor/stanislav-web/octopussy/src/Octopussy/System/Tasks'
+        DOCUMENT_ROOT.'vendor/stanislav-web/octopussy/src/Octopussy/System/Tasks'
 
+            // init configurations // init logger
+            $this->setConfig($this->getDI()->get('config'))->setLogger();
+
+            // run server
+            $this->grabber = new Application($this->getConfig());
+
+            $this->grabber->run();
+            
 ## Usage
 
 ##[Issues](https://github.com/stanislav-web/octopussy/issues "Issues")

@@ -1,8 +1,9 @@
 <?php
 namespace Octopussy\Services;
 
+use Octopussy\Mappers\Mongo\VisitorMapper;
 use Octopussy\Exceptions\StorageException;
-use Octopussy\Mappers\MongoMapper;
+use Octopussy\Exceptions\VisitorMapperException;
 
 /**
  * StorageService class. Database service
@@ -18,7 +19,7 @@ use Octopussy\Mappers\MongoMapper;
 class StorageService {
 
     /**
-     * @var \Octopussy\Mappers\MongoMapper $mapper
+     * @var \Octopussy\Mappers\VisitorMapper $mapper
      */
     private $mapper;
 
@@ -29,7 +30,7 @@ class StorageService {
      */
     public function __construct(\Phalcon\Config $config) {
 
-        $this->mapper = new MongoMapper($config);
+        $this->mapper = new VisitorMapper($config);
     }
 
     /**
@@ -38,11 +39,12 @@ class StorageService {
      * @param array $data
      */
     public function add(array $data) {
+
         try {
             $this->mapper->add($data);
         }
-        catch(StorageException $e) {
-            var_dump($e->getMessage());
+        catch(VisitorMapperException $e) {
+            throw new StorageException($e->getMessage());
         }
     }
 }
