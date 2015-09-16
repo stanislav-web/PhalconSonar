@@ -37,12 +37,12 @@ class Grabber implements MessageComponentInterface {
     /**
      * Initialize client's storage
      */
-    public function __construct(StorageService $storageService) {
+    public function __construct(StorageService $storageService, \Phalcon\Config $config) {
 
         $this->clients = new \SplObjectStorage;
         $this->storageService = $storageService;
 
-        echo Messenger::start();
+        echo Messenger::start($config->socket->host, $config->socket->port);
     }
 
     /**
@@ -56,7 +56,7 @@ class Grabber implements MessageComponentInterface {
         $this->clients->attach($conn);
 
         // Write client to storage
-        $this->storageService->save(['ip' => $this->getIpAddress($conn), 'ua' => $this->getUserAgent($conn), 'time' => (new Request())->getServer('REQUEST_TIME')]);
+        $this->storageService->add(['ip' => $this->getIpAddress($conn), 'ua' => $this->getUserAgent($conn), 'time' => (new Request())->getServer('REQUEST_TIME')]);
 
         echo Messenger::open($this->getIpAddress($conn));
     }

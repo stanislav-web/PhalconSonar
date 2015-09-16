@@ -1,5 +1,6 @@
 <?php
-use Phalcon\Mvc\Collection;
+
+namespace Octopussy\Models;
 
 /**
  * Visitors class. Visitor's ODM
@@ -12,6 +13,33 @@ use Phalcon\Mvc\Collection;
  * @copyright Stanislav WEB
  * @filesource /Octopussy/Models/Visitors.php
  */
-class Visitors extends Collection {
+class Visitors {
 
+    /**
+     * Collection name
+     *
+     * @const COLLECTION
+     */
+    const COLLECTION = 'visitors';
+
+    /**
+     * IP Address
+     *
+     * @var int $ip
+     */
+    public $ip;
+
+    /**
+     * User Agent
+     *
+     * @var string $ua
+     */
+    public $ua;
+
+    /**
+     * Request time
+     *
+     * @var int $time
+     */
+    public $time;
 }

@@ -16,6 +16,27 @@ Octopussy is the site visitors grabber. Build in Phalcon & MongoDb
 * MongoDB
 
 ## Install
+1. Config.
+
+// Grabber task configuration
+            'grabber' =>  [
+                'logfile'  =>   APP_PATH.'/../logs/octopussy-event.log',
+                'socket'        =>  [
+                    'host'  =>  '127.0.0.1',
+                    'port'  =>  9001,
+                ],
+                'storage'       =>  [
+                    'host'      =>  '127.0.0.1',
+                    'port'      =>  27017,
+                    'user'      =>  'root',
+                    'password'  =>  'root',
+                    'dbname'    =>  'octopussy',
+                ]
+            ]
+
+2. Add task to cli.php registerNamespaces
+
+        DOCUMENT_ROOT.'/vendor/stanislav-web/octopussy/src/Octopussy/System/Tasks'
 
 ## Usage
 

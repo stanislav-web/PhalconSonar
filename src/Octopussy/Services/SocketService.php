@@ -59,7 +59,7 @@ class SocketService {
             try {
 
                 $this->server = Server::factory(new HttpServer(new WsServer(
-                    new Grabber(new StorageService($this->config->storage))
+                    new Grabber(new StorageService($this->config->storage),$this->config)
                 )), $this->config->socket->port);
 
             }

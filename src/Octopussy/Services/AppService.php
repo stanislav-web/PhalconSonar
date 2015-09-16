@@ -18,13 +18,6 @@ use Octopussy\Exceptions\SocketException;
 class AppService {
 
     /**
-     * Application configuration
-     *
-     * @var \Phalcon\Config $config
-     */
-    private $config;
-
-    /**
      * Socket service
      *
      * @var \Octopussy\Services\SocketService $socketService
@@ -39,17 +32,13 @@ class AppService {
      */
     public function __construct(\Phalcon\Config $config) {
 
-        if(!$this->config) {
-            $this->config = $config;
-        }
-
         if(!$this->socketService) {
 
-            if(isset($this->config->socket) === false) {
+            if(isset($config->socket) === false) {
                 throw new AppException('There is no option `socket` in your configurations');
             }
 
-            $this->socketService = new SocketService($this->config);
+            $this->socketService = new SocketService($config);
         }
     }
 

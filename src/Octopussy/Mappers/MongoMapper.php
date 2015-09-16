@@ -1,6 +1,8 @@
 <?php
 namespace Octopussy\Mappers;
+
 use Octopussy\Exceptions\StorageException;
+use Octopussy\Models\Visitors;
 
 /**
  * MongoMapper class. Mongo DB Mapper
@@ -18,9 +20,23 @@ class MongoMapper {
     /**
      * MongoDB client connection
      *
-     * @var \MongoClient $connection
+     * @var \MongoClient $client
      */
-    public $connection;
+    public $client;
+
+    /**
+     * Database instance
+     *
+     * @var \MongoDB
+     */
+    public $db;
+
+    /**
+     * Collection instance
+     *
+     * @var \MongoCollection
+     */
+    public $collection;
 
     /**
      * Implement configurations for MongoDB connection
@@ -34,11 +50,28 @@ class MongoMapper {
 
         try {
 
-            $this->connection = new \MongoClient($uri);
-            $this->connection->selectDB($config['dbname']);
+            $this->client = new \MongoClient($uri);
+            $this->db = $this->client->selectDB($config['dbname']);
+            $this->collection = $this->db->selectCollection(Visitors::COLLECTION);
         }
         catch(\MongoConnectionException $e) {
-            throw new StorageException('Could not connect to mongoDb server');
+            throw new StorageException($e->getMessage());
+        }
+    }
+
+    /**
+     * Add records to collection
+     *
+     * @param array $data
+     * @throws \Octopussy\Exceptions\StorageException
+     */
+    public function add(array $data) {
+
+        try {
+            $this->collection->insert($data, ['safe' => true]);
+        }
+        catch(\MongoException $e) {
+            throw new StorageException($e->getMessage());
         }
     }
 }

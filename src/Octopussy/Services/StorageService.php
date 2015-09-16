@@ -1,6 +1,7 @@
 <?php
 namespace Octopussy\Services;
 
+use Octopussy\Exceptions\StorageException;
 use Octopussy\Mappers\MongoMapper;
 
 /**
@@ -31,8 +32,17 @@ class StorageService {
         $this->mapper = new MongoMapper($config);
     }
 
-    public function save(array $data) {
-
-        print_r($data);
+    /**
+     * Add record to collection
+     *
+     * @param array $data
+     */
+    public function add(array $data) {
+        try {
+            $this->mapper->add($data);
+        }
+        catch(StorageException $e) {
+            var_dump($e->getMessage());
+        }
     }
 }

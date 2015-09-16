@@ -1,8 +1,10 @@
 <?php
-namespace Octopussy\System\Tasks;
+#namespace Octopussy\System\Tasks;
 
 use Phalcon\Logger\Adapter\File as FileAdapter;
+use Phalcon\Logger;
 use Phalcon\CLI\Task;
+use Phalcon\Script\Color;
 use Octopussy\Services\AppService as Application;
 use Octopussy\Exceptions\AppException;
 
@@ -19,6 +21,14 @@ use Octopussy\Exceptions\AppException;
  */
 class GrabberTask extends Task
 {
+
+    /**
+     * Default task name
+     *
+     * @var string $taskName
+     */
+    private $taskName = 'grabber';
+
     /**
      * Task configuration
      *
@@ -46,9 +56,13 @@ class GrabberTask extends Task
      * @param \Phalcon\Config $config
      * @return \Octopussy\System\Tasks\GrabberTask
      */
-    public function setConfig(\Phalcon\Config $config)  {
+    private function setConfig(\Phalcon\Config $config)  {
 
-        $this->config = $config->cli->{CURRENT_TASK};
+        if(defined(CURRENT_TASK) === true) {
+            $this->taskName = CURRENT_TASK;
+        }
+
+        $this->config = $config->cli->{$this->taskName};
 
         return $this;
     }
@@ -58,7 +72,7 @@ class GrabberTask extends Task
      *
      * @return \Phalcon\Config
      */
-    public function getConfig() {
+    private function getConfig() {
         return $this->config;
     }
 
@@ -67,7 +81,7 @@ class GrabberTask extends Task
      *
      * @return \Octopussy\System\Tasks\GrabberTask
      */
-    public function setLogger() {
+    private function setLogger() {
 
         $this->logger = new FileAdapter($this->getConfig()->logfile);
 
@@ -79,17 +93,8 @@ class GrabberTask extends Task
      *
      * @return \Phalcon\Logger\Adapter\File
      */
-    public function getLogger() {
+    private function getLogger() {
         return $this->logger;
-    }
-
-    /**
-     * Console style helper
-     *
-     * @return  \Phalcon\Script\Color
-     */
-    public function styleHelper() {
-        return $this->getDI()->get('color');
     }
 
     /**
@@ -101,16 +106,18 @@ class GrabberTask extends Task
         try {
 
             // init configurations // init logger
-            $this->setConfig($this->getDI()->get('config'))->setLogger()->setDb();
+            $this->setConfig($this->getDI()->get('config'))->setLogger();
 
             // run server
             $this->grabber = new Application($this->getConfig());
+
             $this->grabber->run();
 
         }
         catch(AppException $e) {
-            echo $this->styleHelper()->error($e->getMessage());
-            $this->logger->log($e->getMessage(), \Phalcon\Logger::CRITICAL);
+
+            echo Color::colorize($e->getMessage(), Color::FG_RED, Color::AT_BOLD).PHP_EOL;
+            $this->logger->log($e->getMessage(), Logger::CRITICAL);
         }
     }
 }
