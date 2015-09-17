@@ -18,8 +18,8 @@ Octopussy is the site visitors grabber. Build in Phalcon & MongoDb
 ## Install
 1. Config.
 
-// Grabber task configuration
-            'grabber' =>  [
+// Sonar task configuration
+            'sonar' =>  [
                 'logfile'  =>   APP_PATH.'/../logs/octopussy-event.log',
                 'socket'        =>  [
                     'host'  =>  '127.0.0.1',
@@ -42,9 +42,9 @@ Octopussy is the site visitors grabber. Build in Phalcon & MongoDb
             $this->setConfig($this->getDI()->get('config'))->setLogger();
 
             // run server
-            $this->grabber = new Application($this->getConfig());
+            $this->sonar = new Application($this->getConfig());
 
-            $this->grabber->run();
+            $this->sonar->run();
             
 ## Usage
 

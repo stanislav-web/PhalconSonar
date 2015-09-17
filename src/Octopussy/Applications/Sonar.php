@@ -8,7 +8,7 @@ use Octopussy\Services\StorageService;
 use Octopussy\System\Messenger;
 
 /**
- * Grabber class. App receiver
+ * Sonar class. App receiver
  *
  * @package Octopussy
  * @subpackage Octopussy\Applications
@@ -16,9 +16,9 @@ use Octopussy\System\Messenger;
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Octopussy/Applications/Grabber.php
+ * @filesource /Octopussy/Applications/Sonar.php
  */
-class Grabber implements MessageComponentInterface {
+class Sonar implements MessageComponentInterface {
 
     /**
      * Client's storage

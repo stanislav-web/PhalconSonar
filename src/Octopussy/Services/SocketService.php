@@ -5,7 +5,7 @@ use Ratchet\Server\IoServer as Server;
 use Ratchet\WebSocket\WsServer;
 use Ratchet\Http\HttpServer;
 use React\Socket\ConnectionException;
-use Octopussy\Applications\Grabber;
+use Octopussy\Applications\Sonar;
 use Octopussy\Exceptions\AppException;
 use Octopussy\Exceptions\SocketException;
 
@@ -59,7 +59,7 @@ class SocketService {
             try {
 
                 $this->server = Server::factory(new HttpServer(new WsServer(
-                    new Grabber(new StorageService($this->config->storage),$this->config)
+                    new Sonar(new StorageService($this->config->storage),$this->config)
                 )), $this->config->socket->port);
 
             }

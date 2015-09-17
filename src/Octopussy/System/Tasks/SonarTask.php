@@ -9,7 +9,7 @@ use Octopussy\Services\AppService as Application;
 use Octopussy\Exceptions\AppException;
 
 /**
- * Class GrabberTask. Grab user visits
+ * Class SonarTask. Grab user's visits
  *
  * @package Octopussy
  * @subpackage Octopussy\System\Tasks
@@ -17,9 +17,9 @@ use Octopussy\Exceptions\AppException;
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Octopussy/System/Tasks/GrabberTask.php
+ * @filesource /Octopussy/System/Tasks/SonarTask.php
  */
-class GrabberTask extends Task
+class SonarTask extends Task
 {
 
     /**
@@ -27,7 +27,7 @@ class GrabberTask extends Task
      *
      * @var string $taskName
      */
-    private $taskName = 'grabber';
+    private $taskName = 'sonar';
 
     /**
      * Task configuration
@@ -39,9 +39,9 @@ class GrabberTask extends Task
     /**
      * Octopussy configuration
      *
-     * @var \Octopussy\Services\AppService $grabber
+     * @var \Octopussy\Services\AppService $sonar
      */
-    private $grabber;
+    private $sonar;
 
     /**
      * Logger
@@ -54,7 +54,7 @@ class GrabberTask extends Task
      * Setup current task configurations
      *
      * @param \Phalcon\Config $config
-     * @return \Octopussy\System\Tasks\GrabberTask
+     * @return SonarTask
      */
     private function setConfig(\Phalcon\Config $config)  {
 
@@ -79,7 +79,7 @@ class GrabberTask extends Task
     /**
      * Setup file logger
      *
-     * @return \Octopussy\System\Tasks\GrabberTask
+     * @return SonarTask
      */
     private function setLogger() {
 
@@ -109,15 +109,15 @@ class GrabberTask extends Task
             $this->setConfig($this->getDI()->get('config'))->setLogger();
 
             // run server
-            $this->grabber = new Application($this->getConfig());
+            $this->sonar = new Application($this->getConfig());
 
-            $this->grabber->run();
+            $this->sonar->run();
 
         }
         catch(AppException $e) {
 
             echo Color::colorize($e->getMessage(), Color::FG_RED, Color::AT_BOLD).PHP_EOL;
-            $this->logger->log($e->getMessage(), Logger::CRITICAL);
+            $this->getLogger()->log($e->getMessage(), Logger::CRITICAL);
         }
     }
 }
