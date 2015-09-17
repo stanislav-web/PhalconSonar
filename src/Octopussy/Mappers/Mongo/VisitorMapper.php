@@ -1,7 +1,7 @@
 <?php
 namespace Octopussy\Mappers\Mongo;
 
-use Octopussy\Aware\AbstractMapperBase;
+use Octopussy\Aware\AbstractMongoMapper;
 use Octopussy\Models\Visitor;
 use Octopussy\Exceptions\VisitorMapperException;
 
@@ -16,7 +16,7 @@ use Octopussy\Exceptions\VisitorMapperException;
  * @copyright Stanislav WEB
  * @filesource /Octopussy/Mappers/VisitorMapper.php
  */
-class VisitorMapper extends AbstractMapperBase {
+class VisitorMapper extends AbstractMongoMapper {
 
     /**
      * Using collection

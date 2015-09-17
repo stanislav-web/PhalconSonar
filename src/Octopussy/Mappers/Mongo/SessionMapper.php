@@ -1,7 +1,7 @@
 <?php
 namespace Octopussy\Mappers\Mongo;
 
-use Octopussy\Aware\AbstractMapperBase;
+use Octopussy\Aware\AbstractMongoMapper;
 use Octopussy\Models\Session;
 use Octopussy\Exceptions\SessionMapperException;
 
@@ -16,7 +16,7 @@ use Octopussy\Exceptions\SessionMapperException;
  * @copyright Stanislav WEB
  * @filesource /Octopussy/Mappers/SessionMapper.php
  */
-class SessionMapper extends AbstractMapperBase {
+class SessionMapper extends AbstractMongoMapper {
 
     /**
      * Using collection

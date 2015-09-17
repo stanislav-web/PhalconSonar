@@ -2,7 +2,7 @@
 namespace Octopussy\Aware;
 
 /**
- * AbstractMapperBase class. Abstract base mapper
+ * AbstractMongoMapper class. Abstract mapper for mongoDb client
  *
  * @package Octopussy
  * @subpackage Octopussy\Mappers
@@ -10,9 +10,9 @@ namespace Octopussy\Aware;
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Octopussy/Aware/AbstractMapperBase.php
+ * @filesource /Octopussy/Aware/AbstractMongoMapper.php
  */
-abstract class AbstractMapperBase {
+abstract class AbstractMongoMapper {
 
     /**
      * MongoDB client connection
