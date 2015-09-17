@@ -4,7 +4,7 @@ namespace Octopussy\Models;
 use Mobile_Detect;
 
 /**
- * Visitors class. Visitor's collection model
+ * Visitor class. Visitor's collection model
  *
  * @package Octopussy
  * @subpackage Octopussy\Models
@@ -12,9 +12,9 @@ use Mobile_Detect;
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Octopussy/Models/Visitors.php
+ * @filesource /Octopussy/Models/Visitor.php
  */
-class Visitors {
+class Visitor {
 
     /**
      * Collection name
@@ -87,11 +87,11 @@ class Visitors {
     private $page   =   '';
 
     /**
-     * Request time
+     * Start request time
      *
-     * @var int $time
+     * @var int $open
      */
-    private $time;
+    private $open;
 
     /**
      * Detect mobile library instance
@@ -113,7 +113,7 @@ class Visitors {
         // validate client data
         $this->setPage($data['page'])
                     ->setIp($data['ip'])
-                        ->setTime($data['time'])
+                        ->setOpenTime($data['open'])
                             ->setLanguage($data['language'])
                                 ->setUa()
                                     ->deviceDetect();
@@ -123,7 +123,7 @@ class Visitors {
      * Set ip to long int
      *
      * @param string $ip
-     * @return Visitors
+     * @return Visitor
      */
     public function setIp($ip)
     {
@@ -155,7 +155,7 @@ class Visitors {
     /**
      * Set user agent
      *
-     * @return Visitors
+     * @return Visitor
      */
     public function setUa()
     {
@@ -170,7 +170,7 @@ class Visitors {
     /**
      * Detect client device
      *
-     * @return Visitors
+     * @return Visitor
      */
     private function deviceDetect()
     {
@@ -187,7 +187,7 @@ class Visitors {
     /**
      * Set user browser
      *
-     * @return Visitors
+     * @return Visitor
      */
     private function setBrowser()
     {
@@ -201,7 +201,7 @@ class Visitors {
     /**
      * Set user language
      *
-     * @return Visitors
+     * @return Visitor
      */
     private function setLanguage($language)
     {
@@ -212,7 +212,7 @@ class Visitors {
     /**
      * Set user OS platform
      *
-     * @return Visitors
+     * @return Visitor
      */
     private function setPlatform($platform)
     {
@@ -224,16 +224,16 @@ class Visitors {
     /**
      * @return int
      */
-    public function getTime()
+    public function getOpenTime()
     {
-        return $this->time;
+        return $this->open;
     }
 
     /**
      * Set current page
      *
      * @param int $page
-     * @return Visitors
+     * @return Visitor
      */
     public function setPage($page)
     {
@@ -243,14 +243,14 @@ class Visitors {
     }
 
     /**
-     * Set timestamp point
+     * Set timestamp point open
      *
-     * @param int $time
-     * @return Visitors
+     * @param int $open
+     * @return Visitor
      */
-    public function setTime($time)
+    public function setOpenTime($open)
     {
-        $this->time = $time;
+        $this->open = $open;
 
         return $this;
     }

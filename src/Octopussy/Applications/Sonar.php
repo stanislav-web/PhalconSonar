@@ -61,7 +61,7 @@ class Sonar implements MessageComponentInterface {
             'ua'        => $this->getUserAgent($conn),
             'language'  => $this->getLanguage($conn),
             'page'      => $this->getCurrentPage($conn),
-            'time'      => time()
+            'open'      => time()
         ]);
 
         echo Messenger::open($this->getIpAddress($conn));

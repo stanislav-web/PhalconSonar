@@ -2,9 +2,11 @@
 
 namespace Octopussy\Services;
 
+use Octopussy\Mappers\Mongo\SessionMapper;
 use Octopussy\Mappers\Mongo\VisitorMapper;
 use Octopussy\Exceptions\StorageException;
 use Octopussy\Exceptions\VisitorMapperException;
+
 /**
  * StorageService class. Database service
  *
@@ -19,9 +21,14 @@ use Octopussy\Exceptions\VisitorMapperException;
 class StorageService {
 
     /**
-     * @var \Octopussy\Mappers\VisitorMapper $mapper
+     * @var \Octopussy\Mappers\Mongo\VisitorMapper $visitorMapper
      */
-    private $mapper;
+    private $visitorMapper;
+
+    /**
+     * @var \Octopussy\Mappers\Mongo\SessionMapper $sessionMapper
+     */
+    private $sessionMapper;
 
     /**
      * Implement configurations
@@ -30,7 +37,8 @@ class StorageService {
      */
     public function __construct(\Phalcon\Config $config) {
 
-        $this->mapper = new VisitorMapper($config);
+        $this->visitorMapper = new VisitorMapper($config);
+        $this->sessionMapper = new SessionMapper($config);
     }
 
     /**
@@ -41,7 +49,14 @@ class StorageService {
     public function add(array $data) {
 
         try {
-            $this->mapper->add($data);
+            // add user data
+            $lastInsertId = $this->visitorMapper->add($data);
+
+            // save id to session
+            $this->sessionMapper->add([
+                'id' => $lastInsertId->{'$id'},
+                'hash' => md5(serialize($data))
+            ]);
         }
         catch(VisitorMapperException $e) {
             throw new StorageException($e->getMessage());

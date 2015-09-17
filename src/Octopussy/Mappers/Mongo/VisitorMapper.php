@@ -1,8 +1,9 @@
 <?php
 namespace Octopussy\Mappers\Mongo;
 
-use Octopussy\Exceptions\StorageException;
-use Octopussy\Models\Visitors;
+use Octopussy\Aware\AbstractMapperBase;
+use Octopussy\Models\Visitor;
+use Octopussy\Exceptions\VisitorMapperException;
 
 /**
  * VisitorMapper class. Mongo DB Mapper
@@ -15,65 +16,63 @@ use Octopussy\Models\Visitors;
  * @copyright Stanislav WEB
  * @filesource /Octopussy/Mappers/VisitorMapper.php
  */
-class VisitorMapper {
+class VisitorMapper extends AbstractMapperBase {
 
     /**
-     * MongoDB client connection
+     * Using collection
      *
-     * @var \MongoClient $client
+     * @const COLLECTION
      */
-    public $client;
-
-    /**
-     * Database instance
-     *
-     * @var \MongoDB
-     */
-    public $db;
-
-    /**
-     * Collection instance
-     *
-     * @var \MongoCollection
-     */
-    public $collection;
-
-    /**
-     * Implement configurations for MongoDB connection
-     *
-     * @param \Phalcon\Config $config
-     * @throws \Octopussy\Exceptions\StorageException
-     */
-    public function __construct(\Phalcon\Config $config) {
-
-        $uri = "mongodb://".$config['user'].":".$config['password']."@".$config['host'].":".$config['port']."/".$config['dbname'];
-
-        try {
-
-            if(!$this->collection) {
-                $this->client = new \MongoClient($uri);
-                $this->db = $this->client->selectDB($config['dbname']);
-                $this->collection = $this->db->selectCollection(Visitors::COLLECTION);
-            }
-        }
-        catch(\MongoConnectionException $e) {
-            throw new StorageException($e->getMessage());
-        }
-    }
+    const COLLECTION = Visitor::COLLECTION;
 
     /**
      * Add records to collection
      *
      * @param array $data
-     * @throws \Octopussy\Exceptions\StorageException
+     * @throws \Octopussy\Exceptions\VisitorMapperException
+     * @return \MongoId
      */
     public function add(array $data) {
 
         try {
+            $document = (new Visitor($data))->toArray();
+            $this->collection->insert($document, ['w' => true]);
 
-            $this->collection->insert((new Visitors($data))->toArray(), ['w' => true]);
+            return new \MongoId($document['_id']);
         }
         catch(\MongoCursorException $e) {
+            throw new VisitorMapperException($e->getMessage());
+        }
+        catch (\MongoException $e ) {
+            throw new VisitorMapperException($e->getMessage());
+        }
+    }
+
+    /**
+     * Remove records from collection
+     *
+     * @param array $criteria
+     * @throws \Octopussy\Exceptions\VisitorMapperException
+     */
+    public function remove(array $criteria) {
+
+        try {
+            $document = (new Visitor($criteria))->toArray();
+
+            if(isset($document['_id']) === true) {
+                $document['_id'] = new \MongoId($document['_id']);
+            }
+
+            $this->collection->insert($document, ['w' => true]);
+
+            echo 'Product inserted with ID: ' . $document['_id'] . "\n";
+
+            exit;
+        }
+        catch(\MongoCursorException $e) {
+            throw new VisitorMapperException($e->getMessage());
+        }
+        catch (\MongoException $e ) {
             throw new VisitorMapperException($e->getMessage());
         }
     }
