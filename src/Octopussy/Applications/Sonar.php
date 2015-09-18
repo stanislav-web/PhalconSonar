@@ -6,6 +6,7 @@ use Ratchet\MessageComponentInterface;
 use Ratchet\ConnectionInterface;
 use Octopussy\Services\StorageService;
 use Octopussy\System\Messenger;
+use Octopussy\Exceptions\AppException;
 
 /**
  * Sonar class. App receiver
@@ -54,16 +55,6 @@ class Sonar implements MessageComponentInterface {
 
         // store the new connection
         $this->clients->attach($conn);
-
-        // add client to storage
-        $this->storageService->add([
-            'ip'        => $this->getIpAddress($conn),
-            'ua'        => $this->getUserAgent($conn),
-            'language'  => $this->getLanguage($conn),
-            'page'      => $this->getCurrentPage($conn),
-            'open'      => time()
-        ]);
-
         echo Messenger::open($this->getIpAddress($conn));
     }
 
@@ -75,6 +66,14 @@ class Sonar implements MessageComponentInterface {
      * @param string              $msg
      */
     public function onMessage(ConnectionInterface $from, $msg) {
+
+        // add client to storage
+        $this->storageService->add(array_merge([
+            'ip'        => $this->getIpAddress($from),
+            'ua'        => $this->getUserAgent($from),
+            'language'  => $this->getLanguage($from),
+            'open'      => time()
+        ], json_decode($msg, true)));
     }
 
     /**
@@ -95,10 +94,11 @@ class Sonar implements MessageComponentInterface {
      *
      * @param ConnectionInterface $conn
      * @param \Exception          $e
+     * @throws \Octopussy\Exceptions\AppException;
      */
     public function onError(ConnectionInterface $conn, \Exception $e) {
 
-        echo Messenger::error($e->getMessage());
+        throw new AppException(Messenger::error($e->getMessage()));
         $conn->close();
     }
 
