@@ -98,8 +98,15 @@ class Sonar implements MessageComponentInterface {
      */
     public function onError(ConnectionInterface $conn, \Exception $e) {
 
-        throw new AppException(Messenger::error($e->getMessage()));
-        $conn->close();
+        try {
+
+        }
+        catch(\Exception $e) {
+            throw new AppException(Messenger::error($e->getMessage()));
+        }
+        finally {
+            $conn->close();
+        }
     }
 
     /**
