@@ -2,7 +2,7 @@
 namespace Octopussy\Exceptions;
 
 /**
- * SocketException class. Queue exception class
+ * QueueException class. Queue exception class
  *
  * @package Octopussy
  * @subpackage Octopussy\Exceptions
@@ -10,9 +10,9 @@ namespace Octopussy\Exceptions;
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Octopussy/Exceptions/SocketException.php
+ * @filesource /Octopussy/Exceptions/QueueException.php
  */
-class SocketException extends \DomainException {
+class QueueException extends \DomainException {
 
     /**
      * @const CODE exception code

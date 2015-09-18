@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Socket client test</title>
+</head>
+<body>
+<h1>Look into browser console</h1>
+<script>
+    "use strict";
+
+    var Socket = {
+
+        /**
+         * Is WebSockets support
+         *
+         * @type {boolean}
+         */
+        isSupported : ("WebSocket" in window && window.WebSocket != undefined),
+
+        /**
+         * Connection config
+         */
+        config : {
+            protocol : 'ws://',
+            host: '127.0.0.1',
+            port: 9001
+        },
+
+        /**
+         * Create socket connect
+         *
+         * @param {string} page
+         * @return Socket
+         */
+        create : function() {
+
+            if(!this.isSupported)
+                throw Error('Websockets dooes not supported');
+
+            console.info('[CONFIG]', this.config);
+
+            /**
+             * @type {WebSocket}
+             */
+            var connect = new WebSocket(this.config.protocol + this.config.host +':'+this.config.port);
+
+            // socket connect event
+            connect.onOpen = function connectionOpened() {
+                console.info('[SOCKET] Open connect');
+            };
+
+            // socket message event
+            connect.onMessage = function messageReceived(message) {
+                console.info('[SOCKET] Send', message.data);
+            };
+
+            // socket close event
+            connect.onClose = function() {
+                console.info('[SOCKET] Close');
+            };
+
+            this.connect = connect;
+
+            return this;
+        },
+
+        /**
+         * Access watching
+         *
+         * @param {WebSocket} socket
+         * @param {function} callback
+         */
+        wait : function(socket, callback) {
+
+            var then = this;
+
+            setTimeout(function() {
+                if(socket.readyState === socket.OPEN) {
+                    callback();
+                } else {
+                    then.wait(socket, callback);
+                }
+            }, 5);
+        },
+
+        /**
+         * Send data to server
+         *
+         * @param {string} url
+         */
+        send : function(url) {
+            var then = this;
+            this.wait(this.connect, function() {
+                then.connect.send(JSON.stringify({'page' : url}));
+            });
+        }
+    };
+
+    // run
+    Socket.create().send(document.URL);
+</script>
+</body>
+</html>

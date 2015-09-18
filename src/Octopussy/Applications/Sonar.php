@@ -5,6 +5,7 @@ use Phalcon\Http\Request;
 use Ratchet\MessageComponentInterface;
 use Ratchet\ConnectionInterface;
 use Octopussy\Services\StorageService;
+use Octopussy\Services\QueueService;
 use Octopussy\System\Messenger;
 use Octopussy\Exceptions\AppException;
 
@@ -29,21 +30,32 @@ class Sonar implements MessageComponentInterface {
     protected $clients;
 
     /**
-     * Storage service
+     * Db Storage service
      *
      * @var \Octopussy\Services\StorageService $storageService
      */
     private $storageService;
 
     /**
-     * Initialize client's storage
+     * Queue service
+     *
+     * @var \Octopussy\Services\QueueService $queueService
      */
-    public function __construct(StorageService $storageService, \Phalcon\Config $config) {
+    private $queueService;
+
+    /**
+     * Initialize client's storage
+     *
+     * @param StorageService $storageService
+     * @param QueueService   $queueService
+     */
+    public function __construct(StorageService $storageService, QueueService $queueService) {
 
         $this->clients = new \SplObjectStorage;
         $this->storageService = $storageService;
+        $this->queueService = $queueService;
 
-        echo Messenger::start($config->socket->host, $config->socket->port);
+        echo Messenger::start();
     }
 
     /**
@@ -64,16 +76,25 @@ class Sonar implements MessageComponentInterface {
      * @deprecated
      * @param ConnectionInterface $from
      * @param string              $msg
+     * @throws \InvalidArgumentException
      */
     public function onMessage(ConnectionInterface $from, $msg) {
 
-        // add client to storage
-        $this->storageService->add(array_merge([
+
+        if(is_array($msg = json_decode($msg, true)) === false) {
+            throw new \InvalidArgumentException('The server received an invalid data format');
+        }
+
+        $data = array_merge([
             'ip'        => $this->getIpAddress($from),
             'ua'        => $this->getUserAgent($from),
             'language'  => $this->getLanguage($from),
             'open'      => time()
-        ], json_decode($msg, true)));
+        ], $msg);
+
+
+        // add client to storage
+        $this->storageService->add($data);
     }
 
     /**

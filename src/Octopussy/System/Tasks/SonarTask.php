@@ -8,6 +8,9 @@ use Phalcon\Script\Color;
 use Octopussy\Services\AppService as Application;
 use Octopussy\Exceptions\AppException;
 
+error_reporting(7);
+ini_set('display_errors', 'On');
+
 /**
  * Class SonarTask. Grab user's visits
  *

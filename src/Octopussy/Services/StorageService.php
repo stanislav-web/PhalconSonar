@@ -2,8 +2,8 @@
 
 namespace Octopussy\Services;
 
-use Octopussy\Mappers\Mongo\SessionMapper;
-use Octopussy\Mappers\Mongo\VisitorMapper;
+use Octopussy\Mappers\Db\Mongo\SessionMapper;
+use Octopussy\Mappers\Db\Mongo\VisitorMapper;
 use Octopussy\Exceptions\StorageException;
 use Octopussy\Exceptions\VisitorMapperException;
 
@@ -21,12 +21,16 @@ use Octopussy\Exceptions\VisitorMapperException;
 class StorageService {
 
     /**
-     * @var \Octopussy\Mappers\Mongo\VisitorMapper $visitorMapper
+     * User visitor handler
+     *
+     * @var \Octopussy\Mappers\Db\Mongo\VisitorMapper $visitorMapper
      */
     private $visitorMapper;
 
     /**
-     * @var \Octopussy\Mappers\Mongo\SessionMapper $sessionMapper
+     * Session user handler
+     *
+     * @var \Octopussy\Mappers\Db\Mongo\SessionMapper $sessionMapper
      */
     private $sessionMapper;
 

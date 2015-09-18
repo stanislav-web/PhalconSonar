@@ -19,7 +19,7 @@ class Messenger {
     /**
      * const START Start app message
      */
-    const START     = "Server is running on %s:%d ...\n-----------------";
+    const START     = "Server is running ...\n-----------------";
 
     /**
      * @const OPEN greeting text
@@ -48,8 +48,8 @@ class Messenger {
      * @param int $port
      * @return string
      */
-    public static function start($host, $port) {
-        return Color::colorize(sprintf(self::START, $host, $port), Color::FG_BLACK, Color::AT_BOLD).PHP_EOL;
+    public static function start() {
+        return Color::colorize(self::START, Color::FG_BLACK, Color::AT_BOLD).PHP_EOL;
     }
 
     /**

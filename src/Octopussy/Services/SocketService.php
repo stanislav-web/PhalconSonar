@@ -59,7 +59,10 @@ class SocketService {
             try {
 
                 $this->server = Server::factory(new HttpServer(new WsServer(
-                    new Sonar(new StorageService($this->config->storage),$this->config)
+                    new Sonar(
+                        new StorageService($this->config->storage),
+                        new QueueService($this->config->beanstalk)
+                    )
                 )), $this->config->socket->port);
 
             }
