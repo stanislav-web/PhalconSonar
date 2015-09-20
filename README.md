@@ -1,6 +1,6 @@
 # Octopussy
 
-[ ![Codeship Status for stanislav-web/Octopussy](https://codeship.com/projects/3c8b15c0-41ba-0133-04e1-62bb193b9897/status?branch=master)](https://codeship.com/projects/103619))
+[ ![Codeship Status for stanislav-web/Octopussy](https://codeship.com/projects/3c8b15c0-41ba-0133-04e1-62bb193b9897/status?branch=master)](https://codeship.com/projects/103619)
 
 Octopussy is the site visitors grabber. Build in Phalcon & MongoDb.
 Conducts monitoring of visitors, using the WebSockets connection. Great for sites built on REST technology.
