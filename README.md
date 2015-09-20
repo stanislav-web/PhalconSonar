@@ -47,5 +47,8 @@ Octopussy is the site visitors grabber. Build in Phalcon & MongoDb
             $this->sonar->run();
             
 ## Usage
-
+https://docs.phalconphp.com/ru/latest/reference/queue.html
+https://github.com/ratchetphp/Ratchet
+https://github.com/serbanghita/Mobile-Detect
+http://php.net/manual/ru/mongo.core.php
 ##[Issues](https://github.com/stanislav-web/octopussy/issues "Issues")

@@ -8,7 +8,7 @@ use Phalcon\Script\Color;
 use Octopussy\Services\AppService as Application;
 use Octopussy\Exceptions\AppException;
 
-error_reporting(7);
+error_reporting(E_ALL & ~E_WARNING);
 ini_set('display_errors', 'On');
 
 /**
@@ -105,7 +105,6 @@ class SonarTask extends Task
      */
     public function mainAction()
     {
-
         try {
 
             // init configurations // init logger

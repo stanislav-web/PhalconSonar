@@ -49,6 +49,7 @@ class StorageService {
      * Add record to collection
      *
      * @param array $data
+     * @return \MongoId
      */
     public function add(array $data) {
 
@@ -56,11 +57,7 @@ class StorageService {
             // add user data
             $lastInsertId = $this->visitorMapper->add($data);
 
-            // save id to session
-            $this->sessionMapper->add([
-                'id' => $lastInsertId->{'$id'},
-                'hash' => md5(serialize($data))
-            ]);
+            return $lastInsertId;
         }
         catch(VisitorMapperException $e) {
             throw new StorageException($e->getMessage());

@@ -2,6 +2,7 @@
 namespace Octopussy\Mappers\Queue;
 
 use Octopussy\Aware\AbstractQueueMapper;
+use Octopussy\Exceptions\BeanstalkMapperException;
 use Phalcon\Queue\Beanstalk;
 
 /**
@@ -26,23 +27,60 @@ class BeanstalkMapper extends AbstractQueueMapper {
      * Implement configurations
      *
      * @param array $config
+     * @throws \Octopussy\Exceptions\BeanstalkMapperException
      */
     public function __construct(array $config = null) {
 
         if($this->connect === null) {
-            $this->connect = new Beanstalk($config);
+            try {
+                $this->connect = new Beanstalk($config);
+                $this->connect->connect();
+            }
+            catch(\Exception $e) {
+                throw new BeanstalkMapperException($e->getMessage());
+            }
         }
     }
 
     /**
-     * Put data to task
+     * Put message
      *
-     * @param array $data
+     * @param string $message
      * @param array $options optional task config
-     * @throws \Octopussy\Exceptions\BeanstalkMapperException
-     * @return \MongoId
+     * @return null
      */
-    public function put(array $data, array $options = []) {
-        // TODO: Implement put() method.
+    public function put($message, array $options = []) {
+
+        $this->connect->put($message, $options);
+
+        return null;
+    }
+
+    /**
+     * Read message
+     *
+     * @param array $credentials
+     * @param callable $callback
+     * @throws \Octopussy\Exceptions\BeanstalkMapperException
+     */
+    public function read(array $credentials)
+    {
+        try {
+
+            while (($job = $this->connect->peekReady()) !== false) {
+
+                $message = unserialize($job->getBody());
+
+                if($message['hash'] === $credentials['hash']) {
+                    // hash found! Remove job from queue and return message
+                    $job->delete();
+                    unset($message['hash']);
+                    return $message;
+                }
+            }
+        }
+        catch(\Exception $e) {
+            throw new BeanstalkMapperException($e->getMessage());
+        }
     }
 }

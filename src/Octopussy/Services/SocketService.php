@@ -1,6 +1,7 @@
 <?php
 namespace Octopussy\Services;
 
+use Octopussy\Exceptions\QueueException;
 use Ratchet\Server\IoServer as Server;
 use Ratchet\WebSocket\WsServer;
 use Ratchet\Http\HttpServer;
@@ -65,6 +66,9 @@ class SocketService {
                     )
                 )), $this->config->socket->port);
 
+            }
+            catch(QueueException $e) {
+                throw new AppException($e->getMessage());
             }
             catch(ConnectionException $e) {
                 throw new SocketException($e->getMessage());

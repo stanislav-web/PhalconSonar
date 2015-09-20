@@ -5,7 +5,6 @@ namespace Octopussy\Services;
 use Octopussy\Exceptions\QueueException;
 use Octopussy\Mappers\Queue\BeanstalkMapper;
 use Octopussy\Exceptions\BeanstalkMapperException;
-
 /**
  * QueueService class. Queue service
  *
@@ -43,5 +42,35 @@ class QueueService {
                 throw new QueueException($e->getMessage());
             }
         }
+    }
+
+    /**
+     * Push data to task
+     *
+     * @param array $message
+     * @param callable $messageHandler
+     * @return null
+     */
+    public function push(array $message, callable $messageHandler) {
+
+        $this->beanstalkMapper->put(serialize(
+            array_merge(
+                $messageHandler(), $message
+            )
+        ));
+
+        return null;
+    }
+
+    /**
+     * Pull data from task
+     *
+     * @param array $credentials
+     * @param callable $messageHandler
+     * @return array
+     */
+    public function pull(array $credentials, callable $messageHandler) {
+
+        return $messageHandler($this->beanstalkMapper->read($credentials));
     }
 }

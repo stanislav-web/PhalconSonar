@@ -73,28 +73,25 @@ class Sonar implements MessageComponentInterface {
     /**
      * Push to task event
      *
-     * @deprecated
-     * @param ConnectionInterface $from
-     * @param string              $msg
+     * @param ConnectionInterface $request
+     * @param string              $conn
      * @throws \InvalidArgumentException
      */
-    public function onMessage(ConnectionInterface $from, $msg) {
+    public function onMessage(ConnectionInterface $conn, $request) {
 
-
-        if(is_array($msg = json_decode($msg, true)) === false) {
+        if(is_array($request = json_decode($request, true)) === false) {
             throw new \InvalidArgumentException('The server received an invalid data format');
         }
 
-        $data = array_merge([
-            'ip'        => $this->getIpAddress($from),
-            'ua'        => $this->getUserAgent($from),
-            'language'  => $this->getLanguage($from),
-            'open'      => time()
-        ], $msg);
+        $this->queueService->push($request, function() use ($conn) {
 
-
-        // add client to storage
-        $this->storageService->add($data);
+            // process only what is necessary for the subsequent construction of stats
+            return [
+                'ip'        =>  $this->getIpAddress($conn),
+                'hash'      =>  md5($this->getIpAddress($conn).$this->getUserAgent($conn)),
+                'open'      =>  time()
+            ];
+        });
     }
 
     /**
@@ -106,6 +103,22 @@ class Sonar implements MessageComponentInterface {
 
         // The connection is closed, remove it, as we can no longer send it messages
         $this->clients->detach($conn);
+
+        // pulled data from queues
+        $data = $this->queueService->pull([
+            // identity for open queue message
+                'hash'        =>  md5($this->getIpAddress($conn).$this->getUserAgent($conn)),
+            ], function($response) use ($conn) {
+
+            return array_merge($response, [
+                'ua'            => $this->getUserAgent($conn),
+                'language'      => $this->getLanguage($conn),
+                'close'         => time()
+            ]);
+        });
+
+        // save data to storage
+        $this->storageService->add($data);
 
         echo Messenger::close($this->getIpAddress($conn));
     }
@@ -119,9 +132,7 @@ class Sonar implements MessageComponentInterface {
      */
     public function onError(ConnectionInterface $conn, \Exception $e) {
 
-        try {
-
-        }
+        try {}
         catch(\Exception $e) {
             throw new AppException(Messenger::error($e->getMessage()));
         }

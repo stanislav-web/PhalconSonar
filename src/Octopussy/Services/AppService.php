@@ -44,6 +44,7 @@ class AppService {
 
     /**
      * Run socket server
+     * @throws \Octopussy\Exceptions\AppException
      */
     public function run() {
 
@@ -54,4 +55,5 @@ class AppService {
             throw new AppException($e->getMessage());
         }
     }
+
 }

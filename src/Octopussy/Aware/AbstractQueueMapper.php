@@ -15,12 +15,19 @@ namespace Octopussy\Aware;
 abstract class AbstractQueueMapper {
 
     /**
-     * Put data to task
+     * Put message
      *
-     * @param array $data
+     * @param string $data
      * @param array $options optional task config
-     * @throws \Octopussy\Exceptions\BeanstalkMapperException
-     * @return \MongoId
+     * @return null
      */
-    abstract public function put(array $data, array $options = []);
+    abstract public function put($data, array $options = []);
+
+    /**
+     * Read message
+     *
+     * @param array $credentials
+     * @param callable $callback
+     */
+    abstract public function read(array $credentials);
 }
