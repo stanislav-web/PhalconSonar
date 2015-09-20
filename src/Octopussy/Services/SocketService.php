@@ -11,10 +11,10 @@ use Octopussy\Exceptions\AppException;
 use Octopussy\Exceptions\SocketException;
 
 /**
- * SocketService class. Client bridge service for locate incoming messages
+ * Class SocketService. Client bridge service for locate incoming messages
  *
- * @package Octopussy
- * @subpackage Octopussy\Services
+ * @package Octopussy\Services
+ * @subpackage Octopussy
  * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>

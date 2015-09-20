@@ -5,10 +5,10 @@ use Octopussy\Exceptions\AppException;
 use Octopussy\Exceptions\SocketException;
 
 /**
- * AppService class. Application Service
+ * Class AppService. Application Service
  *
- * @package Octopussy
- * @subpackage Octopussy\Services
+ * @package Octopussy\Services
+ * @subpackage Octopussy
  * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>

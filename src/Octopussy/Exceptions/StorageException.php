@@ -2,10 +2,10 @@
 namespace Octopussy\Exceptions;
 
 /**
- * StorageException class. Storage exception class
+ * Class StorageException. Storage exception class
  *
- * @package Octopussy
- * @subpackage Octopussy\Exceptions
+ * @package Octopussy\Exceptions
+ * @subpackage Octopussy
  * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>

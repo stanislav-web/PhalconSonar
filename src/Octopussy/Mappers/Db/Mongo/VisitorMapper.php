@@ -6,15 +6,15 @@ use Octopussy\Models\Visitor;
 use Octopussy\Exceptions\VisitorMapperException;
 
 /**
- * VisitorMapper class. Mongo DB Mapper
+ * Class VisitorMapper. Mongo DB Mapper
  *
- * @package Octopussy
+ * @package Octopussy\Mappers\Db\Mongo
  * @subpackage Octopussy\Mappers\Db
  * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Octopussy/Mappers/Db/VisitorMapper.php
+ * @filesource /Octopussy/Mappers/Db/Mongo/VisitorMapper.php
  */
 class VisitorMapper extends AbstractMongoMapper {
 

@@ -12,7 +12,6 @@ use Octopussy\Exceptions\AppException;
  * Class SonarTask. Grab user's visits
  *
  * @package Octopussy
- * @subpackage Octopussy\System\Tasks
  * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>

@@ -2,10 +2,10 @@
 namespace Octopussy\Exceptions;
 
 /**
- * VisitorMapperException class. VisitorMapper exception class
+ * Class VisitorMapperException. VisitorMapper exception class
  *
- * @package Octopussy
- * @subpackage Octopussy\Exceptions
+ * @package Octopussy\Exceptions
+ * @subpackage Octopussy
  * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>

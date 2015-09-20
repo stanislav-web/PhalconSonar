@@ -4,10 +4,10 @@ namespace Octopussy\Models;
 use Mobile_Detect;
 
 /**
- * Visitor class. Visitor's collection model
+ * Class Visitor. Visitor's collection model
  *
- * @package Octopussy
- * @subpackage Octopussy\Models
+ * @package Octopussy\Models
+ * @subpackage Octopussy
  * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
@@ -92,6 +92,13 @@ class Visitor {
      * @var int $open
      */
     private $open;
+
+    /**
+     * End request time
+     *
+     * @var int $close
+     */
+    private $close;
 
     /**
      * Detect mobile library instance
@@ -222,6 +229,8 @@ class Visitor {
     }
 
     /**
+     * Get open time
+     *
      * @return int
      */
     public function getOpenTime()
@@ -250,9 +259,30 @@ class Visitor {
      */
     public function setOpenTime($open)
     {
-        $this->open = $open;
+        $this->open = (int)$open;
 
         return $this;
+    }
+
+    /**
+     * Get close time
+     *
+     * @return int
+     */
+    public function getCloseTime()
+    {
+        return $this->close;
+    }
+
+    /**
+     * Set timestamp point close
+     *
+     * @param int $close
+     * @return Visitor
+     */
+    public function setCloseTime($close)
+    {
+        $this->close = (int)$close;
     }
 
     /**

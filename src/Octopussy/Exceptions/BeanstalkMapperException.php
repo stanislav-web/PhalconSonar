@@ -2,10 +2,10 @@
 namespace Octopussy\Exceptions;
 
 /**
- * BeanstalkMapperException class. Beanstalk port exception class
+ * Class BeanstalkMapperException. Beanstalk port exception class
  *
- * @package Octopussy
- * @subpackage Octopussy\Exceptions
+ * @package Octopussy\Exceptions
+ * @subpackage Octopussy
  * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>

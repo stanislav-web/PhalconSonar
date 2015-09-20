@@ -2,10 +2,10 @@
 namespace Octopussy\Aware;
 
 /**
- * AbstractQueueMapper class. Abstract mapper for queue clients
+ * Class AbstractQueueMapper. Abstract mapper for queue clients
  *
- * @package Octopussy
- * @subpackage Octopussy\Aware
+ * @package Octopussy\Aware
+ * @subpackage Octopussy
  * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>

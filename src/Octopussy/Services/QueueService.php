@@ -6,10 +6,10 @@ use Octopussy\Exceptions\QueueException;
 use Octopussy\Mappers\Queue\BeanstalkMapper;
 use Octopussy\Exceptions\BeanstalkMapperException;
 /**
- * QueueService class. Queue service
+ * Class QueueService. Queue service
  *
- * @package Octopussy
- * @subpackage Octopussy\Services
+ * @package Octopussy\Services
+ * @subpackage Octopussy
  * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>

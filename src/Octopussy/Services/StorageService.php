@@ -7,10 +7,10 @@ use Octopussy\Exceptions\StorageException;
 use Octopussy\Exceptions\VisitorMapperException;
 
 /**
- * StorageService class. Database service
+ * Class StorageService. Database service
  *
- * @package Octopussy
- * @subpackage Octopussy\Services
+ * @package Octopussy\Services
+ * @subpackage Octopussy
  * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>

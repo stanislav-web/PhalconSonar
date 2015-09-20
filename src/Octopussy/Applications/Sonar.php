@@ -9,10 +9,10 @@ use Octopussy\System\Messenger;
 use Octopussy\Exceptions\AppException;
 
 /**
- * Sonar class. App receiver
+ * Class Sonar. App receiver
  *
- * @package Octopussy
- * @subpackage Octopussy\Applications
+ * @package Octopussy\Applications
+ * @subpackage Octopussy
  * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>

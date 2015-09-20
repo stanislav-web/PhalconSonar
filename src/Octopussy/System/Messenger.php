@@ -4,10 +4,10 @@ namespace Octopussy\System;
 use \Phalcon\Script\Color;
 
 /**
- * Messenger class. Message dictionary helper
+ * Class Messenger. Message dictionary helper
  *
- * @package Octopussy
- * @subpackage Octopussy\System
+ * @package Octopussy\System
+ * @subpackage Octopussy
  * @since PHP >=5.5
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
