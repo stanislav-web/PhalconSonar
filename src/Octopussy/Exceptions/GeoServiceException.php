@@ -2,7 +2,7 @@
 namespace Octopussy\Exceptions;
 
 /**
- * Class AppException. Application exception class
+ * Class GeoServiceException. Geo service exception class
  *
  * @package Octopussy\Exceptions
  * @subpackage Octopussy
@@ -10,9 +10,9 @@ namespace Octopussy\Exceptions;
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Octopussy/Exceptions/AppException.php
+ * @filesource /Octopussy/Exceptions/GeoServiceException.php
  */
-class AppException extends \InvalidArgumentException {
+class GeoServiceException extends \DomainException {
 
     /**
      * @const CODE exception code

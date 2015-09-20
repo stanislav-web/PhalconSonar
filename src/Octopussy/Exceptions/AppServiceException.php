@@ -2,7 +2,7 @@
 namespace Octopussy\Exceptions;
 
 /**
- * Class QueueException class. Queue exception class
+ * Class AppServiceException. Application service exception class
  *
  * @package Octopussy\Exceptions
  * @subpackage Octopussy
@@ -10,9 +10,9 @@ namespace Octopussy\Exceptions;
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Octopussy/Exceptions/QueueException.php
+ * @filesource /Octopussy/Exceptions/AppServiceException.php
  */
-class QueueException extends \DomainException {
+class AppServiceException extends \InvalidArgumentException {
 
     /**
      * @const CODE exception code

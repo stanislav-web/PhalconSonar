@@ -1,14 +1,14 @@
 <?php
 namespace Octopussy\Services;
 
-use Octopussy\Exceptions\QueueException;
+use Octopussy\Exceptions\QueueServiceException;
 use Ratchet\Server\IoServer as Server;
 use Ratchet\WebSocket\WsServer;
 use Ratchet\Http\HttpServer;
 use React\Socket\ConnectionException;
 use Octopussy\Applications\Sonar;
-use Octopussy\Exceptions\AppException;
-use Octopussy\Exceptions\SocketException;
+use Octopussy\Exceptions\AppServiceException;
+use Octopussy\Exceptions\SocketServiceException;
 
 /**
  * Class SocketService. Client bridge service for locate incoming messages
@@ -49,8 +49,8 @@ class SocketService {
     /**
      * Run the server application through the WebSocket protocol
      *
-     * @throws \Octopussy\Exceptions\AppException
-     * @throws \Octopussy\Exceptions\SocketException
+     * @throws \Octopussy\Exceptions\AppServiceException
+     * @throws \Octopussy\Exceptions\SocketServiceException
      * @return null
      */
     public function run() {
@@ -62,24 +62,25 @@ class SocketService {
                 $this->server = Server::factory(new HttpServer(new WsServer(
                     new Sonar(
                         new StorageService($this->config->storage),
-                        new QueueService($this->config->beanstalk)
+                        new QueueService($this->config->beanstalk),
+                        new GeoService()
                     )
                 )), $this->config->socket->port);
 
             }
-            catch(QueueException $e) {
-                throw new AppException($e->getMessage());
+            catch(QueueServiceException $e) {
+                throw new AppServiceException($e->getMessage());
             }
             catch(ConnectionException $e) {
-                throw new SocketException($e->getMessage());
+                throw new SocketServiceException($e->getMessage());
             }
             catch (\RuntimeException $e) {
-                throw new SocketException($e->getMessage());
+                throw new SocketServiceException($e->getMessage());
             }
         }
 
         if(isset($this->config->storage) === false) {
-            throw new AppException('There is no option `storage` in your configurations');
+            throw new AppServiceException('There is no option `storage` in your configurations');
         }
 
         $this->server->run();

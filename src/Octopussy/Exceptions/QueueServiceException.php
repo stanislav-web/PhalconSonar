@@ -2,7 +2,7 @@
 namespace Octopussy\Exceptions;
 
 /**
- * Class StorageException. Storage exception class
+ * Class QueueServiceException. Queue service exception class
  *
  * @package Octopussy\Exceptions
  * @subpackage Octopussy
@@ -10,9 +10,9 @@ namespace Octopussy\Exceptions;
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Octopussy/Exceptions/StorageException.php
+ * @filesource /Octopussy/Exceptions/QueueServiceException.php
  */
-class StorageException extends \DomainException {
+class QueueServiceException extends \DomainException {
 
     /**
      * @const CODE exception code

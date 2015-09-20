@@ -39,7 +39,7 @@ abstract class AbstractMongoMapper {
      * Implement configurations for MongoDB connection
      *
      * @param \Phalcon\Config $config
-     * @throws \Octopussy\Exceptions\StorageException
+     * @throws \Octopussy\Exceptions\StorageServiceException
      */
     public function __construct(\Phalcon\Config $config) {
 
@@ -60,7 +60,7 @@ abstract class AbstractMongoMapper {
 
         }
         catch (\MongoConnectionException $e) {
-            throw new StorageException($e->getMessage());
+            throw new StorageServiceException($e->getMessage());
         }
     }
 

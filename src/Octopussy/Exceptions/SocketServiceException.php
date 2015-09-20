@@ -2,7 +2,7 @@
 namespace Octopussy\Exceptions;
 
 /**
- * Class BeanstalkMapperException. Beanstalk mapper exception class
+ * Class SocketServiceException. Socket service exception class
  *
  * @package Octopussy\Exceptions
  * @subpackage Octopussy
@@ -10,9 +10,9 @@ namespace Octopussy\Exceptions;
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Octopussy/Exceptions/BeanstalkMapperException.php
+ * @filesource /Octopussy/Exceptions/SocketServiceException.php
  */
-class BeanstalkMapperException extends \RuntimeException {
+class SocketServiceException extends \DomainException {
 
     /**
      * @const CODE exception code

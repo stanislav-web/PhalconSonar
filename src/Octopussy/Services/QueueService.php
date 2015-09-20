@@ -1,8 +1,7 @@
 <?php
-
 namespace Octopussy\Services;
 
-use Octopussy\Exceptions\QueueException;
+use Octopussy\Exceptions\QueueServiceException;
 use Octopussy\Mappers\Queue\BeanstalkMapper;
 use Octopussy\Exceptions\BeanstalkMapperException;
 /**
@@ -23,13 +22,13 @@ class QueueService {
      *
      * @var \Octopussy\Mappers\Queue\BeanstalkMapper $beanstalkMapper
      */
-    private $beanstalkMapper = null;
+    private $beanstalkMapper;
 
     /**
      * Implement configurations
      *
      * @param \Phalcon\Config $config $config
-     * @throws \Octopussy\Exceptions\QueueException
+     * @throws \Octopussy\Exceptions\QueueServiceException
      */
     public function __construct(\Phalcon\Config $config) {
 
@@ -39,7 +38,7 @@ class QueueService {
                 $this->beanstalkMapper = new BeanstalkMapper($config->toArray());
             }
             catch(BeanstalkMapperException $e) {
-                throw new QueueException($e->getMessage());
+                throw new QueueServiceException($e->getMessage());
             }
         }
     }

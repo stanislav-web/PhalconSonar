@@ -6,7 +6,7 @@ use Phalcon\Logger;
 use Phalcon\CLI\Task;
 use Phalcon\Script\Color;
 use Octopussy\Services\AppService as Application;
-use Octopussy\Exceptions\AppException;
+use Octopussy\Exceptions\AppServiceException;
 
 /**
  * Class SonarTask. Grab user's visits
@@ -112,7 +112,7 @@ class SonarTask extends Task
             $this->sonar->run();
 
         }
-        catch(AppException $e) {
+        catch(AppServiceException $e) {
 
             echo Color::colorize($e->getMessage(), Color::FG_RED, Color::AT_BOLD).PHP_EOL;
             $this->getLogger()->log($e->getMessage(), Logger::CRITICAL);

@@ -1,9 +1,8 @@
 <?php
-
 namespace Octopussy\Services;
 
 use Octopussy\Mappers\Db\Mongo\VisitorMapper;
-use Octopussy\Exceptions\StorageException;
+use Octopussy\Exceptions\StorageServiceException;
 use Octopussy\Exceptions\VisitorMapperException;
 
 /**
@@ -40,6 +39,7 @@ class StorageService {
      * Add record to collection
      *
      * @param array $data
+     * @throws \Octopussy\Exceptions\StorageServiceException
      * @return \MongoId
      */
     public function add(array $data) {
@@ -51,7 +51,7 @@ class StorageService {
             return $lastInsertId;
         }
         catch(VisitorMapperException $e) {
-            throw new StorageException($e->getMessage());
+            throw new StorageServiceException($e->getMessage());
         }
     }
 }

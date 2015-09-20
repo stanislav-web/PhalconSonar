@@ -2,7 +2,7 @@
 namespace Octopussy\Exceptions;
 
 /**
- * Class VisitorMapperException. VisitorMapper exception class
+ * Class VisitorMapperException. Visitor mapper exception class
  *
  * @package Octopussy\Exceptions
  * @subpackage Octopussy

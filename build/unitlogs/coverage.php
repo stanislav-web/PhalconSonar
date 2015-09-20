@@ -413,7 +413,7 @@ $coverage->setData(array (
   '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractQueueMapper.php' => 
   array (
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/AppException.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/AppServiceException.php' => 
   array (
     29 => 
     array (
@@ -431,7 +431,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/QueueException.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/GeoServiceException.php' => 
   array (
     29 => 
     array (
@@ -440,7 +440,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/SocketException.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/QueueServiceException.php' => 
   array (
     29 => 
     array (
@@ -449,7 +449,16 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/StorageException.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/SocketServiceException.php' => 
+  array (
+    29 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+  ),
+  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/StorageServiceException.php' => 
   array (
     29 => 
     array (
@@ -589,24 +598,73 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/QueueService.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/GeoService.php' => 
   array (
+    34 => 
+    array (
+    ),
+    35 => 
+    array (
+    ),
     36 => 
+    array (
+    ),
+    38 => 
     array (
     ),
     39 => 
     array (
     ),
+    40 => 
+    array (
+    ),
     41 => 
     array (
     ),
-    42 => 
+    43 => 
     array (
     ),
     44 => 
     array (
     ),
     45 => 
+    array (
+    ),
+    57 => 
+    array (
+    ),
+    59 => 
+    array (
+    ),
+    61 => 
+    array (
+    ),
+    62 => 
+    array (
+    ),
+    64 => NULL,
+  ),
+  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/QueueService.php' => 
+  array (
+    35 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+    40 => 
+    array (
+    ),
+    41 => 
+    array (
+    ),
+    43 => 
+    array (
+    ),
+    44 => 
+    array (
+    ),
+    55 => 
     array (
     ),
     56 => 
@@ -621,17 +679,14 @@ $coverage->setData(array (
     59 => 
     array (
     ),
-    60 => 
+    61 => 
     array (
     ),
-    62 => 
+    62 => NULL,
+    73 => 
     array (
     ),
-    63 => NULL,
-    74 => 
-    array (
-    ),
-    75 => NULL,
+    74 => NULL,
   ),
   '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/SocketService.php' => 
   array (
@@ -701,10 +756,10 @@ $coverage->setData(array (
   ),
   '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/StorageService.php' => 
   array (
-    36 => 
+    35 => 
     array (
     ),
-    37 => 
+    36 => 
     array (
     ),
     49 => 
@@ -1199,16 +1254,18 @@ $filter->setWhitelistedFiles(array (
   '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Applications/Sonar.php' => true,
   '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractMongoMapper.php' => true,
   '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractQueueMapper.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/AppException.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/AppServiceException.php' => true,
   '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/BeanstalkMapperException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/QueueException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/SocketException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/StorageException.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/GeoServiceException.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/QueueServiceException.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/SocketServiceException.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/StorageServiceException.php' => true,
   '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/VisitorMapperException.php' => true,
   '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Mappers/Db/Mongo/VisitorMapper.php' => true,
   '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Mappers/Queue/BeanstalkMapper.php' => true,
   '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Models/Visitor.php' => true,
   '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/AppService.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/GeoService.php' => true,
   '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/QueueService.php' => true,
   '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/SocketService.php' => true,
   '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/StorageService.php' => true,
