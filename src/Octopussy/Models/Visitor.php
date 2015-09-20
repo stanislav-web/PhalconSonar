@@ -115,15 +115,29 @@ class Visitor {
     public function __construct(array $data) {
 
         // init detector
-        $this->detector = new Mobile_Detect(null, $data['ua']);
+        $this->detector = new Mobile_Detect();
 
         // validate client data
         $this->setPage($data['page'])
                     ->setIp($data['ip'])
                         ->setOpenTime($data['open'])
-                            ->setLanguage($data['language'])
-                                ->setUa()
-                                    ->deviceDetect();
+                            ->setCloseTime($data['close'])
+                                ->setLanguage($data['language'])
+                                    ->setUa($data['ua'])
+                                        ->deviceDetect();
+    }
+
+    /**
+     * Set current page
+     *
+     * @param int $page
+     * @return Visitor
+     */
+    public function setPage($page)
+    {
+        $this->page = trim(strip_tags($page));
+
+        return $this;
     }
 
     /**
@@ -140,23 +154,41 @@ class Visitor {
     }
 
     /**
-     * Get ip address
+     * Set timestamp point open
      *
-     * @return string
+     * @param int $open
+     * @return Visitor
      */
-    public function getIp()
+    public function setOpenTime($open)
     {
-        return long2ip($this->ip);
+        $this->open = (int)$open;
+
+        return $this;
     }
 
     /**
-     * Get user agent
+     * Set timestamp point close
      *
-     * @return string
+     * @param int $close
+     * @return Visitor
      */
-    public function getUa()
+    public function setCloseTime($close)
     {
-        return $this->ua;
+        $this->close = (int)$close;
+
+        return $this;
+    }
+
+    /**
+     * Set user preferred language
+     *
+     * @return Visitor
+     */
+    private function setLanguage($language)
+    {
+        $this->language = trim($language);
+
+        return $this;
     }
 
     /**
@@ -164,15 +196,35 @@ class Visitor {
      *
      * @return Visitor
      */
-    public function setUa()
+    public function setUa($ua)
     {
-        $this->ua = $this->detector->getUserAgent();
+        $this->ua = $this->detector->setUserAgent($ua);
 
         // set browser & platform
         $this->setBrowser();
 
         return $this;
     }
+
+//    /**
+//     * Get ip address
+//     *
+//     * @return string
+//     */
+//    public function getIp()
+//    {
+//        return long2ip($this->ip);
+//    }
+
+//    /**
+//     * Get user agent
+//     *
+//     * @return string
+//     */
+//    public function getUa()
+//    {
+//        return $this->ua;
+//    }
 
     /**
      * Detect client device
@@ -206,17 +258,6 @@ class Visitor {
     }
 
     /**
-     * Set user language
-     *
-     * @return Visitor
-     */
-    private function setLanguage($language)
-    {
-        $this->language = trim($language);
-        return $this;
-    }
-
-    /**
      * Set user OS platform
      *
      * @return Visitor
@@ -228,62 +269,25 @@ class Visitor {
         return $this;
     }
 
-    /**
-     * Get open time
-     *
-     * @return int
-     */
-    public function getOpenTime()
-    {
-        return $this->open;
-    }
+//    /**
+//     * Get open time
+//     *
+//     * @return int
+//     */
+//    public function getOpenTime()
+//    {
+//        return $this->open;
+//    }
 
-    /**
-     * Set current page
-     *
-     * @param int $page
-     * @return Visitor
-     */
-    public function setPage($page)
-    {
-        $this->page = trim(strip_tags($page));
-
-        return $this;
-    }
-
-    /**
-     * Set timestamp point open
-     *
-     * @param int $open
-     * @return Visitor
-     */
-    public function setOpenTime($open)
-    {
-        $this->open = (int)$open;
-
-        return $this;
-    }
-
-    /**
-     * Get close time
-     *
-     * @return int
-     */
-    public function getCloseTime()
-    {
-        return $this->close;
-    }
-
-    /**
-     * Set timestamp point close
-     *
-     * @param int $close
-     * @return Visitor
-     */
-    public function setCloseTime($close)
-    {
-        $this->close = (int)$close;
-    }
+//    /**
+//     * Get close time
+//     *
+//     * @return int
+//     */
+//    public function getCloseTime()
+//    {
+//        return $this->close;
+//    }
 
     /**
      * Get properties as array view

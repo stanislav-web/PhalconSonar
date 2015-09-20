@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1442749088">
-  <project timestamp="1442749088">
+<coverage generated="1442756268">
+  <project timestamp="1442756268">
     <package name="Octopussy\Applications">
       <file name="/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Applications/Sonar.php">
         <class name="Sonar" namespace="Octopussy\Applications" fullPackage="Octopussy.Octopussy" package="Octopussy" subpackage="Octopussy">
@@ -200,68 +200,61 @@
     <package name="Octopussy\Models">
       <file name="/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Models/Visitor.php">
         <class name="Visitor" namespace="Octopussy\Models" fullPackage="Octopussy.Octopussy" package="Octopussy" subpackage="Octopussy">
-          <metrics methods="15" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="0" elements="59" coveredelements="0"/>
+          <metrics methods="11" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="41" coveredstatements="41" elements="52" coveredelements="52"/>
         </class>
-        <line num="115" type="method" name="__construct" crap="2" count="0"/>
-        <line num="118" type="stmt" count="0"/>
-        <line num="121" type="stmt" count="0"/>
-        <line num="122" type="stmt" count="0"/>
-        <line num="123" type="stmt" count="0"/>
-        <line num="124" type="stmt" count="0"/>
-        <line num="125" type="stmt" count="0"/>
-        <line num="126" type="stmt" count="0"/>
-        <line num="127" type="stmt" count="0"/>
-        <line num="135" type="method" name="setIp" crap="2" count="0"/>
-        <line num="137" type="stmt" count="0"/>
-        <line num="139" type="stmt" count="0"/>
-        <line num="147" type="method" name="getIp" crap="2" count="0"/>
-        <line num="149" type="stmt" count="0"/>
-        <line num="157" type="method" name="getUa" crap="2" count="0"/>
-        <line num="159" type="stmt" count="0"/>
-        <line num="167" type="method" name="setUa" crap="2" count="0"/>
-        <line num="169" type="stmt" count="0"/>
-        <line num="172" type="stmt" count="0"/>
-        <line num="174" type="stmt" count="0"/>
-        <line num="182" type="method" name="deviceDetect" crap="12" count="0"/>
-        <line num="184" type="stmt" count="0"/>
-        <line num="185" type="stmt" count="0"/>
-        <line num="187" type="stmt" count="0"/>
-        <line num="188" type="stmt" count="0"/>
-        <line num="189" type="stmt" count="0"/>
-        <line num="191" type="stmt" count="0"/>
-        <line num="199" type="method" name="setBrowser" crap="2" count="0"/>
-        <line num="201" type="stmt" count="0"/>
-        <line num="202" type="stmt" count="0"/>
-        <line num="203" type="stmt" count="0"/>
-        <line num="205" type="stmt" count="0"/>
-        <line num="213" type="method" name="setLanguage" crap="2" count="0"/>
-        <line num="215" type="stmt" count="0"/>
-        <line num="216" type="stmt" count="0"/>
-        <line num="224" type="method" name="setPlatform" crap="2" count="0"/>
-        <line num="226" type="stmt" count="0"/>
-        <line num="228" type="stmt" count="0"/>
-        <line num="236" type="method" name="getOpenTime" crap="2" count="0"/>
-        <line num="238" type="stmt" count="0"/>
-        <line num="247" type="method" name="setPage" crap="2" count="0"/>
-        <line num="249" type="stmt" count="0"/>
-        <line num="251" type="stmt" count="0"/>
-        <line num="260" type="method" name="setOpenTime" crap="2" count="0"/>
-        <line num="262" type="stmt" count="0"/>
-        <line num="264" type="stmt" count="0"/>
-        <line num="272" type="method" name="getCloseTime" crap="2" count="0"/>
-        <line num="274" type="stmt" count="0"/>
-        <line num="283" type="method" name="setCloseTime" crap="2" count="0"/>
-        <line num="285" type="stmt" count="0"/>
-        <line num="286" type="stmt" count="0"/>
-        <line num="293" type="method" name="toArray" crap="12" count="0"/>
-        <line num="295" type="stmt" count="0"/>
-        <line num="297" type="stmt" count="0"/>
-        <line num="298" type="stmt" count="0"/>
-        <line num="299" type="stmt" count="0"/>
-        <line num="300" type="stmt" count="0"/>
-        <line num="301" type="stmt" count="0"/>
-        <line num="303" type="stmt" count="0"/>
-        <metrics loc="305" ncloc="144" classes="1" methods="15" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="0" elements="59" coveredelements="0"/>
+        <line num="115" type="method" name="__construct" crap="1" count="2"/>
+        <line num="118" type="stmt" count="2"/>
+        <line num="121" type="stmt" count="2"/>
+        <line num="122" type="stmt" count="2"/>
+        <line num="123" type="stmt" count="2"/>
+        <line num="124" type="stmt" count="2"/>
+        <line num="125" type="stmt" count="2"/>
+        <line num="126" type="stmt" count="2"/>
+        <line num="127" type="stmt" count="2"/>
+        <line num="128" type="stmt" count="2"/>
+        <line num="136" type="method" name="setPage" crap="1" count="2"/>
+        <line num="138" type="stmt" count="2"/>
+        <line num="140" type="stmt" count="2"/>
+        <line num="149" type="method" name="setIp" crap="1" count="2"/>
+        <line num="151" type="stmt" count="2"/>
+        <line num="153" type="stmt" count="2"/>
+        <line num="162" type="method" name="setOpenTime" crap="1" count="2"/>
+        <line num="164" type="stmt" count="2"/>
+        <line num="166" type="stmt" count="2"/>
+        <line num="175" type="method" name="setCloseTime" crap="1" count="2"/>
+        <line num="177" type="stmt" count="2"/>
+        <line num="179" type="stmt" count="2"/>
+        <line num="187" type="method" name="setLanguage" crap="1" count="2"/>
+        <line num="189" type="stmt" count="2"/>
+        <line num="191" type="stmt" count="2"/>
+        <line num="199" type="method" name="setUa" crap="1" count="2"/>
+        <line num="201" type="stmt" count="2"/>
+        <line num="204" type="stmt" count="2"/>
+        <line num="206" type="stmt" count="2"/>
+        <line num="234" type="method" name="deviceDetect" crap="3" count="2"/>
+        <line num="236" type="stmt" count="2"/>
+        <line num="237" type="stmt" count="2"/>
+        <line num="239" type="stmt" count="2"/>
+        <line num="240" type="stmt" count="2"/>
+        <line num="241" type="stmt" count="2"/>
+        <line num="243" type="stmt" count="2"/>
+        <line num="251" type="method" name="setBrowser" crap="1" count="2"/>
+        <line num="253" type="stmt" count="2"/>
+        <line num="254" type="stmt" count="2"/>
+        <line num="255" type="stmt" count="2"/>
+        <line num="257" type="stmt" count="2"/>
+        <line num="265" type="method" name="setPlatform" crap="1" count="2"/>
+        <line num="267" type="stmt" count="2"/>
+        <line num="269" type="stmt" count="2"/>
+        <line num="297" type="method" name="toArray" crap="3" count="1"/>
+        <line num="299" type="stmt" count="1"/>
+        <line num="301" type="stmt" count="1"/>
+        <line num="302" type="stmt" count="1"/>
+        <line num="303" type="stmt" count="1"/>
+        <line num="304" type="stmt" count="1"/>
+        <line num="305" type="stmt" count="1"/>
+        <line num="307" type="stmt" count="1"/>
+        <metrics loc="309" ncloc="96" classes="1" methods="11" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="41" coveredstatements="41" elements="52" coveredelements="52"/>
       </file>
     </package>
     <package name="Octopussy\Services">
@@ -393,6 +386,6 @@
       <line num="120" type="stmt" count="0"/>
       <metrics loc="120" ncloc="60" classes="1" methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="0" elements="21" coveredelements="0"/>
     </file>
-    <metrics files="18" loc="1447" ncloc="685" classes="18" methods="56" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="212" coveredstatements="0" elements="268" coveredelements="0"/>
+    <metrics files="18" loc="1451" ncloc="637" classes="18" methods="52" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="209" coveredstatements="41" elements="261" coveredelements="52"/>
   </project>
 </coverage>

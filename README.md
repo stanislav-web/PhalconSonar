@@ -9,7 +9,7 @@ Check the time on each page of the site, determine device. Future versions will 
 
 ## ChangeLog
 
-#### [v 1.0-alpha] 2015-10-20
+#### [v1.0-alpha] 2015-10-20
     - the first version of package
     - socket application named as "Sonar"
     - implemented:

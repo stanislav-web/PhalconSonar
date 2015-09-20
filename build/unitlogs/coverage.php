@@ -1,6 +1,217 @@
 <?php
 $coverage = new PHP_CodeCoverage;
 $coverage->setData(array (
+  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Models/Visitor.php' => 
+  array (
+    118 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    121 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    122 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    123 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    124 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    125 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    126 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    127 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    128 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    138 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    140 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    141 => NULL,
+    151 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    153 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    154 => NULL,
+    164 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    166 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    167 => NULL,
+    177 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    179 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    180 => NULL,
+    189 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    191 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    192 => NULL,
+    201 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    204 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    206 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    207 => NULL,
+    236 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    237 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    239 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    240 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    241 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    243 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    244 => NULL,
+    253 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    254 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    255 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    257 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    258 => NULL,
+    267 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    269 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
+      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    270 => NULL,
+    299 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    301 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    302 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    303 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    304 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    305 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    307 => 
+    array (
+      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+    ),
+    308 => NULL,
+  ),
   '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Applications/Sonar.php' => 
   array (
     53 => 
@@ -344,154 +555,6 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Models/Visitor.php' => 
-  array (
-    118 => 
-    array (
-    ),
-    121 => 
-    array (
-    ),
-    122 => 
-    array (
-    ),
-    123 => 
-    array (
-    ),
-    124 => 
-    array (
-    ),
-    125 => 
-    array (
-    ),
-    126 => 
-    array (
-    ),
-    127 => 
-    array (
-    ),
-    137 => 
-    array (
-    ),
-    139 => 
-    array (
-    ),
-    140 => NULL,
-    149 => 
-    array (
-    ),
-    150 => NULL,
-    159 => 
-    array (
-    ),
-    160 => NULL,
-    169 => 
-    array (
-    ),
-    172 => 
-    array (
-    ),
-    174 => 
-    array (
-    ),
-    175 => NULL,
-    184 => 
-    array (
-    ),
-    185 => 
-    array (
-    ),
-    187 => 
-    array (
-    ),
-    188 => 
-    array (
-    ),
-    189 => 
-    array (
-    ),
-    191 => 
-    array (
-    ),
-    192 => NULL,
-    201 => 
-    array (
-    ),
-    202 => 
-    array (
-    ),
-    203 => 
-    array (
-    ),
-    205 => 
-    array (
-    ),
-    206 => NULL,
-    215 => 
-    array (
-    ),
-    216 => 
-    array (
-    ),
-    217 => NULL,
-    226 => 
-    array (
-    ),
-    228 => 
-    array (
-    ),
-    229 => NULL,
-    238 => 
-    array (
-    ),
-    239 => NULL,
-    249 => 
-    array (
-    ),
-    251 => 
-    array (
-    ),
-    252 => NULL,
-    262 => 
-    array (
-    ),
-    264 => 
-    array (
-    ),
-    265 => NULL,
-    274 => 
-    array (
-    ),
-    275 => NULL,
-    285 => 
-    array (
-    ),
-    286 => 
-    array (
-    ),
-    295 => 
-    array (
-    ),
-    297 => 
-    array (
-    ),
-    298 => 
-    array (
-    ),
-    299 => 
-    array (
-    ),
-    300 => 
-    array (
-    ),
-    301 => 
-    array (
-    ),
-    303 => 
-    array (
-    ),
-    304 => NULL,
-  ),
   '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/AppService.php' => 
   array (
     35 => 
@@ -738,6 +801,16 @@ $coverage->setData(array (
   ),
 ));
 $coverage->setTests(array (
+  'Tests\\Octopussy\\Models\\VisitorTest::testInstance' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
   'UNCOVERED_FILES_FROM_WHITELIST' => 
   array (
     'size' => 'unknown',
