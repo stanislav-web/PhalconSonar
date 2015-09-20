@@ -47,7 +47,7 @@ abstract class AbstractMongoMapper {
 
         try {
 
-            if(!$this->db) {
+            if (!$this->db) {
                 // init client
                 $this->client = new \MongoClient($uri);
 
@@ -59,7 +59,7 @@ abstract class AbstractMongoMapper {
             $this->setCollection();
 
         }
-        catch(\MongoConnectionException $e) {
+        catch (\MongoConnectionException $e) {
             throw new StorageException($e->getMessage());
         }
     }
