@@ -1,6 +1,6 @@
 # Octopussy
 
-[![Codeship Build Code](https://codeship.com/projects/f1a63ed0-3397-0133-8c3a-32e25a7c007a/status?branch=master)](https://codeship.com/projects/f1a63ed0-3397-0133-8c3a-32e25a7c007a/status?branch=master)
+[ ![Codeship Status for stanislav-web/Octopussy](https://codeship.com/projects/3c8b15c0-41ba-0133-04e1-62bb193b9897/status?branch=master)](https://codeship.com/projects/103619))
 
 Octopussy is the site visitors grabber. Build in Phalcon & MongoDb.
 Conducts monitoring of visitors, using the WebSockets connection. Great for sites built on REST technology.
@@ -117,6 +117,6 @@ phpunit --configuration phpunit.xml.dist --coverage-text
 + [Phalcon Queueing](http://docs.phalconphp.com/ru/latest/index.html)
 + [PHP MongoDb client](http://php.net/manual/ru/mongo.core.php)
 + [Asynchronous WebSocket server](http://socketo.me/)
-+ [Monbile Detect](http://mobiledetect.net/)
++ [Mobile Detect](http://mobiledetect.net/)
 
 ##[Issues](https://github.com/stanislav-web/octopussy/issues "Issues")
