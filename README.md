@@ -2,53 +2,121 @@
 
 [![Codeship Build Code](https://codeship.com/projects/f1a63ed0-3397-0133-8c3a-32e25a7c007a/status?branch=master)](https://codeship.com/projects/f1a63ed0-3397-0133-8c3a-32e25a7c007a/status?branch=master)
 
-### _(currently under development)_
-
-Octopussy is the site visitors grabber. Build in Phalcon & MongoDb
+Octopussy is the site visitors grabber. Build in Phalcon & MongoDb.
+Conducts monitoring of visitors, using the WebSockets connection. Great for sites built on REST technology.
+You can easily integrate this package to track detailed information about your visitors.
+Check the time on each page of the site, determine device. Future versions will be possible to determine the Geo location.
 
 ## ChangeLog
 
+#### [v 1.0-alpha] 2015-10-20
+    - the first version of package
+    - socket application named as "Sonar"
+    - implemented:
+        - tracking user's page position
+        - tracking user's page timing activity
+        - tracking user's device (phone, table, pc)
+        - tracking the time of each page
+
 ## Compatible
+- PSR-1, PSR-2, PSR-4 Standards
 
 ## System requirements
 
-* PHP 5.6.x
-* MongoDB
+- PHP 5.5 or higher
+- Phalcon PHP extension 1.3.4 (support 2.x)
+- PHP MongoDb client extension
+- Beanstalk queue server
 
-## Install
-1. Config.
+## Installation
 
-// Sonar task configuration
-            'sonar' =>  [
-                'logfile'  =>   APP_PATH.'/../logs/octopussy-event.log',
-                'socket'        =>  [
-                    'host'  =>  '127.0.0.1',
-                    'port'  =>  9001,
-                ],
-                'storage'       =>  [
-                    'host'      =>  '127.0.0.1',
-                    'port'      =>  27017,
-                    'user'      =>  'root',
-                    'password'  =>  'root',
-                    'dbname'    =>  'octopussy',
-                ]
+First update your dependencies through composer. Add to your composer.json:
+```php
+"require": {
+    "stanislav-web/octopussy": "dev-master",
+}
+```
+Then run to update dependency and autoloader
+```python
+php composer.phar update
+php composer.phar install
+```
+or just
+```
+php composer.phar require stanislav-web/octopussy dev-master
+```
+_(Do not forget to include the composer autoloader)_
+
+## Configuration
+This package have a variety of settings, both mandatory and optional.
+
+1. You can select them in the global app configuration file of your Phalcon project
+if you will be making their to global application config. See example:
+
+```php
+
+    // CLI task's configuration (required)
+
+    'cli' => [
+
+        // "Sonar task"
+        'sonar' =>  [
+
+            // task event log
+            'logfile'  =>   APP_PATH.'/../logs/octopussy-event.log',
+
+            // queue server config
+            'beanstalk'        =>  [
+                'host'  =>  '127.0.0.1',
+                'port'  =>  11300,
+            ],
+
+            // webscoket server config
+            'socket'        =>  [
+                'host'  =>  '127.0.0.1',
+                'port'  =>  9001,
+            ],
+
+            // persistent storage (MongoDb only, MySQL in future...)
+            'storage'       =>  [
+                'host'      =>  '127.0.0.1',
+                'port'      =>  27017,
+                'user'      =>  'root',
+                'password'  =>  'root',
+                'dbname'    =>  'octopussy',
             ]
+        ]
+    ];
+```
 
-2. Add task to cli.php registerNamespaces
+2. Register task in your Phalcon CLI autoloader:
 
+```php
+
+    $loader = new \Phalcon\Loader();
+    $loader->registerDirs([
+        ...
         DOCUMENT_ROOT.'vendor/stanislav-web/octopussy/src/Octopussy/System/Tasks'
+        ...
+    ]);
+```
 
-            // init configurations // init logger
-            $this->setConfig($this->getDI()->get('config'))->setLogger();
+3. Running socket server using CLI from your project. And tracking user thought web interface:
+```
+php public/cli.php sonar
+```
+_(examples of client connect you can see [here](https://github.com/stanislav-web/Octopussy/tree/master/examples))_
 
-            // run server
-            $this->sonar = new Application($this->getConfig());
+## Unit Test
+Also available in /phpunit directory. Run command to start
+```php
+phpunit --configuration phpunit.xml.dist --coverage-text
+```
 
-            $this->sonar->run();
-            
-## Usage
-https://docs.phalconphp.com/ru/latest/reference/queue.html
-https://github.com/ratchetphp/Ratchet
-https://github.com/serbanghita/Mobile-Detect
-http://php.net/manual/ru/mongo.core.php
+## Documents
++ [Phalcon Queueing](http://docs.phalconphp.com/ru/latest/index.html)
++ [PHP MongoDb client](http://php.net/manual/ru/mongo.core.php)
++ [Asynchronous WebSocket server](http://socketo.me/)
++ [Monbile Detect](http://mobiledetect.net/)
+
 ##[Issues](https://github.com/stanislav-web/octopussy/issues "Issues")
