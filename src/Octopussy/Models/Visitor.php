@@ -262,7 +262,9 @@ class Visitor {
      */
     public function toArray() {
 
-        foreach($properties = get_object_vars($this) as $var => &$value) {
+        $properties = get_object_vars($this);
+
+        foreach($properties as $var => &$value) {
             if(gettype($value)  === 'object') {
                 unset($properties[$var]);
             }

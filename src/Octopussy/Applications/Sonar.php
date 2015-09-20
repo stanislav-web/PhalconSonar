@@ -128,7 +128,7 @@ class Sonar implements MessageComponentInterface {
      *
      * @param ConnectionInterface $conn
      * @param \Exception          $e
-     * @throws \Octopussy\Exceptions\AppException;
+     * @throws \Octopussy\Exceptions\AppException
      */
     public function onError(ConnectionInterface $conn, \Exception $e) {
 
@@ -145,49 +145,65 @@ class Sonar implements MessageComponentInterface {
      * Get UserAgent
      *
      * @param ConnectionInterface $conn
+     * @throws \Octopussy\Exceptions\AppException
      * @return string
      */
     private function getUserAgent(ConnectionInterface $conn) {
 
-        $userAgent = $conn->WebSocket->request->getHeader('User-Agent')->toArray();
-        return (empty($userAgent[0]) === false) ? $userAgent[0] : 'Unknown';
+        if($conn->WebSocket instanceof WebSocket) {
+            $userAgent = $conn->WebSocket->request->getHeader('User-Agent')->toArray();
+            return (empty($userAgent[0]) === false) ? $userAgent[0] : 'Unknown';
+        }
+        throw new AppException('Define user agent failed');
     }
 
     /**
      * Get visitor IP address
      *
      * @param ConnectionInterface $conn
+     * @throws \Octopussy\Exceptions\AppException
      * @return string
      */
     private function getIpAddress(ConnectionInterface $conn) {
 
-        $userIp = $conn->WebSocket->request->getHeader('X-Forwarded-For');
-        return (empty($userIp) === false) ? $userIp : $conn->remoteAddress;
+        if($conn->WebSocket instanceof WebSocket) {
+            $userIp = $conn->WebSocket->request->getHeader('X-Forwarded-For');
+            return (empty($userIp) === false) ? $userIp : $conn->remoteAddress;
+        }
+        throw new AppException('Define ip failed');
     }
 
     /**
      * Get visitor IP address
      *
      * @param ConnectionInterface $conn
+     * @throws \Octopussy\Exceptions\AppException
      * @return string
      */
     private function getLanguage(ConnectionInterface $conn) {
 
-        $language = $conn->WebSocket->request->getHeader('Accept-Language');
-        $language = trim(strtoupper(substr($language, 0, 2)));
+        if($conn->WebSocket instanceof WebSocket) {
+            $language = $conn->WebSocket->request->getHeader('Accept-Language');
+            $language = trim(strtoupper(substr($language, 0, 2)));
 
-        return (empty($language) === false) ? $language :'Unknown';
+            return (empty($language) === false) ? $language :'Unknown';
+        }
+        throw new AppException('Language not defined');
     }
 
     /**
      * Get current page
      *
      * @param ConnectionInterface $conn
+     * @throws \Octopussy\Exceptions\AppException
      * @return string
      */
     private function getCurrentPage(ConnectionInterface $conn) {
-        $query = $conn->WebSocket->request->getQuery();
-        return $query->get('page');
-    }
 
+        if($conn->WebSocket instanceof WebSocket) {
+            $query = $conn->WebSocket->request->getQuery();
+            return $query->get('page');
+        }
+        throw new AppException('Language not defined');
+    }
 }

@@ -54,26 +54,5 @@ class VisitorMapper extends AbstractMongoMapper {
      * @param array $criteria
      * @throws \Octopussy\Exceptions\VisitorMapperException
      */
-    public function remove(array $criteria) {
-
-        try {
-            $document = (new Visitor($criteria))->toArray();
-
-            if(isset($document['_id']) === true) {
-                $document['_id'] = new \MongoId($document['_id']);
-            }
-
-            $this->collection->insert($document, ['w' => true]);
-
-            echo 'Product inserted with ID: ' . $document['_id'] . "\n";
-
-            exit;
-        }
-        catch(\MongoCursorException $e) {
-            throw new VisitorMapperException($e->getMessage());
-        }
-        catch (\MongoException $e ) {
-            throw new VisitorMapperException($e->getMessage());
-        }
-    }
+    public function remove(array $criteria) {}
 }

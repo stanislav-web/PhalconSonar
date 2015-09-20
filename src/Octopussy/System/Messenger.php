@@ -44,8 +44,6 @@ class Messenger {
     /**
      * Start message
      *
-     * @param string $host
-     * @param int $port
      * @return string
      */
     public static function start() {

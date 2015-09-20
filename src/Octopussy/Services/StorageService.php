@@ -2,7 +2,6 @@
 
 namespace Octopussy\Services;
 
-use Octopussy\Mappers\Db\Mongo\SessionMapper;
 use Octopussy\Mappers\Db\Mongo\VisitorMapper;
 use Octopussy\Exceptions\StorageException;
 use Octopussy\Exceptions\VisitorMapperException;
@@ -28,13 +27,6 @@ class StorageService {
     private $visitorMapper;
 
     /**
-     * Session user handler
-     *
-     * @var \Octopussy\Mappers\Db\Mongo\SessionMapper $sessionMapper
-     */
-    private $sessionMapper;
-
-    /**
      * Implement configurations
      *
      * @param \Phalcon\Config $config $config
@@ -42,7 +34,6 @@ class StorageService {
     public function __construct(\Phalcon\Config $config) {
 
         $this->visitorMapper = new VisitorMapper($config);
-        $this->sessionMapper = new SessionMapper($config);
     }
 
     /**
