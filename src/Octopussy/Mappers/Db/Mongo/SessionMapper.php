@@ -40,10 +40,10 @@ class SessionMapper extends AbstractMongoMapper {
 
             return new \MongoId($document['_id']);
         }
-        catch(\MongoCursorException $e) {
+        catch (\MongoCursorException $e) {
             throw new SessionMapperException($e->getMessage());
         }
-        catch (\MongoException $e ) {
+        catch (\MongoException $e) {
             throw new SessionMapperException($e->getMessage());
         }
     }

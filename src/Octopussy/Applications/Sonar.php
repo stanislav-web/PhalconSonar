@@ -1,7 +1,6 @@
 <?php
 namespace Octopussy\Applications;
 
-use Phalcon\Http\Request;
 use Ratchet\MessageComponentInterface;
 use Ratchet\ConnectionInterface;
 use Octopussy\Services\StorageService;

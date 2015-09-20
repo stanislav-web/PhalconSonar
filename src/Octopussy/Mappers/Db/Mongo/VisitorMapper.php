@@ -40,10 +40,10 @@ class VisitorMapper extends AbstractMongoMapper {
 
             return new \MongoId($document['_id']);
         }
-        catch(\MongoCursorException $e) {
+        catch (\MongoCursorException $e) {
             throw new VisitorMapperException($e->getMessage());
         }
-        catch (\MongoException $e ) {
+        catch (\MongoException $e) {
             throw new VisitorMapperException($e->getMessage());
         }
     }
@@ -59,20 +59,20 @@ class VisitorMapper extends AbstractMongoMapper {
         try {
             $document = (new Visitor($criteria))->toArray();
 
-            if(isset($document['_id']) === true) {
+            if (isset($document['_id']) === true) {
                 $document['_id'] = new \MongoId($document['_id']);
             }
 
             $this->collection->insert($document, ['w' => true]);
 
-            echo 'Product inserted with ID: ' . $document['_id'] . "\n";
+            echo 'Product inserted with ID: '.$document['_id']."\n";
 
             exit;
         }
-        catch(\MongoCursorException $e) {
+        catch (\MongoCursorException $e) {
             throw new VisitorMapperException($e->getMessage());
         }
-        catch (\MongoException $e ) {
+        catch (\MongoException $e) {
             throw new VisitorMapperException($e->getMessage());
         }
     }
