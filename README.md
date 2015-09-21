@@ -4,14 +4,17 @@
 
 [![Latest Stable Version](https://poser.pugx.org/stanislav-web/octopussy/v/stable)](https://packagist.org/packages/stanislav-web/octopussy) [![Total Downloads](https://poser.pugx.org/stanislav-web/octopussy/downloads)](https://packagist.org/packages/stanislav-web/octopussy) [![Latest Unstable Version](https://poser.pugx.org/stanislav-web/octopussy/v/unstable)](https://packagist.org/packages/stanislav-web/octopussy) [![License](https://poser.pugx.org/stanislav-web/octopussy/license)](https://packagist.org/packages/stanislav-web/octopussy)
 
-Octopussy is the site visitors grabber. Build in Phalcon & MongoDb.
+Octopussy is the site visitors monitor. Build in Phalcon & MongoDb.
 Conducts monitoring of visitors, using the WebSockets connection. Great for sites built on REST technology.
 You can easily integrate this package to track detailed information about your visitors.
-Check the time on each page of the site, determine device. Future versions will be possible to determine the Geo location.
+Check the time on each page of the site, determine device, geo location.
 
 ## ChangeLog
 
-#### [v1.0-alpha] 2015-10-20
+#### [v1.1-alpha] 2015-09-21
+    - implementing geo location detector
+        
+#### [v1.0-alpha] 2015-09-20
     - the first version of package
     - socket application named as "Sonar"
     - implemented:
@@ -114,6 +117,9 @@ Also available in /phpunit directory. Run command to start
 ```php
 phpunit --configuration phpunit.xml.dist --coverage-text
 ```
+
+## In Future
+- More examples
 
 ## Documents
 + [Phalcon Queueing](http://docs.phalconphp.com/ru/latest/index.html)

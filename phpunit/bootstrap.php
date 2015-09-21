@@ -7,6 +7,7 @@
     }
 
     $paths = [
+        getcwd().'/../../../vendor/autoload.php',
         getcwd().'/../vendor/autoload.php',
         getcwd().'/vendor/autoload.php',
         __DIR__ . '/../../autoload.php',
@@ -14,6 +15,7 @@
         __DIR__ . '/vendor/autoload.php',
         __DIR__ . 'vendor/autoload.php'
     ];
+
     foreach ($paths as $file) {
         if (file_exists($file)) {
             define('AUTOLOADER', $file);
