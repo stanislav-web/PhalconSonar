@@ -82,7 +82,7 @@ class SonarTask extends Task
      */
     private function setLogger() {
 
-        $this->logger = new FileAdapter($this->getConfig()->logfile);
+        $this->logger = new FileAdapter($this->getConfig()->errorLog);
 
         return $this;
     }

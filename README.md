@@ -120,7 +120,7 @@ if you will be making their to global application config. See example:
 ```
 php public/cli.php sonar
 ```
-_(examples of client connect you can see [here](https://github.com/stanislav-web/Sonar/tree/master/examples))_
+_(examples of client connect you can see [here](https://github.com/stanislav-web/PhalconSonar/tree/master/examples))_
 
 ## Unit Test
 Also available in /phpunit directory. Run command to start
@@ -141,4 +141,4 @@ phpunit --configuration ./vendor/stanislav-web/sonar/phpunit.xml.dist --coverage
 + [Asynchronous WebSocket server](http://socketo.me/)
 + [Mobile Detect](http://mobiledetect.net/)
 
-##[Issues](https://github.com/stanislav-web/sonar/issues "Issues")
+##[Issues](https://github.com/stanislav-web/PhalconSonar "Issues")
