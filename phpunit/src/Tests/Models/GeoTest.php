@@ -1,31 +1,31 @@
 <?php
 namespace Octopussy\Tests\Models;
 
-use Octopussy\Mockups\VisitorMockup;
-use Octopussy\Models\Visitor;
+use Octopussy\Mockups\GeoMockup;
+use Octopussy\Models\Geo;
 
 /**
- * Class VisitorTest
+ * Class GeoTest
  *
  * @package Octopussy\Tests\Models
  * @subpackage Octopussy\Tests
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Octopussy/Models/VisitorTest.php
+ * @filesource /Octopussy/Models/GeoTest.php
  */
-class VisitorTest extends \PHPUnit_Framework_TestCase {
+class GeoTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * Testing object namespace
      *
      * @const INSTANCE_OBJECT
      */
-    const INSTANCE_OBJECT = 'Octopussy\Models\Visitor';
+    const INSTANCE_OBJECT = 'Octopussy\Models\Geo';
 
     /**
-     * Get visitor mockup
+     * Get geo mockup
      *
-     * @var \Octopussy\Mockups\VisitorMockup
+     * @var \Octopussy\Mockups\GeoMockup
      */
     private $mock;
 
@@ -43,7 +43,7 @@ class VisitorTest extends \PHPUnit_Framework_TestCase {
      */
     public function setUp()
     {
-        $this->mock = new VisitorMockup();
+        $this->mock = new GeoMockup();
     }
 
     /**
@@ -61,10 +61,10 @@ class VisitorTest extends \PHPUnit_Framework_TestCase {
      */
     public function testInstance() {
 
-        $user = new Visitor($this->mock->getMockData());
+        $data = new Geo($this->mock->getMockData());
 
         // checking instance object return
-        $this->assertInstanceOf(self::INSTANCE_OBJECT, $user);
+        $this->assertInstanceOf(self::INSTANCE_OBJECT, $data);
     }
 
     /*
@@ -72,11 +72,12 @@ class VisitorTest extends \PHPUnit_Framework_TestCase {
      */
     public function testHasAttributes()
     {
-        $user = new Visitor($this->mock->getMockData());
+        $data = new Geo($this->mock->getMockData());
 
         // just checking that the attributes exists & equal too
         $this->assertSame(
-            array_diff($this->mock->getReturnedResultKeys(), array_keys($user->toArray())),
-            array_diff(array_keys($user->toArray()), $this->mock->getReturnedResultKeys()));
+            array_diff($this->mock->getReturnedResultKeys(), array_keys($data->toArray())),
+            array_diff(array_keys($data->toArray()), $this->mock->getReturnedResultKeys()));
     }
+
 }

@@ -10,9 +10,9 @@ build:
     dependencies:
 
         before:
-            - composer install --prefer-dist -o
-            - git clone -q --depth=1 https://github.com/phalcon/cphalcon.git -b master
-            - cd cphalcon/ext; export CFLAGS="-g3 -O1 -fno-delete-null-pointer-checks -Wall"; phpize && ./configure --enable-phalcon && make -j4 && sudo make install && sed -i '$ a \\n[Phalcon]\nextension=phalcon.so\n'  /home/scrutinizer/.phpenv/versions/5.5.12/etc/php.ini
+            - composer install --no-dev --prefer-source
+            - git clone -q https://github.com/phalcon/cphalcon.git
+            - cd cphalcon/ext; export CFLAGS="-g3 -O1 -std=gnu90 -Wall -Werror -Wno-error=uninitialized"; phpize && ./configure --silent --enable-phalcon && make --silent -j4 > /dev/null && sudo make --silent install && phpenv config-add ../unit-tests/ci/phalcon.ini
             - cd /home/scrutinizer/build
 
 filter:

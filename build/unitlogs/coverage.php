@@ -4,6 +4,169 @@ $coverage->setData(array (
   '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/ModelInterface.php' => 
   array (
   ),
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Models/Geo.php' => 
+  array (
+    77 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    78 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    79 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    80 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    81 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    82 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    83 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    93 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    94 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    95 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    96 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    98 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    99 => NULL,
+    109 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    110 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    111 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    113 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    115 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    116 => NULL,
+    126 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    128 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    129 => NULL,
+    139 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    141 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    142 => NULL,
+    152 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    154 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    155 => NULL,
+    165 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    167 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    168 => NULL,
+    177 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    179 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    180 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    181 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    182 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    183 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    185 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    186 => NULL,
+  ),
   '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Models/Visitor.php' => 
   array (
     126 => 
@@ -33,18 +196,28 @@ $coverage->setData(array (
     ),
     133 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     134 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     135 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     136 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     137 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     147 => 
     array (
@@ -70,23 +243,35 @@ $coverage->setData(array (
     163 => NULL,
     173 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     175 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     176 => NULL,
     186 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     188 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     189 => NULL,
     198 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     200 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     201 => NULL,
     210 => 
@@ -139,50 +324,73 @@ $coverage->setData(array (
     262 => NULL,
     271 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     273 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     274 => NULL,
     283 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     284 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     286 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     287 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     288 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     290 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     291 => NULL,
     320 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     322 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     323 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     324 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     325 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     326 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     328 => 
     array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     329 => NULL,
   ),
@@ -562,112 +770,6 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Models/Geo.php' => 
-  array (
-    77 => 
-    array (
-    ),
-    78 => 
-    array (
-    ),
-    79 => 
-    array (
-    ),
-    80 => 
-    array (
-    ),
-    81 => 
-    array (
-    ),
-    82 => 
-    array (
-    ),
-    83 => 
-    array (
-    ),
-    93 => 
-    array (
-    ),
-    94 => 
-    array (
-    ),
-    95 => 
-    array (
-    ),
-    96 => 
-    array (
-    ),
-    98 => 
-    array (
-    ),
-    99 => NULL,
-    109 => 
-    array (
-    ),
-    110 => 
-    array (
-    ),
-    111 => 
-    array (
-    ),
-    113 => 
-    array (
-    ),
-    115 => 
-    array (
-    ),
-    116 => NULL,
-    126 => 
-    array (
-    ),
-    128 => 
-    array (
-    ),
-    129 => NULL,
-    139 => 
-    array (
-    ),
-    141 => 
-    array (
-    ),
-    142 => NULL,
-    152 => 
-    array (
-    ),
-    154 => 
-    array (
-    ),
-    155 => NULL,
-    165 => 
-    array (
-    ),
-    167 => 
-    array (
-    ),
-    168 => NULL,
-    177 => 
-    array (
-    ),
-    179 => 
-    array (
-    ),
-    180 => 
-    array (
-    ),
-    181 => 
-    array (
-    ),
-    182 => 
-    array (
-    ),
-    183 => 
-    array (
-    ),
-    185 => 
-    array (
-    ),
-    186 => NULL,
-  ),
   '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/AppService.php' => 
   array (
     35 => 
@@ -963,15 +1065,25 @@ $coverage->setData(array (
   ),
 ));
 $coverage->setTests(array (
+  'Octopussy\\Tests\\Models\\GeoTest::testInstance' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
   'Octopussy\\Tests\\Models\\VisitorTest::testInstance' => 
   array (
     'size' => 'unknown',
-    'status' => 4,
+    'status' => 0,
   ),
   'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes' => 
   array (
     'size' => 'unknown',
-    'status' => 4,
+    'status' => 0,
   ),
   'UNCOVERED_FILES_FROM_WHITELIST' => 
   array (

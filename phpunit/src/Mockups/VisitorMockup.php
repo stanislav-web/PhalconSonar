@@ -7,9 +7,9 @@ namespace Octopussy\Mockups;
  * @package Octopussy\Mockups
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Octopussy/Mockups/VisitorMock.php
+ * @filesource /Octopussy/Mockups/VisitorMockup.php
  */
-class VisitorMock {
+class VisitorMockup {
 
     /**
      * Get Visitors mock data
@@ -22,6 +22,7 @@ class VisitorMock {
             'page'      => 'http://redumbrella.com.ua',
             'ip'        => "".mt_rand(0,255).".".mt_rand(0,255).".".mt_rand(0,255).".".mt_rand(0,255),
             'open'      => time(),
+            'location'  => [],
             'close'     => time() + mt_rand(0, 1000),
             'language'  => array_rand(['RU', 'UA', 'DE', 'US'], 1)[0],
             'ua'        => 'Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/4.0.212.0 Safari/532.0'
@@ -46,7 +47,8 @@ class VisitorMock {
             'pc',
             'page',
             'open',
-            'close'
+            'close',
+            'location'
         ];
     }
 
