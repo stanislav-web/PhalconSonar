@@ -1,11 +1,10 @@
 <?php
-namespace Tests\Mockups;
+namespace Octopussy\Mockups;
 
 /**
  * Class VisitorMock
  *
- * @package Tests\Octopussy\Mockups
- * @subpackage Tests\Octopussy
+ * @package Octopussy\Mockups
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
  * @filesource /Octopussy/Mockups/VisitorMock.php

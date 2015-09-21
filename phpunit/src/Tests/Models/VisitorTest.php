@@ -1,14 +1,14 @@
 <?php
-namespace Tests\Octopussy\Models;
+namespace Octopussy\Tests\Models;
 
-use Tests\Mockups\VisitorMock;
+use Octopussy\Mockups\VisitorMock;
 use Octopussy\Models\Visitor;
 
 /**
  * Class VisitorTest
  *
- * @package Tests\Octopussy\Models
- * @subpackage Tests\Octopussy
+ * @package Octopussy\Tests\Models
+ * @subpackage Octopussy\Tests
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
  * @filesource /Octopussy/Models/VisitorTest.php
