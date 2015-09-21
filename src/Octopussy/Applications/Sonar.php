@@ -218,9 +218,7 @@ class Sonar implements MessageComponentInterface {
 
         if($conn->WebSocket instanceof \StdClass) {
 
-            //@TODO location
-            //$this->getIpAddress($conn);
-            $location = $this->geoService->location('195.12.23.15');
+            $location = $this->geoService->location($this->getIpAddress($conn));
             return $location;
         }
         throw new AppServiceException('Language not defined');

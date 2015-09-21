@@ -2,13 +2,11 @@
 namespace Octopussy\Services;
 
 use Octopussy\Exceptions\QueueServiceException;
-use Ratchet\Server\IoServer as Server;
-use Ratchet\WebSocket\WsServer;
-use Ratchet\Http\HttpServer;
 use React\Socket\ConnectionException;
 use Octopussy\Applications\Sonar;
 use Octopussy\Exceptions\AppServiceException;
 use Octopussy\Exceptions\SocketServiceException;
+use Ratchet\App as AppServer;
 
 /**
  * Class SocketService. Client bridge service for locate incoming messages
@@ -33,7 +31,7 @@ class SocketService {
     /**
      * WebSocket server instance
      *
-     * @var Server $server
+     * @var AppServer $server
      */
     private $server;
 
@@ -59,13 +57,14 @@ class SocketService {
 
             try {
 
-                $this->server = Server::factory(new HttpServer(new WsServer(
-                    new Sonar(
-                        new StorageService($this->config->storage),
-                        new QueueService($this->config->beanstalk),
-                        new GeoService()
-                    )
-                )), $this->config->socket->port);
+                $this->server = new AppServer($this->config->socket->host, $this->config->socket->port);
+
+                $this->server->route('/sonar', new Sonar(
+                    new StorageService($this->config->storage),
+                    new QueueService($this->config->beanstalk),
+                    new GeoService()
+                ), ['*']);
+
 
             }
             catch(QueueServiceException $e) {
