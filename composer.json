@@ -41,7 +41,7 @@
     },
 	"autoload-dev": {
 		"psr-0": {
-			"Tests\\": "phpunit/src",
+			"Tests\\": "phpunit/src"
 		}
 	},
     "suggest": {
