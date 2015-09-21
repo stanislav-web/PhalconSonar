@@ -72,7 +72,7 @@ class Messenger {
     }
 
     /**
-     * Closing
+     * Closing message
      *
      * @param string $ip
      * @return string
@@ -82,7 +82,7 @@ class Messenger {
     }
 
     /**
-     * Error
+     * Error message
      *
      * @param string $message
      * @return string

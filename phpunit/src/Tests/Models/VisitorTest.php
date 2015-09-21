@@ -30,13 +30,6 @@ class VisitorTest extends \PHPUnit_Framework_TestCase {
     private $mock;
 
     /**
-     * Constraint object
-     *
-     * @var \PHPUnit_Framework_Constraint
-     */
-    private $constraint;
-
-    /**
      * Initialize testing object
      *
      * @uses VisitorMock
@@ -61,10 +54,10 @@ class VisitorTest extends \PHPUnit_Framework_TestCase {
      */
     public function testInstance() {
 
-        $user = new Visitor($this->mock->getMockData());
+        $data = new Visitor($this->mock->getMockData());
 
         // checking instance object return
-        $this->assertInstanceOf(self::INSTANCE_OBJECT, $user);
+        $this->assertInstanceOf(self::INSTANCE_OBJECT, $data);
     }
 
     /*
@@ -72,11 +65,11 @@ class VisitorTest extends \PHPUnit_Framework_TestCase {
      */
     public function testHasAttributes()
     {
-        $user = new Visitor($this->mock->getMockData());
+        $data = new Visitor($this->mock->getMockData());
 
         // just checking that the attributes exists & equal too
         $this->assertSame(
-            array_diff($this->mock->getReturnedResultKeys(), array_keys($user->toArray())),
-            array_diff(array_keys($user->toArray()), $this->mock->getReturnedResultKeys()));
+            array_diff($this->mock->getReturnedResultKeys(), array_keys($data->toArray())),
+            array_diff(array_keys($data->toArray()), $this->mock->getReturnedResultKeys()));
     }
 }

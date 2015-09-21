@@ -30,13 +30,6 @@ class GeoTest extends \PHPUnit_Framework_TestCase {
     private $mock;
 
     /**
-     * Constraint object
-     *
-     * @var \PHPUnit_Framework_Constraint
-     */
-    private $constraint;
-
-    /**
      * Initialize testing object
      *
      * @uses VisitorMock

@@ -394,6 +394,34 @@ $coverage->setData(array (
     ),
     329 => NULL,
   ),
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/System/Messenger.php' => 
+  array (
+    50 => 
+    array (
+      0 => 'Octopussy\\Tests\\System\\MessengerTest::testStart',
+    ),
+    51 => NULL,
+    60 => 
+    array (
+      0 => 'Octopussy\\Tests\\System\\MessengerTest::testOpen',
+    ),
+    61 => NULL,
+    71 => 
+    array (
+      0 => 'Octopussy\\Tests\\System\\MessengerTest::testMessage',
+    ),
+    72 => NULL,
+    81 => 
+    array (
+      0 => 'Octopussy\\Tests\\System\\MessengerTest::testClose',
+    ),
+    82 => NULL,
+    91 => 
+    array (
+      0 => 'Octopussy\\Tests\\System\\MessengerTest::testError',
+    ),
+    92 => NULL,
+  ),
   '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Applications/Sonar.php' => 
   array (
     12 => 
@@ -985,29 +1013,6 @@ $coverage->setData(array (
     ),
     56 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/System/Messenger.php' => 
-  array (
-    50 => 
-    array (
-    ),
-    51 => NULL,
-    60 => 
-    array (
-    ),
-    61 => NULL,
-    71 => 
-    array (
-    ),
-    72 => NULL,
-    81 => 
-    array (
-    ),
-    82 => NULL,
-    91 => 
-    array (
-    ),
-    92 => NULL,
-  ),
   '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/System/Tasks/SonarTask.php' => 
   array (
     60 => 
@@ -1081,6 +1086,36 @@ $coverage->setTests(array (
     'status' => 0,
   ),
   'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Octopussy\\Tests\\System\\MessengerTest::testInstance' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Octopussy\\Tests\\System\\MessengerTest::testStart' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Octopussy\\Tests\\System\\MessengerTest::testOpen' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Octopussy\\Tests\\System\\MessengerTest::testMessage' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Octopussy\\Tests\\System\\MessengerTest::testClose' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Octopussy\\Tests\\System\\MessengerTest::testError' => 
   array (
     'size' => 'unknown',
     'status' => 0,

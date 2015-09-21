@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1442851319">
-  <project timestamp="1442851319">
+<coverage generated="1442853236">
+  <project timestamp="1442853236">
     <package name="Octopussy\Applications">
       <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Applications/Sonar.php">
         <class name="Sonar" namespace="Octopussy\Applications" fullPackage="Octopussy.Octopussy" package="Octopussy" subpackage="Octopussy">
@@ -443,19 +443,19 @@
     <package name="Octopussy\System">
       <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/System/Messenger.php">
         <class name="Messenger" namespace="Octopussy\System" fullPackage="Octopussy.Octopussy" package="Octopussy" subpackage="Octopussy">
-          <metrics methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="10" coveredelements="0"/>
+          <metrics methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="10" coveredelements="10"/>
         </class>
-        <line num="49" type="method" name="start" crap="2" count="0"/>
-        <line num="50" type="stmt" count="0"/>
-        <line num="59" type="method" name="open" crap="2" count="0"/>
-        <line num="60" type="stmt" count="0"/>
-        <line num="70" type="method" name="message" crap="2" count="0"/>
-        <line num="71" type="stmt" count="0"/>
-        <line num="80" type="method" name="close" crap="2" count="0"/>
-        <line num="81" type="stmt" count="0"/>
-        <line num="90" type="method" name="error" crap="2" count="0"/>
-        <line num="91" type="stmt" count="0"/>
-        <metrics loc="92" ncloc="36" classes="1" methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="10" coveredelements="0"/>
+        <line num="49" type="method" name="start" crap="1" count="1"/>
+        <line num="50" type="stmt" count="1"/>
+        <line num="59" type="method" name="open" crap="1" count="1"/>
+        <line num="60" type="stmt" count="1"/>
+        <line num="70" type="method" name="message" crap="1" count="1"/>
+        <line num="71" type="stmt" count="1"/>
+        <line num="80" type="method" name="close" crap="1" count="1"/>
+        <line num="81" type="stmt" count="1"/>
+        <line num="90" type="method" name="error" crap="1" count="1"/>
+        <line num="91" type="stmt" count="1"/>
+        <metrics loc="92" ncloc="36" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="10" coveredelements="10"/>
       </file>
     </package>
     <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/System/Tasks/SonarTask.php">
@@ -485,6 +485,6 @@
       <line num="120" type="stmt" count="0"/>
       <metrics loc="120" ncloc="60" classes="1" methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="0" elements="21" coveredelements="0"/>
     </file>
-    <metrics files="23" loc="1837" ncloc="824" classes="22" methods="65" coveredmethods="20" conditionals="0" coveredconditionals="0" statements="268" coveredstatements="76" elements="333" coveredelements="96"/>
+    <metrics files="23" loc="1837" ncloc="824" classes="22" methods="65" coveredmethods="25" conditionals="0" coveredconditionals="0" statements="268" coveredstatements="81" elements="333" coveredelements="106"/>
   </project>
 </coverage>
