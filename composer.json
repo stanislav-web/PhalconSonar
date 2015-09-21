@@ -1,6 +1,6 @@
 {
     "name": "stanislav-web/sonar",
-    "description": "The site visitors grabber. Build in Phalcon & MongoDb",
+    "description": "Sonar is the site visitors monitor. Build in Phalcon & MongoDb. Conducts monitoring of visitors, using the WebSockets connection. Great for sites built on REST technology. You can easily integrate this package to track detailed information about your visitors. Check the time on each page of the site, determine device, geo location.",
     "type": "library",
     "keywords" : [
         "site visitor",
