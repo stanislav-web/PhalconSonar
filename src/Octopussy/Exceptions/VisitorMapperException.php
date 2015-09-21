@@ -3,6 +3,7 @@ namespace Octopussy\Exceptions;
 
 /**
  * Class VisitorMapperException. Visitor mapper exception class
+ * Low-level catching errors class
  *
  * @package Octopussy\Exceptions
  * @subpackage Octopussy
@@ -12,12 +13,7 @@ namespace Octopussy\Exceptions;
  * @copyright Stanislav WEB
  * @filesource /Octopussy/Exceptions/VisitorMapperException.php
  */
-class VisitorMapperException extends \RuntimeException {
-
-    /**
-     * @const CODE exception code
-     */
-    const CODE = 500;
+class VisitorMapperException extends BeanstalkMapperException {
 
     /**
      * Constructor
@@ -25,7 +21,7 @@ class VisitorMapperException extends \RuntimeException {
      * @param string $message
      * @param string $code status code
      */
-    public function __construct($message, $code = self::CODE) {
-        parent::__construct($message, $code);
+    public function __construct($message) {
+        parent::__construct($message, self::class);
     }
 }

@@ -1,8 +1,11 @@
 <?php
 namespace Octopussy\Exceptions;
 
+use Octopussy\Aware\AbstractBaseException;
+
 /**
  * Class BeanstalkMapperException. Beanstalk mapper exception class
+ * Low-level catching errors class
  *
  * @package Octopussy\Exceptions
  * @subpackage Octopussy
@@ -12,12 +15,7 @@ namespace Octopussy\Exceptions;
  * @copyright Stanislav WEB
  * @filesource /Octopussy/Exceptions/BeanstalkMapperException.php
  */
-class BeanstalkMapperException extends \RuntimeException {
-
-    /**
-     * @const CODE exception code
-     */
-    const CODE = 500;
+class BeanstalkMapperException extends AbstractBaseException {
 
     /**
      * Constructor
@@ -25,7 +23,7 @@ class BeanstalkMapperException extends \RuntimeException {
      * @param string $message
      * @param string $code status code
      */
-    public function __construct($message, $code = self::CODE) {
-        parent::__construct($message, $code);
+    public function __construct($message) {
+        parent::__construct($message, self::class);
     }
 }

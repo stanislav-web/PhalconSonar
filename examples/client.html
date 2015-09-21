@@ -25,7 +25,7 @@
         config : {
             protocol : 'ws://',
             host: '127.0.0.1',
-            port: 9001
+            port: 9003
         },
 
         /**
@@ -91,6 +91,9 @@
          * @param {string} url
          */
         send : function(url) {
+
+            console.info('[SEND]', url);
+
             var then = this;
             this.wait(this.connect, function() {
                 then.connect.send(JSON.stringify({'page' : url}));

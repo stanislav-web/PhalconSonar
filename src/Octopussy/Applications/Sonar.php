@@ -92,7 +92,7 @@ class Sonar implements MessageComponentInterface {
     public function onMessage(ConnectionInterface $conn, $request) {
 
         if(is_array($request = json_decode($request, true)) === false) {
-            throw new \InvalidArgumentException('The server received an invalid data format');
+            throw new AppServiceException('The server received an invalid data format');
         }
 
         $this->queueService->push($request, function() use ($conn) {
@@ -116,9 +116,6 @@ class Sonar implements MessageComponentInterface {
         // The connection is closed, remove it, as we can no longer send it messages
         $this->clients->detach($conn);
 
-
-        //var_dump($this->geoService->location('195.12.23.15'));
-
         // pulled data from queues
         $data = $this->queueService->pull([
             // identity for open queue message
@@ -128,6 +125,7 @@ class Sonar implements MessageComponentInterface {
             return array_merge($response, [
                 'ua'            => $this->getUserAgent($conn),
                 'language'      => $this->getLanguage($conn),
+                'location'      => $this->getLocation($conn),
                 'close'         => time()
             ]);
         });
@@ -165,7 +163,7 @@ class Sonar implements MessageComponentInterface {
      */
     private function getUserAgent(ConnectionInterface $conn) {
 
-        if($conn->WebSocket instanceof WebSocket) {
+        if($conn->WebSocket instanceof \StdClass) {
             $userAgent = $conn->WebSocket->request->getHeader('User-Agent')->toArray();
 
             return (empty($userAgent[0]) === false) ? $userAgent[0] : 'Unknown';
@@ -182,7 +180,8 @@ class Sonar implements MessageComponentInterface {
      */
     private function getIpAddress(ConnectionInterface $conn) {
 
-        if($conn->WebSocket instanceof WebSocket) {
+        if($conn->WebSocket instanceof \StdClass) {
+
             $userIp = $conn->WebSocket->request->getHeader('X-Forwarded-For');
 
             return (empty($userIp) === false) ? $userIp : $conn->remoteAddress;
@@ -199,7 +198,7 @@ class Sonar implements MessageComponentInterface {
      */
     private function getLanguage(ConnectionInterface $conn) {
 
-        if($conn->WebSocket instanceof WebSocket) {
+        if($conn->WebSocket instanceof \StdClass) {
             $language = $conn->WebSocket->request->getHeader('Accept-Language');
             $language = trim(strtoupper(substr($language, 0, 2)));
 
@@ -217,11 +216,13 @@ class Sonar implements MessageComponentInterface {
      */
     private function getLocation(ConnectionInterface $conn) {
 
+        if($conn->WebSocket instanceof \StdClass) {
 
-
-        if($conn->WebSocket instanceof WebSocket) {
-            $query = $conn->WebSocket->request->getQuery();
-            return $query->get('page');
+            //@TODO location
+            //$this->getIpAddress($conn);
+            $location = $this->geoService->location('195.12.23.15');
+            //var_dump($location->all());
+            return '';
         }
         throw new AppServiceException('Language not defined');
     }

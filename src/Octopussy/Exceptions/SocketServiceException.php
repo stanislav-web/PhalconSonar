@@ -1,9 +1,12 @@
 <?php
 namespace Octopussy\Exceptions;
 
+use Octopussy\Aware\AbstractBaseException;
+
 /**
  * Class SocketServiceException. Socket service exception class
- *
+ * Low-level catching errors class
+
  * @package Octopussy\Exceptions
  * @subpackage Octopussy
  * @since PHP >=5.5
@@ -12,12 +15,7 @@ namespace Octopussy\Exceptions;
  * @copyright Stanislav WEB
  * @filesource /Octopussy/Exceptions/SocketServiceException.php
  */
-class SocketServiceException extends \DomainException {
-
-    /**
-     * @const CODE exception code
-     */
-    const CODE = 500;
+class SocketServiceException extends AbstractBaseException {
 
     /**
      * Constructor
@@ -25,7 +23,7 @@ class SocketServiceException extends \DomainException {
      * @param string $message
      * @param string $code status code
      */
-    public function __construct($message, $code = self::CODE) {
-        parent::__construct($message, $code);
+    public function __construct($message) {
+        parent::__construct($message, self::class);
     }
 }

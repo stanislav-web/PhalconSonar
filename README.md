@@ -1,6 +1,8 @@
 # Octopussy
 
-[ ![Codeship Status for stanislav-web/Octopussy](https://codeship.com/projects/3c8b15c0-41ba-0133-04e1-62bb193b9897/status?branch=master)](https://codeship.com/projects/103619)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/stanislav-web/Octopussy/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/stanislav-web/Octopussy/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/stanislav-web/Octopussy/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/stanislav-web/Octopussy/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/stanislav-web/Octopussy/badges/build.png?b=master)](https://scrutinizer-ci.com/g/stanislav-web/Octopussy/build-status/master)
+
+[![Latest Stable Version](https://poser.pugx.org/stanislav-web/octopussy/v/stable)](https://packagist.org/packages/stanislav-web/octopussy) [![Total Downloads](https://poser.pugx.org/stanislav-web/octopussy/downloads)](https://packagist.org/packages/stanislav-web/octopussy) [![Latest Unstable Version](https://poser.pugx.org/stanislav-web/octopussy/v/unstable)](https://packagist.org/packages/stanislav-web/octopussy) [![License](https://poser.pugx.org/stanislav-web/octopussy/license)](https://packagist.org/packages/stanislav-web/octopussy)
 
 Octopussy is the site visitors grabber. Build in Phalcon & MongoDb.
 Conducts monitoring of visitors, using the WebSockets connection. Great for sites built on REST technology.
