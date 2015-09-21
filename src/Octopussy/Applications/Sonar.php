@@ -130,6 +130,8 @@ class Sonar implements MessageComponentInterface {
             ]);
         });
 
+
+        print_r($data); exit;
         // save data to storage
         $this->storageService->add($data);
 
@@ -221,8 +223,7 @@ class Sonar implements MessageComponentInterface {
             //@TODO location
             //$this->getIpAddress($conn);
             $location = $this->geoService->location('195.12.23.15');
-            //var_dump($location->all());
-            return '';
+            return $location;
         }
         throw new AppServiceException('Language not defined');
     }

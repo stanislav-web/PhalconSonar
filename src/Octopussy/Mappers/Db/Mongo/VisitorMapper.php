@@ -3,7 +3,7 @@ namespace Octopussy\Mappers\Db\Mongo;
 
 use Octopussy\Aware\AbstractMongoMapper;
 use Octopussy\Models\Visitor;
-use Octopussy\Exceptions\VisitorMapperException;
+use Octopussy\Exceptions\MongoMapperException;
 
 /**
  * Class VisitorMapper. Mongo DB Mapper
@@ -29,7 +29,7 @@ class VisitorMapper extends AbstractMongoMapper {
      * Add records to collection
      *
      * @param array $data
-     * @throws \Octopussy\Exceptions\VisitorMapperException
+     * @throws \Octopussy\Exceptions\MongoMapperException
      * @return \MongoId
      */
     public function add(array $data) {
@@ -41,10 +41,10 @@ class VisitorMapper extends AbstractMongoMapper {
             return new \MongoId($document['_id']);
         }
         catch (\MongoCursorException $e) {
-            throw new VisitorMapperException($e->getMessage());
+            throw new MongoMapperException($e->getMessage());
         }
         catch (\MongoException $e) {
-            throw new VisitorMapperException($e->getMessage());
+            throw new MongoMapperException($e->getMessage());
         }
     }
 
@@ -52,7 +52,7 @@ class VisitorMapper extends AbstractMongoMapper {
      * Remove records from collection
      *
      * @param array $criteria
-     * @throws \Octopussy\Exceptions\VisitorMapperException
+     * @throws \Octopussy\Exceptions\MongoMapperException
      */
     public function remove(array $criteria) {}
 }

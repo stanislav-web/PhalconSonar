@@ -12,7 +12,7 @@ namespace Octopussy\Exceptions;
  * @copyright Stanislav WEB
  * @filesource /Octopussy/Exceptions/QueueServiceException.php
  */
-class QueueServiceException extends \DomainException {
+class QueueServiceException extends \RuntimeException {
 
     /**
      * @const CODE exception code

@@ -12,7 +12,7 @@ namespace Octopussy\Exceptions;
  * @copyright Stanislav WEB
  * @filesource /Octopussy/Exceptions/AppServiceException.php
  */
-class AppServiceException extends \InvalidArgumentException {
+class AppServiceException extends \RuntimeException {
 
     /**
      * @const CODE exception code

@@ -12,7 +12,7 @@ namespace Octopussy\Exceptions;
  * @copyright Stanislav WEB
  * @filesource /Octopussy/Exceptions/StorageServiceException.php
  */
-class StorageServiceException extends \DomainException {
+class StorageServiceException extends \RuntimeException {
 
     /**
      * @const CODE exception code

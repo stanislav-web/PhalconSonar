@@ -1,8 +1,10 @@
 <?php
 namespace Octopussy\Exceptions;
 
+use Octopussy\Aware\AbstractBaseException;
+
 /**
- * Class VisitorMapperException. Visitor mapper exception class
+ * Class MongoMapperException. Visitor mapper exception class
  * Low-level catching errors class
  *
  * @package Octopussy\Exceptions
@@ -11,9 +13,9 @@ namespace Octopussy\Exceptions;
  * @version 1.0
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Octopussy/Exceptions/VisitorMapperException.php
+ * @filesource /Octopussy/Exceptions/MongoMapperException.php
  */
-class VisitorMapperException extends BeanstalkMapperException {
+class MongoMapperException extends AbstractBaseException {
 
     /**
      * Constructor

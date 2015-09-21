@@ -3,7 +3,7 @@ namespace Octopussy\Services;
 
 use Octopussy\Mappers\Db\Mongo\VisitorMapper;
 use Octopussy\Exceptions\StorageServiceException;
-use Octopussy\Exceptions\VisitorMapperException;
+use Octopussy\Exceptions\MongoMapperException;
 
 /**
  * Class StorageService. Database service
@@ -50,7 +50,7 @@ class StorageService {
 
             return $lastInsertId;
         }
-        catch(VisitorMapperException $e) {
+        catch(MongoMapperException $e) {
             throw new StorageServiceException($e->getMessage());
         }
     }

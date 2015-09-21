@@ -2,6 +2,7 @@
 namespace Octopussy\Models;
 
 use Mobile_Detect;
+use Octopussy\Aware\ModelInterface;
 
 /**
  * Class Visitor. Visitor's collection model
@@ -14,7 +15,7 @@ use Mobile_Detect;
  * @copyright Stanislav WEB
  * @filesource /Octopussy/Models/Visitor.php
  */
-class Visitor {
+class Visitor implements ModelInterface {
 
     /**
      * Collection name
@@ -112,7 +113,7 @@ class Visitor {
      *
      * @param array $data
      */
-    public function __construct(array $data) {
+    public function __construct($data) {
 
         // init detector
         $this->detector = new Mobile_Detect();

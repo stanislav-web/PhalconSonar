@@ -7,6 +7,7 @@ use Geocoder\Provider\Chain;
 use Geocoder\Provider\FreeGeoIp;
 use Geocoder\Provider\HostIp;
 use Octopussy\Exceptions\GeoServiceException;
+use Octopussy\Models\Geo;
 
 /**
  * Class GeoService. Geo location service
@@ -52,11 +53,13 @@ class GeoService {
      * @return \Geocoder\Model\AddressCollection
      */
     public function location($param) {
+
         try {
 
             $result = $this->geocoder->geocode($param);
 
-            return $result;
+            // parse  data from geo locator
+            return (new Geo($result))->toArray();
 
         } catch (\Exception $e) {
             throw new GeoServiceException($e->getMessage());

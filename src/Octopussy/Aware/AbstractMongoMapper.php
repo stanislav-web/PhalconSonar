@@ -1,6 +1,9 @@
 <?php
 namespace Octopussy\Aware;
 
+use Octopussy\Exceptions\E;
+use Octopussy\Exceptions\MongoMapperException;
+
 /**
  * Class AbstractMongoMapper. Abstract mapper for mongoDb client
  *
@@ -60,7 +63,7 @@ abstract class AbstractMongoMapper {
 
         }
         catch (\MongoConnectionException $e) {
-            throw new StorageServiceException($e->getMessage());
+            throw new MongoMapperException($e->getMessage());
         }
     }
 
@@ -80,7 +83,7 @@ abstract class AbstractMongoMapper {
      * Add records to collection
      *
      * @param array $data
-     * @throws \Octopussy\Exceptions\VisitorMapperException
+     * @throws \Octopussy\Exceptions\MongoMapperException
      * @return \MongoId
      */
     abstract public function add(array $data);
@@ -89,7 +92,7 @@ abstract class AbstractMongoMapper {
      * Remove records from collection
      *
      * @param array $criteria
-     * @throws \Octopussy\Exceptions\VisitorMapperException
+     * @throws \Octopussy\Exceptions\MongoMapperException
      */
     abstract public function remove(array $criteria);
 }
