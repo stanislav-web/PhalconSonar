@@ -32,7 +32,7 @@
             <directory suffix=".php">./vendor</directory>
             <directory suffix=".php">./examples</directory>
             <directory suffix=".php">./phpunit/src/Mockups</directory>
-            <file>./src/Octopussy/System/Tasks/SonarTask.php</file>
+            <file>./src/Sonar/System/Tasks/SonarTask.php</file>
             <file>./phpunit/bootstrap.php</file>
         </blacklist>
         <whitelist processUncoveredFilesFromWhitelist="true">

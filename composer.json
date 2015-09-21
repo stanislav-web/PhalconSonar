@@ -1,5 +1,5 @@
 {
-    "name": "stanislav-web/octopussy",
+    "name": "stanislav-web/sonar",
     "description": "The site visitors grabber. Build in Phalcon & MongoDb",
     "type": "library",
     "keywords" : [
@@ -10,10 +10,10 @@
         "mongo visitors grabber"
     ],
     "support": {
-        "issues": "https://github.com/stanislav-web/octopussy/issues"
+        "issues": "https://github.com/stanislav-web/sonar/issues"
     },
     "minimum-stability": "dev",
-    "homepage" : "https://github.com/stanislav-web/octopussy",
+    "homepage" : "https://github.com/stanislav-web/sonar",
     "license" : "MIT",
     "authors" : [{
         "name": "Stanislav WEB",
@@ -35,16 +35,10 @@
 		"phpunit/phpunit": "4.*"
 	},
     "autoload": {
-      "psr-4": {
-        "Octopussy\\": "src/Octopussy"
+      "psr-0": {
+        "Sonar": "src"
       }
     },
-	"autoload-dev": {
-		"psr-4": {
-			"Tests\\Octopussy\\": "phpunit/src/Octopussy",
-			"Tests\\Mockups\\": "phpunit/src/Mockups"
-		}
-	},
     "suggest": {
         "stanislav-web/zf2-websocket-server-factory": "ZF2 WebSockets. You can organize a chat, monitor live site visit, you can create real-time statistics and save it to DB (MySQL, Mongo..etc), you can organize the postal service in the likeness of Google. Yes, anything!",
         "stanislav-web/phalcon-searcher": "Phalcon Database Searcher. This is the search service is designed to search multiple SQL tables. Convenient to use autocomplete, search documents, search the whole site.",

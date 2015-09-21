@@ -1,4 +1,7 @@
-#### [v 1.0-alpha] 2015-10-20
+#### [v1.1-alpha] 2015-09-21
+    - implementing geo location detector
+    
+#### [v 1.0-alpha] 2015-09-20
     - the first version of package
     - socket application named as "Sonar"
     - implemented:

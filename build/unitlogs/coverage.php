@@ -1,241 +1,451 @@
 <?php
 $coverage = new PHP_CodeCoverage;
 $coverage->setData(array (
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Models/Visitor.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/ModelInterface.php' => 
   array (
-    118 => 
+  ),
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Models/Geo.php' => 
+  array (
+    77 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
-    121 => 
+    78 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
-    122 => 
+    79 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
-    123 => 
+    80 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
-    124 => 
+    81 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
-    125 => 
+    82 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
+    83 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    93 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    94 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    95 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    96 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    98 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    99 => NULL,
+    109 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    110 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    111 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    113 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    115 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+    ),
+    116 => NULL,
     126 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    127 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     128 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
-    138 => 
+    129 => NULL,
+    139 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
-    140 => 
+    141 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
-    141 => NULL,
-    151 => 
+    142 => NULL,
+    152 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
-    153 => 
+    154 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
-    154 => NULL,
-    164 => 
+    155 => NULL,
+    165 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
-    166 => 
+    167 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
-    167 => NULL,
+    168 => NULL,
     177 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     179 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
-    180 => NULL,
-    189 => 
+    180 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
-    191 => 
+    181 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
-    192 => NULL,
-    201 => 
+    182 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
-    204 => 
+    183 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
-    206 => 
+    185 => 
     array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
-    207 => NULL,
-    236 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    237 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    239 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    240 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    241 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    243 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    244 => NULL,
-    253 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    254 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    255 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    257 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    258 => NULL,
-    267 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    269 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testInstance',
-      1 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    270 => NULL,
-    299 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    301 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    302 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    303 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    304 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    305 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    307 => 
-    array (
-      0 => 'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes',
-    ),
-    308 => NULL,
+    186 => NULL,
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Applications/Sonar.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Models/Visitor.php' => 
   array (
-    53 => 
+    126 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    129 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    130 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    131 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    132 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    133 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    134 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    135 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    136 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    137 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    147 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    149 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    150 => NULL,
+    160 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    162 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    163 => NULL,
+    173 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    175 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    176 => NULL,
+    186 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    188 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    189 => NULL,
+    198 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    200 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    201 => NULL,
+    210 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    213 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    215 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    216 => NULL,
+    245 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    246 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    247 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    249 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    250 => NULL,
+    259 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    261 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    262 => NULL,
+    271 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    273 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    274 => NULL,
+    283 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    284 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    286 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    287 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    288 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    290 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    291 => NULL,
+    320 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    322 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    323 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    324 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    325 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    326 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    328 => 
+    array (
+      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    329 => NULL,
+  ),
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/System/Messenger.php' => 
+  array (
+    50 => 
+    array (
+      0 => 'Octopussy\\Tests\\System\\MessengerTest::testStart',
+    ),
+    51 => NULL,
+    60 => 
+    array (
+      0 => 'Octopussy\\Tests\\System\\MessengerTest::testOpen',
+    ),
+    61 => NULL,
+    71 => 
+    array (
+      0 => 'Octopussy\\Tests\\System\\MessengerTest::testMessage',
+    ),
+    72 => NULL,
+    81 => 
+    array (
+      0 => 'Octopussy\\Tests\\System\\MessengerTest::testClose',
+    ),
+    82 => NULL,
+    91 => 
+    array (
+      0 => 'Octopussy\\Tests\\System\\MessengerTest::testError',
+    ),
+    92 => NULL,
+  ),
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Applications/Sonar.php' => 
+  array (
+    12 => 
     array (
     ),
-    54 => 
+    13 => 
     array (
     ),
-    55 => 
+    65 => 
     array (
     ),
-    57 => 
+    66 => 
     array (
     ),
-    58 => 
+    67 => 
     array (
     ),
     68 => 
     array (
     ),
-    69 => 
+    70 => 
     array (
     ),
-    70 => 
+    71 => 
     array (
     ),
     81 => 
@@ -244,47 +454,32 @@ $coverage->setData(array (
     82 => 
     array (
     ),
-    83 => NULL,
-    89 => 
-    array (
-    ),
-    90 => 
-    array (
-    ),
-    91 => 
-    array (
-    ),
-    92 => 
-    array (
-    ),
-    93 => 
+    83 => 
     array (
     ),
     94 => 
     array (
     ),
+    95 => 
+    array (
+    ),
+    96 => NULL,
+    102 => 
+    array (
+    ),
+    103 => 
+    array (
+    ),
     104 => 
     array (
     ),
+    105 => 
+    array (
+    ),
+    106 => 
+    array (
+    ),
     107 => 
-    array (
-    ),
-    109 => 
-    array (
-    ),
-    112 => 
-    array (
-    ),
-    113 => 
-    array (
-    ),
-    114 => 
-    array (
-    ),
-    115 => 
-    array (
-    ),
-    116 => 
     array (
     ),
     117 => 
@@ -296,98 +491,134 @@ $coverage->setData(array (
     122 => 
     array (
     ),
-    123 => 
+    125 => 
     array (
     ),
-    135 => 
+    126 => 
+    array (
+    ),
+    127 => 
+    array (
+    ),
+    128 => 
+    array (
+    ),
+    129 => 
+    array (
+    ),
+    130 => 
+    array (
+    ),
+    131 => 
+    array (
+    ),
+    134 => 
     array (
     ),
     136 => 
     array (
     ),
-    138 => 
+    137 => 
     array (
     ),
-    139 => NULL,
-    140 => NULL,
-    141 => 
+    149 => 
+    array (
+    ),
+    150 => 
     array (
     ),
     152 => 
     array (
     ),
-    153 => 
+    153 => NULL,
+    154 => NULL,
+    155 => 
     array (
     ),
-    154 => 
+    166 => 
     array (
     ),
-    155 => NULL,
-    156 => 
-    array (
-    ),
-    157 => NULL,
-    168 => 
+    167 => 
     array (
     ),
     169 => 
     array (
     ),
-    170 => 
+    170 => NULL,
+    171 => 
     array (
     ),
-    171 => NULL,
-    172 => 
-    array (
-    ),
-    173 => NULL,
-    184 => 
+    172 => NULL,
+    183 => 
     array (
     ),
     185 => 
     array (
     ),
-    186 => 
+    187 => 
     array (
     ),
-    188 => 
+    188 => NULL,
+    189 => 
     array (
     ),
-    189 => NULL,
-    190 => 
+    190 => NULL,
+    201 => 
     array (
     ),
-    191 => NULL,
     202 => 
     array (
     ),
     203 => 
     array (
     ),
-    204 => 
+    205 => 
     array (
     ),
-    205 => NULL,
-    206 => 
+    206 => NULL,
+    207 => 
     array (
     ),
-    207 => NULL,
+    208 => NULL,
+    219 => 
+    array (
+    ),
+    223 => 
+    array (
+    ),
+    224 => 
+    array (
+    ),
+    225 => NULL,
+    226 => 
+    array (
+    ),
+    227 => NULL,
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractMongoMapper.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractBaseException.php' => 
   array (
-    46 => 
+    35 => 
     array (
     ),
-    50 => 
+    36 => 
     array (
     ),
-    52 => 
+    37 => 
+    array (
+    ),
+  ),
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractMongoMapper.php' => 
+  array (
+    49 => 
+    array (
+    ),
+    53 => 
     array (
     ),
     55 => 
     array (
     ),
-    56 => 
+    58 => 
     array (
     ),
     59 => 
@@ -396,33 +627,27 @@ $coverage->setData(array (
     62 => 
     array (
     ),
-    63 => 
-    array (
-    ),
     65 => 
     array (
     ),
-    74 => 
+    66 => 
     array (
     ),
-    76 => 
+    68 => 
     array (
     ),
-    77 => NULL,
+    77 => 
+    array (
+    ),
+    79 => 
+    array (
+    ),
+    80 => NULL,
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractQueueMapper.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractQueueMapper.php' => 
   array (
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/AppServiceException.php' => 
-  array (
-    29 => 
-    array (
-    ),
-    30 => 
-    array (
-    ),
-  ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/BeanstalkMapperException.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/AppServiceException.php' => 
   array (
     29 => 
     array (
@@ -431,7 +656,34 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/GeoServiceException.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/BeanstalkMapperException.php' => 
+  array (
+    27 => 
+    array (
+    ),
+    28 => 
+    array (
+    ),
+  ),
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/GeoServiceException.php' => 
+  array (
+    27 => 
+    array (
+    ),
+    28 => 
+    array (
+    ),
+  ),
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/MongoMapperException.php' => 
+  array (
+    27 => 
+    array (
+    ),
+    28 => 
+    array (
+    ),
+  ),
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/QueueServiceException.php' => 
   array (
     29 => 
     array (
@@ -440,7 +692,16 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/QueueServiceException.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/SocketServiceException.php' => 
+  array (
+    27 => 
+    array (
+    ),
+    28 => 
+    array (
+    ),
+  ),
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/StorageServiceException.php' => 
   array (
     29 => 
     array (
@@ -449,34 +710,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/SocketServiceException.php' => 
-  array (
-    29 => 
-    array (
-    ),
-    30 => 
-    array (
-    ),
-  ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/StorageServiceException.php' => 
-  array (
-    29 => 
-    array (
-    ),
-    30 => 
-    array (
-    ),
-  ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/VisitorMapperException.php' => 
-  array (
-    29 => 
-    array (
-    ),
-    30 => 
-    array (
-    ),
-  ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Mappers/Db/Mongo/VisitorMapper.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Mappers/Db/Mongo/VisitorMapper.php' => 
   array (
     38 => 
     array (
@@ -502,7 +736,7 @@ $coverage->setData(array (
     ),
     49 => NULL,
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Mappers/Queue/BeanstalkMapper.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Mappers/Queue/BeanstalkMapper.php' => 
   array (
     34 => 
     array (
@@ -564,7 +798,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/AppService.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/AppService.php' => 
   array (
     35 => 
     array (
@@ -598,18 +832,15 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/GeoService.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/GeoService.php' => 
   array (
-    34 => 
-    array (
-    ),
     35 => 
     array (
     ),
     36 => 
     array (
     ),
-    38 => 
+    37 => 
     array (
     ),
     39 => 
@@ -621,7 +852,7 @@ $coverage->setData(array (
     41 => 
     array (
     ),
-    43 => 
+    42 => 
     array (
     ),
     44 => 
@@ -630,21 +861,24 @@ $coverage->setData(array (
     45 => 
     array (
     ),
-    57 => 
+    46 => 
     array (
     ),
     59 => 
     array (
     ),
-    61 => 
-    array (
-    ),
     62 => 
     array (
     ),
-    64 => NULL,
+    64 => 
+    array (
+    ),
+    65 => 
+    array (
+    ),
+    67 => NULL,
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/QueueService.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/QueueService.php' => 
   array (
     35 => 
     array (
@@ -688,7 +922,7 @@ $coverage->setData(array (
     ),
     74 => NULL,
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/SocketService.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/SocketService.php' => 
   array (
     46 => 
     array (
@@ -717,44 +951,47 @@ $coverage->setData(array (
     67 => 
     array (
     ),
-    70 => 
+    68 => 
     array (
     ),
     71 => 
     array (
     ),
-    72 => NULL,
-    73 => 
+    72 => 
     array (
     ),
+    73 => NULL,
     74 => 
     array (
     ),
-    75 => NULL,
-    76 => 
+    75 => 
     array (
     ),
+    76 => NULL,
     77 => 
     array (
     ),
-    79 => 
+    78 => 
     array (
     ),
-    81 => 
+    80 => 
     array (
     ),
     82 => 
     array (
     ),
-    83 => NULL,
-    85 => 
+    83 => 
     array (
     ),
+    84 => NULL,
     86 => 
     array (
     ),
+    87 => 
+    array (
+    ),
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/StorageService.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/StorageService.php' => 
   array (
     35 => 
     array (
@@ -776,30 +1013,7 @@ $coverage->setData(array (
     ),
     56 => NULL,
   ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/System/Messenger.php' => 
-  array (
-    50 => 
-    array (
-    ),
-    51 => NULL,
-    60 => 
-    array (
-    ),
-    61 => NULL,
-    71 => 
-    array (
-    ),
-    72 => NULL,
-    81 => 
-    array (
-    ),
-    82 => NULL,
-    91 => 
-    array (
-    ),
-    92 => NULL,
-  ),
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/System/Tasks/SonarTask.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/System/Tasks/SonarTask.php' => 
   array (
     60 => 
     array (
@@ -856,12 +1070,52 @@ $coverage->setData(array (
   ),
 ));
 $coverage->setTests(array (
-  'Tests\\Octopussy\\Models\\VisitorTest::testInstance' => 
+  'Octopussy\\Tests\\Models\\GeoTest::testInstance' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Tests\\Octopussy\\Models\\VisitorTest::testHasAttributes' => 
+  'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Octopussy\\Tests\\Models\\VisitorTest::testInstance' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Octopussy\\Tests\\System\\MessengerTest::testInstance' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Octopussy\\Tests\\System\\MessengerTest::testStart' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Octopussy\\Tests\\System\\MessengerTest::testOpen' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Octopussy\\Tests\\System\\MessengerTest::testMessage' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Octopussy\\Tests\\System\\MessengerTest::testClose' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Octopussy\\Tests\\System\\MessengerTest::testError' => 
   array (
     'size' => 'unknown',
     'status' => 0,
@@ -875,402 +1129,38 @@ $coverage->setTests(array (
 
 $filter = $coverage->filter();
 $filter->setBlacklistedFiles(array (
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-file-iterator/src/Facade.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-file-iterator/src/Factory.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-file-iterator/src/Iterator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/HHVM.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/PHPDBG.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/Xdebug.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Exception.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Exception/UnintentionallyCoveredCode.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Filter.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Clover.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Crap4j.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Factory.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Dashboard.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Directory.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/File.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/Directory.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/File.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/Iterator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/PHP.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Text.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Directory.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Coverage.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Method.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Report.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Unit.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Node.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Project.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Tests.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Totals.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Util.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-code-coverage/src/CodeCoverage/Util/InvalidArgumentHelper.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-timer/src/Timer.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-token-stream/src/Token.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-token-stream/src/Token/Stream.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-token-stream/src/Token/Stream/CachingFactory.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Exception.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Extensions/GroupTestSuite.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Extensions/PhptTestCase.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Extensions/PhptTestSuite.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Extensions/RepeatedTest.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Extensions/TestDecorator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Extensions/TicketListener.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Assert.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/AssertionFailedError.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/BaseTestListener.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/CodeCoverageException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/And.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/ArrayHasKey.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/ArraySubset.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/Attribute.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/Callback.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/ClassHasAttribute.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/ClassHasStaticAttribute.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/Composite.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/Count.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/Exception.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/ExceptionCode.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/ExceptionMessage.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/ExceptionMessageRegExp.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/FileExists.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/GreaterThan.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/IsAnything.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/IsEmpty.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/IsEqual.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/IsFalse.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/IsIdentical.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/IsInstanceOf.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/IsJson.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/IsNull.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/IsTrue.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/IsType.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/JsonMatches.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/JsonMatches/ErrorMessageProvider.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/LessThan.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/Not.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/ObjectHasAttribute.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/Or.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/PCREMatch.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/SameSize.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/StringContains.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/StringEndsWith.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/StringMatches.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/StringStartsWith.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/TraversableContains.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/TraversableContainsOnly.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Constraint/Xor.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Error.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Error/Deprecated.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Error/Notice.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Error/Warning.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Exception.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/ExceptionWrapper.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/ExpectationFailedException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/IncompleteTest.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/IncompleteTestCase.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/IncompleteTestError.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/InvalidCoversTargetError.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/InvalidCoversTargetException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/OutputError.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/RiskyTest.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/RiskyTestError.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/SelfDescribing.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/SkippedTest.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/SkippedTestCase.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/SkippedTestError.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/SkippedTestSuiteError.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/SyntheticError.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Test.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/TestCase.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/TestFailure.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/TestListener.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/TestResult.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/TestSuite.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/TestSuite/DataProvider.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/UnintentionallyCoveredCodeError.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Framework/Warning.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Runner/BaseTestRunner.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Runner/Exception.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Runner/Filter/Factory.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Runner/Filter/Group.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Runner/Filter/Group/Exclude.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Runner/Filter/Group/Include.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Runner/Filter/Test.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Runner/StandardTestSuiteLoader.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Runner/TestSuiteLoader.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Runner/Version.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/TextUI/Command.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/TextUI/ResultPrinter.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/TextUI/TestRunner.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/Blacklist.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/Configuration.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/ErrorHandler.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/Fileloader.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/Filesystem.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/Filter.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/Getopt.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/GlobalState.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/InvalidArgumentHelper.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/Log/JSON.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/Log/JUnit.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/Log/TAP.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/PHP.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/PHP/Default.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/PHP/Windows.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/Printer.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/Regex.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/String.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/Test.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/TestDox/NamePrettifier.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter/HTML.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter/Text.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/TestSuiteIterator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/Type.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit/src/Util/XML.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Identity.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/InvocationMocker.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Match.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/MethodNameMatch.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Namespace.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/ParametersMatch.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Stub.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/BadMethodCallException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/Exception.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/RuntimeException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation/Object.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation/Static.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/InvocationMocker.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invokable.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/AnyInvokedCount.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/AnyParameters.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/ConsecutiveParameters.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/Invocation.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtIndex.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtLeastCount.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtLeastOnce.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtMostCount.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedCount.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedRecorder.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/MethodName.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/Parameters.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/StatelessInvocation.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/MockBuilder.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/MockObject.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ConsecutiveCalls.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/Exception.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/MatcherCollection.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/Return.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnArgument.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnCallback.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnSelf.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnValueMap.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Verifiable.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpunit/php-text-template/src/Template.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/symfony/yaml/Dumper.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/symfony/yaml/Escaper.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/symfony/yaml/Exception/DumpException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/symfony/yaml/Exception/ExceptionInterface.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/symfony/yaml/Exception/ParseException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/symfony/yaml/Exception/RuntimeException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/symfony/yaml/Inline.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/symfony/yaml/Parser.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/symfony/yaml/Tests/DumperTest.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/symfony/yaml/Tests/InlineTest.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/symfony/yaml/Tests/ParseExceptionTest.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/symfony/yaml/Tests/ParserTest.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/symfony/yaml/Tests/YamlTest.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/symfony/yaml/Unescaper.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/symfony/yaml/Yaml.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/diff/src/Chunk.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/diff/src/Diff.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/diff/src/Differ.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/diff/src/LCS/LongestCommonSubsequence.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/diff/src/LCS/MemoryEfficientLongestCommonSubsequenceImplementation.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/diff/src/LCS/TimeEfficientLongestCommonSubsequenceImplementation.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/diff/src/Line.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/diff/src/Parser.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/environment/src/Console.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/environment/src/Runtime.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/comparator/src/ArrayComparator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/comparator/src/Comparator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/comparator/src/ComparisonFailure.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/comparator/src/DOMNodeComparator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/comparator/src/DateTimeComparator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/comparator/src/DoubleComparator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/comparator/src/ExceptionComparator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/comparator/src/Factory.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/comparator/src/MockObjectComparator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/comparator/src/NumericComparator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/comparator/src/ObjectComparator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/comparator/src/ResourceComparator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/comparator/src/ScalarComparator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/comparator/src/SplObjectStorageComparator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/comparator/src/TypeComparator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/exporter/src/Exporter.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/global-state/src/Blacklist.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/global-state/src/CodeExporter.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/global-state/src/Exception.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/global-state/src/Restorer.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/global-state/src/RuntimeException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/global-state/src/Snapshot.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/recursion-context/src/Context.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/recursion-context/src/Exception.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/recursion-context/src/InvalidArgumentException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/sebastian/version/src/Version.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/composer/ClassLoader.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/composer/autoload_classmap.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/composer/autoload_files.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/composer/autoload_namespaces.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/composer/autoload_psr4.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/composer/autoload_real.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/ExceptionInterface.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/InvalidArgumentException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/UnexpectedValueException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/doctrine/instantiator/src/Doctrine/Instantiator/InstantiatorInterface.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Context.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Description.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Location.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Serializer.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/AuthorTag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/CoversTag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/DeprecatedTag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/ExampleTag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/LinkTag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/MethodTag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/ParamTag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/PropertyReadTag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/PropertyTag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/PropertyWriteTag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/ReturnTag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/SeeTag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/SinceTag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/SourceTag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/ThrowsTag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/UsesTag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/VarTag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/VersionTag.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Type/Collection.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Argument.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Argument/ArgumentsWildcard.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValueToken.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValuesToken.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ArrayCountToken.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ArrayEntryToken.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ArrayEveryEntryToken.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/CallbackToken.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ExactValueToken.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/IdenticalValueToken.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/LogicalAndToken.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/LogicalNotToken.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ObjectStateToken.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/StringContainsToken.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/TokenInterface.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/TypeToken.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Call/Call.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Call/CallCenter.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Comparator/ClosureComparator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Comparator/Factory.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/CachedDoubler.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/ClassPatchInterface.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/DisableConstructorPatch.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/HhvmExceptionPatch.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/KeywordPatch.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/MagicCallPatch.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/ProphecySubjectPatch.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/ReflectionClassNewInstancePatch.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/SplFileInfoPatch.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/TraversablePatch.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/DoubleInterface.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/Doubler.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ClassCodeGenerator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ClassCreator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ClassMirror.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/ArgumentNode.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/ClassNode.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/MethodNode.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ReflectionInterface.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/LazyDouble.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Doubler/NameGenerator.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Call/UnexpectedCallException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/ClassCreatorException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/ClassMirrorException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/ClassNotFoundException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/DoubleException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/DoublerException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/InterfaceNotFoundException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/MethodNotFoundException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/ReturnByReferenceException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Exception.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/InvalidArgumentException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/AggregateException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/FailedPredictionException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/NoCallsException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/PredictionException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/UnexpectedCallsCountException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/UnexpectedCallsException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Prophecy/MethodProphecyException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Prophecy/ObjectProphecyException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Exception/Prophecy/ProphecyException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Prediction/CallPrediction.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Prediction/CallTimesPrediction.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Prediction/CallbackPrediction.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Prediction/NoCallsPrediction.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Prediction/PredictionInterface.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Promise/CallbackPromise.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Promise/PromiseInterface.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Promise/ReturnArgumentPromise.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Promise/ReturnPromise.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Promise/ThrowPromise.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Prophecy/MethodProphecy.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Prophecy/ObjectProphecy.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Prophecy/ProphecyInterface.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Prophecy/ProphecySubjectInterface.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Prophecy/Revealer.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Prophecy/RevealerInterface.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Prophet.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Util/ExportUtil.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/vendor/phpspec/prophecy/src/Prophecy/Util/StringUtil.php' => true,
+  '/Users/stanislavmenshykh/phalcon-devtools/phpunit.phar' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/composer/ClassLoader.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/composer/autoload_classmap.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/composer/autoload_files.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/composer/autoload_namespaces.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/composer/autoload_psr4.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/composer/autoload_real.php' => true,
 ));
 $filter->setWhitelistedFiles(array (
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Applications/Sonar.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractMongoMapper.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractQueueMapper.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/AppServiceException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/BeanstalkMapperException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/GeoServiceException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/QueueServiceException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/SocketServiceException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/StorageServiceException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/VisitorMapperException.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Mappers/Db/Mongo/VisitorMapper.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Mappers/Queue/BeanstalkMapper.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Models/Visitor.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/AppService.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/GeoService.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/QueueService.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/SocketService.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/StorageService.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/System/Messenger.php' => true,
-  '/var/www/backend.local/vendor/stanislav-web/octopussy/src/Octopussy/System/Tasks/SonarTask.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Applications/Sonar.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractBaseException.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractMongoMapper.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractQueueMapper.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/ModelInterface.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/AppServiceException.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/BeanstalkMapperException.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/GeoServiceException.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/MongoMapperException.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/QueueServiceException.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/SocketServiceException.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/StorageServiceException.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Mappers/Db/Mongo/VisitorMapper.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Mappers/Queue/BeanstalkMapper.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Models/Geo.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Models/Visitor.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/AppService.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/GeoService.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/QueueService.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/SocketService.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/StorageService.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/System/Messenger.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/System/Tasks/SonarTask.php' => true,
 ));
 
 return $coverage;

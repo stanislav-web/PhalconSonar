@@ -25,7 +25,8 @@
         config : {
             protocol : 'ws://',
             host: '127.0.0.1',
-            port: 9003
+            port: 9003,
+            route: '/sonar',
         },
 
         /**
@@ -44,7 +45,7 @@
             /**
              * @type {WebSocket}
              */
-            var connect = new WebSocket(this.config.protocol + this.config.host +':'+this.config.port);
+            var connect = new WebSocket(this.config.protocol + this.config.host +':'+this.config.port+''+this.config.route);
 
             // socket connect event
             connect.onOpen = function connectionOpened() {

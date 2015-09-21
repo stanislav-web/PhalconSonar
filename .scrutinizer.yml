@@ -2,7 +2,7 @@ build:
 
     environment:
         php:
-            version: "5.5.25" # Common versions: 5.4.28, 5.5.25check-plataform-packages, or hhvm
+            version: "5.5.25" # Common versions: 5.4.28, 5.5.25, or hhvm
             ini:
                 'date.timezone': 'UTC'
         redis: false

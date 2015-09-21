@@ -1,17 +1,20 @@
-# Octopussy
+# Sonar
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/stanislav-web/Octopussy/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/stanislav-web/Octopussy/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/stanislav-web/Octopussy/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/stanislav-web/Octopussy/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/stanislav-web/Octopussy/badges/build.png?b=master)](https://scrutinizer-ci.com/g/stanislav-web/Octopussy/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/stanislav-web/Sonar/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/stanislav-web/Sonar/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/stanislav-web/Sonar/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/stanislav-web/Sonar/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/stanislav-web/Sonar/badges/build.png?b=master)](https://scrutinizer-ci.com/g/stanislav-web/Sonar/build-status/master)
 
-[![Latest Stable Version](https://poser.pugx.org/stanislav-web/octopussy/v/stable)](https://packagist.org/packages/stanislav-web/octopussy) [![Total Downloads](https://poser.pugx.org/stanislav-web/octopussy/downloads)](https://packagist.org/packages/stanislav-web/octopussy) [![Latest Unstable Version](https://poser.pugx.org/stanislav-web/octopussy/v/unstable)](https://packagist.org/packages/stanislav-web/octopussy) [![License](https://poser.pugx.org/stanislav-web/octopussy/license)](https://packagist.org/packages/stanislav-web/octopussy)
+[![Latest Stable Version](https://poser.pugx.org/stanislav-web/sonar/v/stable)](https://packagist.org/packages/stanislav-web/sonar) [![Total Downloads](https://poser.pugx.org/stanislav-web/sonar/downloads)](https://packagist.org/packages/stanislav-web/sonar) [![Latest Unstable Version](https://poser.pugx.org/stanislav-web/sonar/v/unstable)](https://packagist.org/packages/stanislav-web/sonar) [![License](https://poser.pugx.org/stanislav-web/sonar/license)](https://packagist.org/packages/stanislav-web/sonar)
 
-Octopussy is the site visitors grabber. Build in Phalcon & MongoDb.
+Sonar is the site visitors monitor. Build in Phalcon & MongoDb.
 Conducts monitoring of visitors, using the WebSockets connection. Great for sites built on REST technology.
 You can easily integrate this package to track detailed information about your visitors.
-Check the time on each page of the site, determine device. Future versions will be possible to determine the Geo location.
+Check the time on each page of the site, determine device, geo location.
 
 ## ChangeLog
 
-#### [v1.0-alpha] 2015-10-20
+#### [v1.1-alpha] 2015-09-21
+    - implementing geo location detector
+        
+#### [v1.0-alpha] 2015-09-20
     - the first version of package
     - socket application named as "Sonar"
     - implemented:
@@ -35,7 +38,7 @@ Check the time on each page of the site, determine device. Future versions will 
 First update your dependencies through composer. Add to your composer.json:
 ```php
 "require": {
-    "stanislav-web/octopussy": "dev-master",
+    "stanislav-web/sonar": "dev-master",
 }
 ```
 Then run to update dependency and autoloader
@@ -45,7 +48,7 @@ php composer.phar install
 ```
 or just
 ```
-php composer.phar require stanislav-web/octopussy dev-master
+php composer.phar require stanislav-web/sonar dev-master
 ```
 _(Do not forget to include the composer autoloader)_
 
@@ -61,31 +64,41 @@ if you will be making their to global application config. See example:
 
     'cli' => [
 
-        // "Sonar task"
+        // Sonar task configuration
         'sonar' =>  [
+            'debug'     =>   true,  // verbose mode
+            'errors'    =>   true,  // add errors to logfile
+            'cache'     =>   true,  // enable cache
+            'errorLog'  =>   APP_PATH.'/../logs/sonar-error.log',
 
-            // task event log
-            'logfile'  =>   APP_PATH.'/../logs/octopussy-event.log',
-
-            // queue server config
+            // queue client configurations
             'beanstalk'        =>  [
                 'host'  =>  '127.0.0.1',
                 'port'  =>  11300,
             ],
 
-            // webscoket server config
+            // webscoket server configuration
             'socket'        =>  [
                 'host'  =>  '127.0.0.1',
-                'port'  =>  9001,
+                'port'  =>  9003,
             ],
 
-            // persistent storage (MongoDb only, MySQL in future...)
+            // memcache server configuration
+            'cache'     =>  [
+                'lifetime'      => 300,
+                'prefix'        => 'sonar_',
+                'host'          => '127.0.0.1',
+                'port'          => 11211,
+                'persistent'    => false,
+            ],
+
+            // db storage configuration (Mongo)
             'storage'       =>  [
                 'host'      =>  '127.0.0.1',
                 'port'      =>  27017,
                 'user'      =>  'root',
                 'password'  =>  'root',
-                'dbname'    =>  'octopussy',
+                'dbname'    =>  'sonar',
             ]
         ]
     ];
@@ -98,7 +111,7 @@ if you will be making their to global application config. See example:
     $loader = new \Phalcon\Loader();
     $loader->registerDirs([
         ...
-        DOCUMENT_ROOT.'vendor/stanislav-web/octopussy/src/Octopussy/System/Tasks'
+        DOCUMENT_ROOT.'vendor/stanislav-web/sonar/src/Sonar/System/Tasks'
         ...
     ]);
 ```
@@ -107,13 +120,20 @@ if you will be making their to global application config. See example:
 ```
 php public/cli.php sonar
 ```
-_(examples of client connect you can see [here](https://github.com/stanislav-web/Octopussy/tree/master/examples))_
+_(examples of client connect you can see [here](https://github.com/stanislav-web/Sonar/tree/master/examples))_
 
 ## Unit Test
 Also available in /phpunit directory. Run command to start
 ```php
 phpunit --configuration phpunit.xml.dist --coverage-text
+
+or from your project root: 
+
+phpunit --configuration ./vendor/stanislav-web/sonar/phpunit.xml.dist --coverage-text
 ```
+
+## In Future
+- More examples
 
 ## Documents
 + [Phalcon Queueing](http://docs.phalconphp.com/ru/latest/index.html)
@@ -121,4 +141,4 @@ phpunit --configuration phpunit.xml.dist --coverage-text
 + [Asynchronous WebSocket server](http://socketo.me/)
 + [Mobile Detect](http://mobiledetect.net/)
 
-##[Issues](https://github.com/stanislav-web/octopussy/issues "Issues")
+##[Issues](https://github.com/stanislav-web/sonar/issues "Issues")
