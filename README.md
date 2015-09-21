@@ -116,6 +116,10 @@ _(examples of client connect you can see [here](https://github.com/stanislav-web
 Also available in /phpunit directory. Run command to start
 ```php
 phpunit --configuration phpunit.xml.dist --coverage-text
+
+or from your project root: 
+
+phpunit --configuration ./vendor/stanislav-web/octopussy/phpunit.xml.dist --coverage-text
 ```
 
 ## In Future
