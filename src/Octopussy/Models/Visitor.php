@@ -53,6 +53,13 @@ class Visitor implements ModelInterface {
     private $language;
 
     /**
+     * User defined location
+     *
+     * @var array $location
+     */
+    private $location = [];
+
+    /**
      * User OS type
      *
      * @var string $platform
@@ -119,13 +126,14 @@ class Visitor implements ModelInterface {
         $this->detector = new Mobile_Detect();
 
         // validate client data
-        $this->setPage($data['page'])
-                    ->setIp($data['ip'])
-                        ->setOpenTime($data['open'])
-                            ->setCloseTime($data['close'])
-                                ->setLanguage($data['language'])
-                                    ->setUa($data['ua'])
-                                        ->deviceDetect();
+        $this->setPage($data['page']);
+        $this->setIp($data['ip']);
+        $this->setUa($data['ua']);
+        $this->setLocation($data['location']);
+        $this->setOpenTime($data['open']);
+        $this->setCloseTime($data['close']);
+        $this->setLanguage($data['language']);
+        $this->deviceDetect();
     }
 
     /**
@@ -228,23 +236,6 @@ class Visitor implements ModelInterface {
 //    }
 
     /**
-     * Detect client device
-     *
-     * @return Visitor
-     */
-    private function deviceDetect()
-    {
-        $this->mobile   = (int)$this->detector->isMobile();
-        $this->tablet   = (int)$this->detector->isTablet();
-
-        if ($this->mobile === 0 && $this->tablet === 0) {
-            $this->pc = 1;
-        }
-
-        return $this;
-    }
-
-    /**
      * Set user browser
      *
      * @return Visitor
@@ -266,6 +257,35 @@ class Visitor implements ModelInterface {
     private function setPlatform($platform)
     {
         $this->platform = $platform;
+
+        return $this;
+    }
+
+    /**
+     * Set location
+     *
+     * @return Visitor
+     */
+    private function setLocation(array $location)
+    {
+        $this->location = $location;
+
+        return $this;
+    }
+
+    /**
+     * Detect client device
+     *
+     * @return Visitor
+     */
+    private function deviceDetect()
+    {
+        $this->mobile   = (int)$this->detector->isMobile();
+        $this->tablet   = (int)$this->detector->isTablet();
+
+        if ($this->mobile === 0 && $this->tablet === 0) {
+            $this->pc = 1;
+        }
 
         return $this;
     }

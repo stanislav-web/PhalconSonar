@@ -130,8 +130,6 @@ class Sonar implements MessageComponentInterface {
             ]);
         });
 
-
-        print_r($data); exit;
         // save data to storage
         $this->storageService->add($data);
 
