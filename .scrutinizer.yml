@@ -10,14 +10,14 @@ build:
     dependencies:
 
         before:
-            - composer install --prefer-dist -o
-            - git clone -q --depth=1 https://github.com/phalcon/cphalcon.git -b master
+            #- composer install --prefer-dist -o
+            #- git clone -q --depth=1 https://github.com/phalcon/cphalcon.git -b master
             - cd cphalcon/ext; export CFLAGS="-g3 -O1 -fno-delete-null-pointer-checks -Wall"; phpize && ./configure --enable-phalcon && make -j4 && sudo make install && sed -i '$ a \\n[Phalcon]\nextension=phalcon.so\n'  /home/scrutinizer/.phpenv/versions/5.5.25/etc/php.ini
-            - cd /home/scrutinizer/build
+            #- cd /home/scrutinizer/build
 
 filter:
     paths: [src/*]
-    excluded_paths: [build/*, examples/*, phpunit/*, vendor/*]
+    excluded_paths: [build/*, phpunit/*, vendor/*]
 
 tools:
     php_sim: true
@@ -28,16 +28,15 @@ tools:
             - php
         excluded_dirs:
             - build
-            - examples
             - phpunit
             - vendor
 
-    php_code_coverage: true
+    php_code_coverage: false
 
     php_analyzer:
         enabled: true
         filter:
-            excluded_paths: [build/*, examples/*, phpunit/*, vendor/*]
+            excluded_paths: [build/*, phpunit/*, vendor/*]
         extensions:
             - php
 
@@ -49,7 +48,7 @@ tools:
         extensions:
             - php
         filter:
-           excluded_paths: [build/*, examples/*, phpunit/*, vendor/*]
+           excluded_paths: [build/*, phpunit/*, vendor/*]
 
     php_cs_fixer:
         enabled: true
