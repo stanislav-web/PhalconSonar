@@ -47,7 +47,7 @@ class SonarTask extends Task
      *
      * @var \Phalcon\Logger\Adapter\File $logger
      */
-    private $logger;
+    private $logger = null;
 
     /**
      * Setup current task configurations
@@ -82,7 +82,11 @@ class SonarTask extends Task
      */
     private function setLogger() {
 
-        $this->logger = new FileAdapter($this->getConfig()->errorLog);
+        $config = $this->getConfig();
+
+        if($config->offsetExists('errors') === true && $config->errors === true) {
+            $this->logger = new FileAdapter($this->getConfig()->errorLog);
+        }
 
         return $this;
     }
@@ -116,7 +120,11 @@ class SonarTask extends Task
         catch(AppServiceException $e) {
 
             echo Color::colorize($e->getMessage(), Color::FG_RED, Color::AT_BOLD).PHP_EOL;
-            $this->getLogger()->log($e->getMessage(), Logger::CRITICAL);
+
+            if($this->logger != null) {
+                // logging all error exceptions
+                $this->getLogger()->log($e->getMessage(), Logger::CRITICAL);
+            }
         }
     }
 }

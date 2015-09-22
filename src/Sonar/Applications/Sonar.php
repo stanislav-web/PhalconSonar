@@ -1,16 +1,14 @@
 <?php
 namespace Sonar\Applications;
 
-use Sonar\Services\GeoService;
 use Ratchet\MessageComponentInterface;
 use Ratchet\ConnectionInterface;
+use Sonar\Services\GeoService;
 use Sonar\Services\StorageService;
 use Sonar\Services\QueueService;
 use Sonar\System\Messenger;
 use Sonar\Exceptions\AppServiceException;
 
-error_reporting(E_ALL & ~E_WARNING);
-ini_set('display_errors', 'On');
 
 /**
  * Class Sonar. App receiver
@@ -38,6 +36,13 @@ class Sonar implements MessageComponentInterface {
      * @var \Sonar\Services\StorageService $storageService
      */
     private $storageService;
+
+    /**
+     * Db Storage service
+     *
+     * @var \Sonar\Services\StorageService $cacheService
+     */
+    private $cacheService;
 
     /**
      * Queue service

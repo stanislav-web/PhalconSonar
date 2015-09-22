@@ -8,6 +8,8 @@ use Sonar\Exceptions\AppServiceException;
 use Sonar\Exceptions\SocketServiceException;
 use Ratchet\App as AppServer;
 
+ini_set('display_errors', 'On');
+error_reporting(7);
 /**
  * Class SocketService. Client bridge service for locate incoming messages
  *
@@ -57,15 +59,22 @@ class SocketService {
 
             try {
 
+                // initialize socket server
                 $this->server = new AppServer($this->config->socket->host, $this->config->socket->port);
 
-                $this->server->route('/sonar', new Sonar(
+                // create application with dependencies
+                $app = new Sonar(
                     new StorageService($this->config->storage),
                     new QueueService($this->config->beanstalk),
                     new GeoService()
-                ), ['*']);
+                );
 
+                if($this->config->offsetExists('cache') === true && $config->cache === true) {
+                    // wrap application to cache
+                    $app = (new CacheService($this->config->memcache))->addApplication($app);
+                }
 
+                $this->server->route('/sonar', $app, ['*']);
             }
             catch(QueueServiceException $e) {
                 throw new AppServiceException($e->getMessage());

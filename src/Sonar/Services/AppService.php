@@ -38,6 +38,9 @@ class AppService {
                 throw new AppServiceException('There is no option `socket` in your configurations');
             }
 
+            if($config->offsetExists('debug') === true) {
+                define('VERBOSE', $config->debug);
+            }
             $this->socketService = new SocketService($config);
         }
     }

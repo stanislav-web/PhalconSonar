@@ -11,6 +11,9 @@ Check the time on each page of the site, determine device, geo location.
 
 ## ChangeLog
 
+#### [v1.2-alpha] 2015-09-22
+    - configurable error log
+
 #### [v1.1-alpha] 2015-09-21
     - implementing geo location detector
         
@@ -84,7 +87,7 @@ if you will be making their to global application config. See example:
             ],
 
             // memcache server configuration
-            'cache'     =>  [
+            'memcache'     =>  [
                 'lifetime'      => 300,
                 'prefix'        => 'sonar_',
                 'host'          => '127.0.0.1',
