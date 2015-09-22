@@ -27,7 +27,6 @@ abstract class AbstractQueueMapper {
      * Read message
      *
      * @param array $credentials
-     * @param callable $callback
      */
     abstract public function read(array $credentials);
 }

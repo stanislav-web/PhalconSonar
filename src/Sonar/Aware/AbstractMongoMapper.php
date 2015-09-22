@@ -70,7 +70,7 @@ abstract class AbstractMongoMapper {
     /**
      * Set using collection
      *
-     * @return \Sonar\Aware\AbstractMapperBase
+     * @return \Sonar\Aware\AbstractMongoMapper
      */
     protected function setCollection() {
 

@@ -28,11 +28,11 @@ abstract class AbstractBaseException extends \RuntimeException {
      * Constructor
      *
      * @param string $message
-     * @param string $code status code
+     * @param string $exception child exception
      */
-    public function __construct($message, $except) {
+    public function __construct($message, $exception) {
 
-        $message = $except.self::DELIMITER.$message; // use as late state binding
+        $message = $exception.self::DELIMITER.$message; // use as late state binding
         parent::__construct($message, self::CODE);
     }
 }
