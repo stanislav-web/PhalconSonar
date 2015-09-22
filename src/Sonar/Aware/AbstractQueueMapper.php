@@ -19,7 +19,7 @@ abstract class AbstractQueueMapper {
      *
      * @param string $data
      * @param array $options optional task config
-     * @return null
+     * @return string|bool
      */
     abstract public function put($data, array $options = []);
 
@@ -27,6 +27,7 @@ abstract class AbstractQueueMapper {
      * Read message
      *
      * @param array $credentials
+     * @return array
      */
     abstract public function read(array $credentials);
 }

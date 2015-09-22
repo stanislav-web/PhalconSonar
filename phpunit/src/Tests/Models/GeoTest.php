@@ -11,7 +11,7 @@ use Sonar\Models\Geo;
  * @subpackage Sonar\Tests
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Sonar/Models/GeoTest.php
+ * @filesource /Tests/Models/GeoTest.php
  */
 class GeoTest extends \PHPUnit_Framework_TestCase {
 

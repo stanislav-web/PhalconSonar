@@ -48,7 +48,7 @@ class Geo implements ModelInterface {
     /**
      * Country
      *
-     * @var string $country
+     * @var \Geocoder\Model\Country $country
      */
     private $country = '';
 

@@ -46,13 +46,11 @@ abstract class AbstractMongoMapper {
      */
     public function __construct(\Phalcon\Config $config) {
 
-        $uri = "mongodb://".$config['user'].":".$config['password']."@".$config['host'].":".$config['port']."/".$config['dbname'];
-
         try {
 
             if (!$this->db) {
                 // init client
-                $this->client = new \MongoClient($uri);
+                $this->client = new \MongoClient($this->getConnectUri($config));
 
                 // select database
                 $this->db = $this->client->selectDB($config['dbname']);
@@ -64,6 +62,22 @@ abstract class AbstractMongoMapper {
         }
         catch (\MongoConnectionException $e) {
             throw new MongoMapperException($e->getMessage());
+        }
+    }
+
+    /**
+     * Get mongo connection URI
+     *
+     * @param \Phalcon\Config $config
+     * @return string
+     */
+    private function getConnectUri(\Phalcon\Config $config) {
+
+        if($config->offsetExists('user') && $config->offsetExists('password')) {
+            return "mongodb://".$config['user'].":".$config['password']."@".$config['host'].":".$config['port']."/".$config['dbname'];
+        }
+        else {
+            return "mongodb://".$config['host'].":".$config['port']."/".$config['dbname'];
         }
     }
 
@@ -87,12 +101,4 @@ abstract class AbstractMongoMapper {
      * @return \MongoId
      */
     abstract public function add(array $data);
-
-    /**
-     * Remove records from collection
-     *
-     * @param array $criteria
-     * @throws \Sonar\Exceptions\MongoMapperException
-     */
-    abstract public function remove(array $criteria);
 }

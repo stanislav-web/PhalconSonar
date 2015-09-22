@@ -7,7 +7,7 @@ namespace Sonar\Mockups;
  * @package Sonar\Mockups
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Sonar/Mockups/VisitorMockup.php
+ * @filesource /Mockups/VisitorMockup.php
  */
 class VisitorMockup {
 

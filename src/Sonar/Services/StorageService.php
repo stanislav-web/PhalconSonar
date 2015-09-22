@@ -32,7 +32,13 @@ class StorageService {
      */
     public function __construct(\Phalcon\Config $config) {
 
-        $this->visitorMapper = new VisitorMapper($config);
+        try {
+            // add user data
+            $this->visitorMapper = new VisitorMapper($config);
+        }
+        catch(MongoMapperException $e) {
+            throw new StorageServiceException($e->getMessage());
+        }
     }
 
     /**

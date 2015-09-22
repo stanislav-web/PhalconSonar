@@ -3,13 +3,14 @@ namespace Sonar\Applications;
 
 use Ratchet\MessageComponentInterface;
 use Ratchet\ConnectionInterface;
+use Sonar\Exceptions\SocketServiceException;
+use Sonar\Services\CacheService;
 use Sonar\Services\GeoService;
 use Sonar\Services\StorageService;
 use Sonar\Services\QueueService;
 use Sonar\System\Messenger;
 use Sonar\Exceptions\AppServiceException;
-
-
+use Phalcon\Http\Response\Headers;
 /**
  * Class Sonar. App receiver
  *
@@ -38,13 +39,6 @@ class Sonar implements MessageComponentInterface {
     private $storageService;
 
     /**
-     * Db Storage service
-     *
-     * @var \Sonar\Services\StorageService $cacheService
-     */
-    private $cacheService;
-
-    /**
      * Queue service
      *
      * @var \Sonar\Services\QueueService $queueService
@@ -59,18 +53,31 @@ class Sonar implements MessageComponentInterface {
     private $geoService;
 
     /**
+     * Implemented cache
+     *
+     * @var null|\Sonar\Services\CacheService $cacheService
+     */
+    private $cacheService;
+
+    /**
      * Initialize client's storage
      *
      * @param StorageService $storageService
      * @param QueueService   $queueService
      * @param GeoService     $geoService
+     * @param CacheService|null   $cacheService
      */
-    public function __construct(StorageService $storageService, QueueService $queueService, GeoService $geoService) {
+    public function __construct(
+        StorageService $storageService,
+        QueueService $queueService,
+        GeoService $geoService,
+        CacheService $cacheService = null) {
 
         $this->clients = new \SplObjectStorage;
         $this->storageService = $storageService;
         $this->queueService = $queueService;
         $this->geoService = $geoService;
+        $this->cacheService = $cacheService;
 
         echo Messenger::start();
     }
@@ -84,6 +91,7 @@ class Sonar implements MessageComponentInterface {
 
         // store the new connection
         $this->clients->attach($conn);
+
         echo Messenger::open($this->getIpAddress($conn));
     }
 
@@ -150,9 +158,11 @@ class Sonar implements MessageComponentInterface {
      */
     public function onError(ConnectionInterface $conn, \Exception $e) {
 
-        try {}
+        try {
+            throw new \Exception($e->getMessage());
+        }
         catch(\Exception $e) {
-            throw new AppServiceException(Messenger::error($e->getMessage()));
+            throw new SocketServiceException(Messenger::error($e->getMessage()));
         }
         finally {
             $conn->close();
@@ -223,7 +233,22 @@ class Sonar implements MessageComponentInterface {
 
         if($conn->WebSocket instanceof \StdClass) {
 
-            $location = $this->geoService->location($this->getIpAddress($conn));
+            if(($cache = $this->cacheService) != null) {
+
+                $ip = $this->getIpAddress($conn);
+
+                // load geo location from cache
+                if($cache->getStorage()->exists($ip) === true) {
+                    $location = $cache->getStorage()->get($ip);
+                }
+
+                // add to cache geo location
+                $cache->getStorage()->save($ip, $this->geoService->location($ip));
+            }
+            else {
+                $location = $this->geoService->location($this->getIpAddress($conn));
+            }
+
             return $location;
         }
         throw new AppServiceException('Language not defined');

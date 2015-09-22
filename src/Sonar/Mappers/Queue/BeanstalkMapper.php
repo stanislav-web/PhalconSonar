@@ -26,7 +26,7 @@ class BeanstalkMapper extends AbstractQueueMapper {
     /**
      * Implement configurations
      *
-     * @param array $config
+     * @param null|array $config
      * @throws \Sonar\Exceptions\BeanstalkMapperException
      */
     public function __construct(array $config = null) {
@@ -47,7 +47,7 @@ class BeanstalkMapper extends AbstractQueueMapper {
      *
      * @param string $message
      * @param array $options optional task config
-     * @return null
+     * @return string|bool
      */
     public function put($message, array $options = []) {
 
@@ -61,6 +61,7 @@ class BeanstalkMapper extends AbstractQueueMapper {
      *
      * @param array $credentials
      * @throws \Sonar\Exceptions\BeanstalkMapperException
+     * @return array
      */
     public function read(array $credentials)
     {

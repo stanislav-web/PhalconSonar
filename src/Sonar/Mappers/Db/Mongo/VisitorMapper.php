@@ -47,12 +47,4 @@ class VisitorMapper extends AbstractMongoMapper {
             throw new MongoMapperException($e->getMessage());
         }
     }
-
-    /**
-     * Remove records from collection
-     *
-     * @param array $criteria
-     * @throws \Sonar\Exceptions\MongoMapperException
-     */
-    public function remove(array $criteria) {}
 }

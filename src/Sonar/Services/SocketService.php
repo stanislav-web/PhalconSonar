@@ -1,15 +1,17 @@
 <?php
 namespace Sonar\Services;
 
-use Sonar\Exceptions\QueueServiceException;
 use React\Socket\ConnectionException;
+use Ratchet\App as AppServer;
 use Sonar\Applications\Sonar;
+use Sonar\Exceptions\QueueServiceException;
 use Sonar\Exceptions\AppServiceException;
 use Sonar\Exceptions\SocketServiceException;
-use Ratchet\App as AppServer;
+use Sonar\Exceptions\StorageServiceException;
+use Sonar\Exceptions\CacheServiceException;
 
 ini_set('display_errors', 'On');
-error_reporting(7);
+error_reporting(E_ALL);
 /**
  * Class SocketService. Client bridge service for locate incoming messages
  *
@@ -66,14 +68,9 @@ class SocketService {
                 $app = new Sonar(
                     new StorageService($this->config->storage),
                     new QueueService($this->config->beanstalk),
-                    new GeoService()
+                    new GeoService(),
+                    ($this->config->offsetExists('cache') === true && $this->config->cache === true) ? new CacheService($this->config->memcache) : null
                 );
-
-                if($this->config->offsetExists('cache') === true && $config->cache === true) {
-                    // wrap application to cache
-                    $app = (new CacheService($this->config->memcache))->addApplication($app);
-                }
-
                 $this->server->route('/sonar', $app, ['*']);
             }
             catch(QueueServiceException $e) {
@@ -82,9 +79,13 @@ class SocketService {
             catch(ConnectionException $e) {
                 throw new SocketServiceException($e->getMessage());
             }
-            catch (\RuntimeException $e) {
-                throw new SocketServiceException($e->getMessage());
+            catch(StorageServiceException $e) {
+                throw new AppServiceException($e->getMessage());
             }
+            catch(CacheServiceException $e) {
+                throw new AppServiceException($e->getMessage());
+            }
+
         }
 
         if(isset($this->config->storage) === false) {

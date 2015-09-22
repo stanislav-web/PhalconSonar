@@ -5,11 +5,40 @@
     <title>Socket client test</title>
 </head>
 <body>
-<h1>Look into browser console</h1>
+<h1>WebSocket Test</h1>
+<h3>Look into browser console</h3>
+<div id="output"></div>
 <button onclick="Socket.send(document.URL);">Send page</button>
+
 <script>
     "use strict";
 
+    window.addEventListener("load", init, false);
+    document.cookie="username=John Doe; expires=Thu, 18 Dec 2016 12:00:00 UTC; path=/";
+
+    /**
+     * <!-- Use only for test connection -->
+     */
+    var output;
+
+    function init() {
+        output = document.getElementById("output");
+    }
+
+    function writeToScreen(message) {
+        var pre = document.createElement("p");
+        pre.style.wordWrap = "break-word";
+        pre.innerHTML = message;
+        output.appendChild(pre);
+    }
+
+    /**
+     * <!-- Use only for test connection -->
+     */
+
+    /**
+     *  Using for production
+     */
     var Socket = {
 
         /**
@@ -48,18 +77,27 @@
             var connect = new WebSocket(this.config.protocol + this.config.host +':'+this.config.port+''+this.config.route);
 
             // socket connect event
-            connect.onOpen = function connectionOpened() {
+            connect.onopen = function connectionOpened() {
+                writeToScreen('[SOCKET] Open connect');
                 console.info('[SOCKET] Open connect');
             };
 
             // socket message event
-            connect.onMessage = function messageReceived(message) {
+            connect.onmessage = function messageReceived(message) {
+                writeToScreen('<span style="color: blue;">[SOCKET] Send: ' + message.data+'</span>')
                 console.info('[SOCKET] Send', message.data);
             };
 
             // socket close event
-            connect.onClose = function() {
+            connect.onclose = function() {
+                writeToScreen('[SOCKET] Close');
                 console.info('[SOCKET] Close');
+            };
+
+            // socket error event
+            connect.onerror = function(event) {
+                writeToScreen('<span style="color: red;">[SOCKET] Error:</span> ' + event.data);
+                console.info('[SOCKET] Error: '+event.data);
             };
 
             this.connect = connect;

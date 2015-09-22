@@ -14,6 +14,7 @@ Check the time on each page of the site, determine device, geo location.
 #### [v1.2-alpha] 2015-09-22
     - configurable error log
     - add cache session (memcache)
+    - silent error logger (warnings & noticies)
 
 #### [v1.1-alpha] 2015-09-21
     - implementing geo location detector
@@ -138,6 +139,7 @@ phpunit --configuration ./vendor/stanislav-web/sonar/phpunit.xml.dist --coverage
 
 ## In Future
 - More examples
+- Output working
 
 ## Documents
 + [Phalcon Queueing](http://docs.phalconphp.com/ru/latest/index.html)

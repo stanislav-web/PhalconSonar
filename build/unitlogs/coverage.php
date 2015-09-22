@@ -1,454 +1,451 @@
 <?php
 $coverage = new PHP_CodeCoverage;
 $coverage->setData(array (
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/ModelInterface.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/ModelInterface.php' => 
   array (
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Models/Geo.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Models/Geo.php' => 
   array (
     77 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     78 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     79 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     80 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     81 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     82 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     83 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     93 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     94 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     95 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     96 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     98 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     99 => NULL,
     109 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     110 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     111 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     113 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     115 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     116 => NULL,
     126 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     128 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     129 => NULL,
     139 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     141 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     142 => NULL,
     152 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     154 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     155 => NULL,
     165 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     167 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     168 => NULL,
     177 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     179 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     180 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     181 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     182 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     183 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     185 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     186 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Models/Visitor.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Models/Visitor.php' => 
   array (
     126 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     129 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     130 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     131 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     132 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     133 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     134 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     135 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     136 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     137 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     147 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     149 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     150 => NULL,
     160 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     162 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     163 => NULL,
     173 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     175 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     176 => NULL,
     186 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     188 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     189 => NULL,
     198 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     200 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     201 => NULL,
     210 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     213 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     215 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     216 => NULL,
-    245 => 
+    225 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
-    246 => 
+    226 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
-    247 => 
+    227 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
-    249 => 
+    229 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
-    250 => NULL,
-    259 => 
+    230 => NULL,
+    239 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
-    261 => 
+    241 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
-    262 => NULL,
-    271 => 
+    242 => NULL,
+    251 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
-    273 => 
+    253 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
-    274 => NULL,
+    254 => NULL,
+    263 => 
+    array (
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    264 => 
+    array (
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    266 => 
+    array (
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    267 => 
+    array (
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    268 => 
+    array (
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    270 => 
+    array (
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    271 => NULL,
+    280 => 
+    array (
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    282 => 
+    array (
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
     283 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     284 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    285 => 
+    array (
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     286 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    287 => 
-    array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
     288 => 
     array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
+      0 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
-    290 => 
-    array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    291 => NULL,
-    320 => 
-    array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    322 => 
-    array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    323 => 
-    array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    324 => 
-    array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    325 => 
-    array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    326 => 
-    array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    328 => 
-    array (
-      0 => 'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    329 => NULL,
+    289 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/System/Messenger.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/System/Messenger.php' => 
   array (
-    50 => 
+    51 => 
     array (
-      0 => 'Octopussy\\Tests\\System\\MessengerTest::testStart',
+      0 => 'Sonar\\Tests\\System\\MessengerTest::testStart',
     ),
-    51 => NULL,
-    60 => 
+    52 => NULL,
+    62 => 
     array (
-      0 => 'Octopussy\\Tests\\System\\MessengerTest::testOpen',
+      0 => 'Sonar\\Tests\\System\\MessengerTest::testOpen',
     ),
-    61 => NULL,
-    71 => 
+    63 => NULL,
+    74 => 
     array (
-      0 => 'Octopussy\\Tests\\System\\MessengerTest::testMessage',
+      0 => 'Sonar\\Tests\\System\\MessengerTest::testMessage',
     ),
-    72 => NULL,
-    81 => 
+    75 => NULL,
+    85 => 
     array (
-      0 => 'Octopussy\\Tests\\System\\MessengerTest::testClose',
+      0 => 'Sonar\\Tests\\System\\MessengerTest::testClose',
     ),
-    82 => NULL,
-    91 => 
+    86 => NULL,
+    96 => 
     array (
-      0 => 'Octopussy\\Tests\\System\\MessengerTest::testError',
+      0 => 'Sonar\\Tests\\System\\MessengerTest::testError',
     ),
-    92 => NULL,
+    97 => NULL,
+    105 => 
+    array (
+      0 => 'Sonar\\Tests\\System\\MessengerTest::testStart',
+      1 => 'Sonar\\Tests\\System\\MessengerTest::testOpen',
+      2 => 'Sonar\\Tests\\System\\MessengerTest::testMessage',
+      3 => 'Sonar\\Tests\\System\\MessengerTest::testClose',
+      4 => 'Sonar\\Tests\\System\\MessengerTest::testError',
+    ),
+    106 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Applications/Sonar.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Applications/Sonar.php' => 
   array (
-    12 => 
+    76 => 
     array (
     ),
-    13 => 
+    77 => 
     array (
     ),
-    65 => 
+    78 => 
     array (
     ),
-    66 => 
+    79 => 
     array (
     ),
-    67 => 
-    array (
-    ),
-    68 => 
-    array (
-    ),
-    70 => 
-    array (
-    ),
-    71 => 
-    array (
-    ),
-    81 => 
+    80 => 
     array (
     ),
     82 => 
@@ -457,68 +454,71 @@ $coverage->setData(array (
     83 => 
     array (
     ),
-    94 => 
+    93 => 
     array (
     ),
     95 => 
     array (
     ),
-    96 => NULL,
-    102 => 
-    array (
-    ),
-    103 => 
-    array (
-    ),
-    104 => 
-    array (
-    ),
-    105 => 
-    array (
-    ),
-    106 => 
+    96 => 
     array (
     ),
     107 => 
     array (
     ),
+    108 => 
+    array (
+    ),
+    109 => NULL,
+    115 => 
+    array (
+    ),
+    116 => 
+    array (
+    ),
     117 => 
+    array (
+    ),
+    118 => 
+    array (
+    ),
+    119 => 
     array (
     ),
     120 => 
     array (
     ),
-    122 => 
-    array (
-    ),
-    125 => 
-    array (
-    ),
-    126 => 
-    array (
-    ),
-    127 => 
-    array (
-    ),
-    128 => 
-    array (
-    ),
-    129 => 
-    array (
-    ),
     130 => 
     array (
     ),
-    131 => 
+    133 => 
     array (
     ),
-    134 => 
+    135 => 
     array (
     ),
-    136 => 
+    138 => 
     array (
     ),
-    137 => 
+    139 => 
+    array (
+    ),
+    140 => 
+    array (
+    ),
+    141 => 
+    array (
+    ),
+    142 => 
+    array (
+    ),
+    143 => 
+    array (
+    ),
+    144 => 
+    array (
+    ),
+    147 => 
     array (
     ),
     149 => 
@@ -527,75 +527,101 @@ $coverage->setData(array (
     150 => 
     array (
     ),
-    152 => 
+    162 => 
     array (
     ),
-    153 => NULL,
-    154 => NULL,
-    155 => 
+    164 => 
     array (
     ),
-    166 => 
+    165 => 
     array (
     ),
-    167 => 
-    array (
-    ),
-    169 => 
-    array (
-    ),
+    167 => NULL,
+    168 => NULL,
+    169 => NULL,
     170 => NULL,
-    171 => 
+    181 => 
     array (
     ),
-    172 => NULL,
-    183 => 
+    182 => 
     array (
     ),
-    185 => 
+    184 => 
     array (
     ),
-    187 => 
+    185 => NULL,
+    186 => 
     array (
     ),
-    188 => NULL,
-    189 => 
+    187 => NULL,
+    198 => 
     array (
     ),
-    190 => NULL,
-    201 => 
+    200 => 
     array (
     ),
     202 => 
     array (
     ),
-    203 => 
+    203 => NULL,
+    204 => 
     array (
     ),
-    205 => 
+    205 => NULL,
+    216 => 
     array (
     ),
-    206 => NULL,
-    207 => 
+    217 => 
     array (
     ),
-    208 => NULL,
-    219 => 
+    218 => 
     array (
     ),
-    223 => 
+    220 => 
     array (
     ),
-    224 => 
+    221 => NULL,
+    222 => 
     array (
     ),
-    225 => NULL,
-    226 => 
+    223 => NULL,
+    234 => 
     array (
     ),
-    227 => NULL,
+    236 => 
+    array (
+    ),
+    238 => 
+    array (
+    ),
+    241 => 
+    array (
+    ),
+    242 => 
+    array (
+    ),
+    243 => 
+    array (
+    ),
+    246 => 
+    array (
+    ),
+    247 => 
+    array (
+    ),
+    249 => 
+    array (
+    ),
+    252 => 
+    array (
+    ),
+    253 => NULL,
+    254 => 
+    array (
+    ),
+    255 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractBaseException.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractBaseException.php' => 
   array (
     35 => 
     array (
@@ -607,110 +633,55 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractMongoMapper.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractMongoMapper.php' => 
   array (
-    49 => 
+    51 => 
     array (
     ),
     53 => 
     array (
     ),
-    55 => 
+    56 => 
     array (
     ),
-    58 => 
+    57 => 
     array (
     ),
-    59 => 
+    60 => 
     array (
     ),
-    62 => 
+    63 => 
     array (
     ),
-    65 => 
+    64 => 
     array (
     ),
     66 => 
     array (
     ),
-    68 => 
+    76 => 
     array (
     ),
     77 => 
     array (
     ),
-    79 => 
+    78 => NULL,
+    80 => 
     array (
     ),
-    80 => NULL,
+    82 => NULL,
+    91 => 
+    array (
+    ),
+    93 => 
+    array (
+    ),
+    94 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractQueueMapper.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractQueueMapper.php' => 
   array (
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/AppServiceException.php' => 
-  array (
-    29 => 
-    array (
-    ),
-    30 => 
-    array (
-    ),
-  ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/BeanstalkMapperException.php' => 
-  array (
-    27 => 
-    array (
-    ),
-    28 => 
-    array (
-    ),
-  ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/GeoServiceException.php' => 
-  array (
-    27 => 
-    array (
-    ),
-    28 => 
-    array (
-    ),
-  ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/MongoMapperException.php' => 
-  array (
-    27 => 
-    array (
-    ),
-    28 => 
-    array (
-    ),
-  ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/QueueServiceException.php' => 
-  array (
-    29 => 
-    array (
-    ),
-    30 => 
-    array (
-    ),
-  ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/SocketServiceException.php' => 
-  array (
-    27 => 
-    array (
-    ),
-    28 => 
-    array (
-    ),
-  ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/StorageServiceException.php' => 
-  array (
-    29 => 
-    array (
-    ),
-    30 => 
-    array (
-    ),
-  ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Mappers/Db/Mongo/VisitorMapper.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Db/Mongo/VisitorMapper.php' => 
   array (
     38 => 
     array (
@@ -736,7 +707,7 @@ $coverage->setData(array (
     ),
     49 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Mappers/Queue/BeanstalkMapper.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Queue/BeanstalkMapper.php' => 
   array (
     34 => 
     array (
@@ -798,7 +769,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/AppService.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/AppService.php' => 
   array (
     35 => 
     array (
@@ -819,10 +790,13 @@ $coverage->setData(array (
     43 => 
     array (
     ),
-    52 => 
+    44 => 
     array (
     ),
-    54 => 
+    45 => 
+    array (
+    ),
+    46 => 
     array (
     ),
     55 => 
@@ -831,16 +805,22 @@ $coverage->setData(array (
     57 => 
     array (
     ),
+    58 => 
+    array (
+    ),
+    60 => 
+    array (
+    ),
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/GeoService.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/CacheService.php' => 
   array (
     35 => 
     array (
     ),
-    36 => 
+    37 => 
     array (
     ),
-    37 => 
+    38 => 
     array (
     ),
     39 => 
@@ -858,27 +838,67 @@ $coverage->setData(array (
     44 => 
     array (
     ),
-    45 => 
+    46 => 
+    array (
+    ),
+    47 => 
+    array (
+    ),
+    49 => 
+    array (
+    ),
+    57 => 
+    array (
+    ),
+    58 => NULL,
+  ),
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/GeoService.php' => 
+  array (
+    37 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+    39 => 
+    array (
+    ),
+    41 => 
+    array (
+    ),
+    42 => 
+    array (
+    ),
+    43 => 
+    array (
+    ),
+    44 => 
     array (
     ),
     46 => 
     array (
     ),
-    59 => 
+    47 => 
     array (
     ),
-    62 => 
+    48 => 
+    array (
+    ),
+    61 => 
     array (
     ),
     64 => 
     array (
     ),
-    65 => 
+    66 => 
     array (
     ),
-    67 => NULL,
+    67 => 
+    array (
+    ),
+    69 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/QueueService.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/QueueService.php' => 
   array (
     35 => 
     array (
@@ -922,36 +942,33 @@ $coverage->setData(array (
     ),
     74 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/SocketService.php' => 
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/SocketService.php' => 
   array (
-    46 => 
+    13 => 
     array (
     ),
-    47 => 
+    14 => 
     array (
     ),
-    58 => 
+    48 => 
     array (
     ),
-    62 => 
+    49 => 
     array (
     ),
-    63 => 
-    array (
-    ),
-    64 => 
+    60 => 
     array (
     ),
     65 => 
     array (
     ),
-    66 => 
-    array (
-    ),
-    67 => 
-    array (
-    ),
     68 => 
+    array (
+    ),
+    69 => 
+    array (
+    ),
+    70 => 
     array (
     ),
     71 => 
@@ -960,23 +977,26 @@ $coverage->setData(array (
     72 => 
     array (
     ),
-    73 => NULL,
+    73 => 
+    array (
+    ),
     74 => 
     array (
     ),
-    75 => 
+    76 => 
     array (
     ),
-    76 => NULL,
     77 => 
     array (
     ),
-    78 => 
+    78 => NULL,
+    79 => 
     array (
     ),
     80 => 
     array (
     ),
+    81 => NULL,
     82 => 
     array (
     ),
@@ -984,138 +1004,105 @@ $coverage->setData(array (
     array (
     ),
     84 => NULL,
-    86 => 
-    array (
-    ),
-    87 => 
-    array (
-    ),
-  ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/StorageService.php' => 
-  array (
-    35 => 
-    array (
-    ),
-    36 => 
-    array (
-    ),
-    49 => 
-    array (
-    ),
-    51 => 
-    array (
-    ),
-    53 => 
-    array (
-    ),
-    54 => 
-    array (
-    ),
-    56 => NULL,
-  ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/System/Tasks/SonarTask.php' => 
-  array (
-    60 => 
-    array (
-    ),
-    61 => 
-    array (
-    ),
-    62 => 
-    array (
-    ),
-    64 => 
-    array (
-    ),
-    66 => 
-    array (
-    ),
-    67 => NULL,
-    75 => 
-    array (
-    ),
-    76 => NULL,
     85 => 
     array (
     ),
-    87 => 
+    86 => 
     array (
     ),
-    88 => NULL,
+    89 => 
+    array (
+    ),
+    91 => 
+    array (
+    ),
+    92 => 
+    array (
+    ),
+    93 => NULL,
+    95 => 
+    array (
+    ),
     96 => 
     array (
     ),
-    97 => NULL,
-    107 => 
+  ),
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/StorageService.php' => 
+  array (
+    37 => 
     array (
     ),
-    110 => 
+    39 => 
     array (
     ),
-    112 => 
+    40 => 
     array (
     ),
-    115 => 
+    42 => 
     array (
     ),
-    117 => 
+    55 => 
     array (
     ),
-    118 => 
+    57 => 
     array (
     ),
-    120 => 
+    59 => 
     array (
     ),
+    60 => 
+    array (
+    ),
+    62 => NULL,
   ),
 ));
 $coverage->setTests(array (
-  'Octopussy\\Tests\\Models\\GeoTest::testInstance' => 
+  'Sonar\\Tests\\Models\\GeoTest::testInstance' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Octopussy\\Tests\\Models\\GeoTest::testHasAttributes' => 
+  'Sonar\\Tests\\Models\\GeoTest::testHasAttributes' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Octopussy\\Tests\\Models\\VisitorTest::testInstance' => 
+  'Sonar\\Tests\\Models\\VisitorTest::testInstance' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Octopussy\\Tests\\Models\\VisitorTest::testHasAttributes' => 
+  'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Octopussy\\Tests\\System\\MessengerTest::testInstance' => 
+  'Sonar\\Tests\\System\\MessengerTest::testInstance' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Octopussy\\Tests\\System\\MessengerTest::testStart' => 
+  'Sonar\\Tests\\System\\MessengerTest::testStart' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Octopussy\\Tests\\System\\MessengerTest::testOpen' => 
+  'Sonar\\Tests\\System\\MessengerTest::testOpen' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Octopussy\\Tests\\System\\MessengerTest::testMessage' => 
+  'Sonar\\Tests\\System\\MessengerTest::testMessage' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Octopussy\\Tests\\System\\MessengerTest::testClose' => 
+  'Sonar\\Tests\\System\\MessengerTest::testClose' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Octopussy\\Tests\\System\\MessengerTest::testError' => 
+  'Sonar\\Tests\\System\\MessengerTest::testError' => 
   array (
     'size' => 'unknown',
     'status' => 0,
@@ -1138,29 +1125,22 @@ $filter->setBlacklistedFiles(array (
   '/Users/stanislavmenshykh/phalcon.local/vendor/composer/autoload_real.php' => true,
 ));
 $filter->setWhitelistedFiles(array (
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Applications/Sonar.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractBaseException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractMongoMapper.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/AbstractQueueMapper.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Aware/ModelInterface.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/AppServiceException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/BeanstalkMapperException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/GeoServiceException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/MongoMapperException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/QueueServiceException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/SocketServiceException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Exceptions/StorageServiceException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Mappers/Db/Mongo/VisitorMapper.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Mappers/Queue/BeanstalkMapper.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Models/Geo.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Models/Visitor.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/AppService.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/GeoService.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/QueueService.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/SocketService.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/Services/StorageService.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/System/Messenger.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/octopussy/src/Octopussy/System/Tasks/SonarTask.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Applications/Sonar.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractBaseException.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractMongoMapper.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractQueueMapper.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/ModelInterface.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Db/Mongo/VisitorMapper.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Queue/BeanstalkMapper.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Models/Geo.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Models/Visitor.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/AppService.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/CacheService.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/GeoService.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/QueueService.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/SocketService.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/StorageService.php' => true,
+  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/System/Messenger.php' => true,
 ));
 
 return $coverage;

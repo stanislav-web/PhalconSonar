@@ -32,14 +32,13 @@
             <directory suffix=".php">./vendor</directory>
             <directory suffix=".php">./examples</directory>
             <directory suffix=".php">./phpunit/src/Mockups</directory>
-            <file>./src/Sonar/System/Tasks/SonarTask.php</file>
-            <file>./phpunit/bootstrap.php</file>
         </blacklist>
         <whitelist processUncoveredFilesFromWhitelist="true">
             <directory suffix=".php">./src</directory>
             <exclude>
                 <file>./phpunit/bootstrap.php</file>
                 <file>./src/Sonar/System/Tasks/SonarTask.php</file>
+                <directory suffix=".php">./src/Sonar/Exceptions</directory>
             </exclude>
         </whitelist>
     </filter>

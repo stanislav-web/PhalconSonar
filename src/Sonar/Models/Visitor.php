@@ -215,26 +215,6 @@ class Visitor implements ModelInterface {
         return $this;
     }
 
-//    /**
-//     * Get ip address
-//     *
-//     * @return string
-//     */
-//    public function getIp()
-//    {
-//        return long2ip($this->ip);
-//    }
-
-//    /**
-//     * Get user agent
-//     *
-//     * @return string
-//     */
-//    public function getUa()
-//    {
-//        return $this->ua;
-//    }
-
     /**
      * Set user browser
      *
@@ -289,26 +269,6 @@ class Visitor implements ModelInterface {
 
         return $this;
     }
-
-//    /**
-//     * Get open time
-//     *
-//     * @return int
-//     */
-//    public function getOpenTime()
-//    {
-//        return $this->open;
-//    }
-
-//    /**
-//     * Get close time
-//     *
-//     * @return int
-//     */
-//    public function getCloseTime()
-//    {
-//        return $this->close;
-//    }
 
     /**
      * Get properties as array view

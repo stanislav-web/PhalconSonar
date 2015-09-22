@@ -4,9 +4,12 @@
     "type": "library",
     "keywords" : [
         "site visitor",
+        "site visitor monitor",
         "site visitor grabber",
         "users monitor",
         "phalcon mongo",
+        "phalcon monitor",
+        "phalcon statistics",
         "mongo visitors grabber"
     ],
     "support": {
@@ -25,6 +28,7 @@
     "require" : {
         "php" : ">=5.5.0",
         "ext-mongo" : "*",
+        "ext-memcache" : "*",
         "cboden/ratchet": "dev-master",
         "phalcon/devtools": ">=2.0.1",
         "mobiledetect/mobiledetectlib": "^2.8",

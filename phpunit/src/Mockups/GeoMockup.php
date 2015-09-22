@@ -13,7 +13,7 @@ use Geocoder\Provider\HostIp;
  * @package Sonar\Mockups
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Sonar/Mockups/GeoMockup.php
+ * @filesource /Mockups/GeoMockup.php
  */
 class GeoMockup {
 

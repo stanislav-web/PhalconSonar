@@ -1,5 +1,4 @@
 <?php
-#namespace Sonar\System\Tasks;
 
 use Phalcon\Logger\Adapter\File as FileAdapter;
 use Phalcon\Logger;
@@ -105,6 +104,8 @@ class SonarTask extends Task
      */
     public function mainAction()
     {
+        // define error handler
+        $this->setSilentErrorHandler();
 
         try {
 
@@ -126,5 +127,22 @@ class SonarTask extends Task
                 $this->getLogger()->log($e->getMessage(), Logger::CRITICAL);
             }
         }
+    }
+
+    /**
+     * Silent error handler
+     * catching WARNINGS & NOTICIES
+     */
+    public function setSilentErrorHandler() {
+        set_error_handler(function($errno, $errstr, $errfile, $errline, array $errcontext) {
+            if (0 === error_reporting()) {
+                return false;
+            }
+
+            if($this->logger != null) {
+                // logging all warnings & notices
+                $this->getLogger()->log($errstr, Logger::CRITICAL);
+            }
+        });
     }
 }

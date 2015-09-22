@@ -11,7 +11,7 @@ use Sonar\Models\Visitor;
  * @subpackage Sonar\Tests
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Sonar/Models/VisitorTest.php
+ * @filesource /Tests/Models/VisitorTest.php
  */
 class VisitorTest extends \PHPUnit_Framework_TestCase {
 

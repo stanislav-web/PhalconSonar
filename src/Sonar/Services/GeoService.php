@@ -23,6 +23,8 @@ use Sonar\Models\Geo;
 class GeoService {
 
     /**
+     * Geocoder plugin instance
+     *
      * @var \Geocoder\Geocoder $geocoder
      */
     private $geocoder;
@@ -50,7 +52,7 @@ class GeoService {
      *
      * @param string $param
      * @throws \Sonar\Exceptions\GeoServiceException
-     * @return \Geocoder\Model\AddressCollection
+     * @return array
      */
     public function location($param) {
 

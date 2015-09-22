@@ -1,3 +1,8 @@
+#### [v1.2-alpha] 2015-09-22
+    - configurable error log
+    - add cache session (memcache)
+    - silent error logger (warnings & noticies)
+    
 #### [v1.1-alpha] 2015-09-21
     - implementing geo location detector
     

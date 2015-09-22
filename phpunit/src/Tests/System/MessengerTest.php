@@ -11,7 +11,7 @@ use Phalcon\Script\Color;
  * @subpackage Sonar\Tests
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Sonar/Models/MessengerTest.php
+ * @filesource /Sonar/System/MessengerTest.php
  */
 class MessengerTest extends \PHPUnit_Framework_TestCase {
 
