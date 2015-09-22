@@ -91,7 +91,7 @@ class Sonar implements MessageComponentInterface {
      * Push to task event
      *
      * @param ConnectionInterface $request
-     * @param string              $conn
+     * @param ConnectionInterface              $conn
      * @throws \InvalidArgumentException
      */
     public function onMessage(ConnectionInterface $conn, $request) {

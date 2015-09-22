@@ -21,7 +21,6 @@ class BeanstalkMapperException extends AbstractBaseException {
      * Constructor
      *
      * @param string $message
-     * @param string $code status code
      */
     public function __construct($message) {
         parent::__construct($message, self::class);
