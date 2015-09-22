@@ -4,7 +4,6 @@ namespace Sonar\Services;
 use Ratchet\Session\SessionProvider;
 use Ratchet\MessageComponentInterface;
 use Symfony\Component\HttpFoundation\Session\Storage\Handler\MemcacheSessionHandler;
-use Sonar\Exceptions\CacheServiceException;
 
 /**
  * Class CacheService. Cache data service
