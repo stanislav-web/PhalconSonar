@@ -18,6 +18,7 @@ interface ModelInterface {
      * Receiving incoming data
      *
      * @param mixed $data
+     * @return void
      */
     public function __construct($data);
 

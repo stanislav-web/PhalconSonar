@@ -60,7 +60,6 @@ class BeanstalkMapper extends AbstractQueueMapper {
      * Read message
      *
      * @param array $credentials
-     * @param callable $callback
      * @throws \Sonar\Exceptions\BeanstalkMapperException
      */
     public function read(array $credentials)

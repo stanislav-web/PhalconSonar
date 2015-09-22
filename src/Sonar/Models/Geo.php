@@ -69,7 +69,7 @@ class Geo implements ModelInterface {
     /**
      * Initialize model & validate client data
      *
-     * @param array $data
+     * @param \Geocoder\Model\AddressCollection $data
      */
     public function __construct($data) {
 

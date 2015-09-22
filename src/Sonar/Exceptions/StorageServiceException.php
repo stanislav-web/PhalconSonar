@@ -23,7 +23,7 @@ class StorageServiceException extends \RuntimeException {
      * Constructor
      *
      * @param string $message
-     * @param string $code status code
+     * @param integer $code status code
      */
     public function __construct($message, $code = self::CODE) {
         parent::__construct($message, $code);
