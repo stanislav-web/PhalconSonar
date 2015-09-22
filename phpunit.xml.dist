@@ -37,6 +37,10 @@
         </blacklist>
         <whitelist processUncoveredFilesFromWhitelist="true">
             <directory suffix=".php">./src</directory>
+            <exclude>
+                <file>./phpunit/bootstrap.php</file>
+                <file>./src/Sonar/System/Tasks/SonarTask.php</file>
+            </exclude>
         </whitelist>
     </filter>
 
