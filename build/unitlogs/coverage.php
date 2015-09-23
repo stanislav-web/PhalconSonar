@@ -1,10 +1,10 @@
 <?php
 $coverage = new PHP_CodeCoverage;
 $coverage->setData(array (
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/ModelInterface.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/ModelInterface.php' => 
   array (
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Models/Geo.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Models/Geo.php' => 
   array (
     77 => 
     array (
@@ -167,7 +167,7 @@ $coverage->setData(array (
     ),
     186 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Models/Visitor.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Models/Visitor.php' => 
   array (
     126 => 
     array (
@@ -394,7 +394,7 @@ $coverage->setData(array (
     ),
     289 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/System/Messenger.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/System/Messenger.php' => 
   array (
     51 => 
     array (
@@ -431,7 +431,7 @@ $coverage->setData(array (
     ),
     106 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Applications/Sonar.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Applications/Sonar.php' => 
   array (
     76 => 
     array (
@@ -621,7 +621,7 @@ $coverage->setData(array (
     ),
     255 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractBaseException.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractBaseException.php' => 
   array (
     35 => 
     array (
@@ -633,7 +633,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractMongoMapper.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractMongoMapper.php' => 
   array (
     51 => 
     array (
@@ -678,10 +678,10 @@ $coverage->setData(array (
     ),
     94 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractQueueMapper.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractQueueMapper.php' => 
   array (
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Db/Mongo/VisitorMapper.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Db/Mongo/VisitorMapper.php' => 
   array (
     38 => 
     array (
@@ -707,7 +707,7 @@ $coverage->setData(array (
     ),
     49 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Queue/BeanstalkMapper.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Queue/BeanstalkMapper.php' => 
   array (
     34 => 
     array (
@@ -769,7 +769,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/AppService.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/AppService.php' => 
   array (
     35 => 
     array (
@@ -812,7 +812,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/CacheService.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/CacheService.php' => 
   array (
     35 => 
     array (
@@ -852,7 +852,7 @@ $coverage->setData(array (
     ),
     58 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/GeoService.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/GeoService.php' => 
   array (
     37 => 
     array (
@@ -898,7 +898,7 @@ $coverage->setData(array (
     ),
     69 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/QueueService.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/QueueService.php' => 
   array (
     35 => 
     array (
@@ -942,7 +942,7 @@ $coverage->setData(array (
     ),
     74 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/SocketService.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/SocketService.php' => 
   array (
     13 => 
     array (
@@ -1027,7 +1027,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/StorageService.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/StorageService.php' => 
   array (
     37 => 
     array (
@@ -1116,31 +1116,31 @@ $coverage->setTests(array (
 
 $filter = $coverage->filter();
 $filter->setBlacklistedFiles(array (
-  '/Users/stanislavmenshykh/phalcon-devtools/phpunit.phar' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/composer/ClassLoader.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/composer/autoload_classmap.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/composer/autoload_files.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/composer/autoload_namespaces.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/composer/autoload_psr4.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/composer/autoload_real.php' => true,
+  '/var/www/tools/phpunit.phar' => true,
+  '/var/www/backend.local/vendor/composer/ClassLoader.php' => true,
+  '/var/www/backend.local/vendor/composer/autoload_classmap.php' => true,
+  '/var/www/backend.local/vendor/composer/autoload_files.php' => true,
+  '/var/www/backend.local/vendor/composer/autoload_namespaces.php' => true,
+  '/var/www/backend.local/vendor/composer/autoload_psr4.php' => true,
+  '/var/www/backend.local/vendor/composer/autoload_real.php' => true,
 ));
 $filter->setWhitelistedFiles(array (
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Applications/Sonar.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractBaseException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractMongoMapper.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractQueueMapper.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/ModelInterface.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Db/Mongo/VisitorMapper.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Queue/BeanstalkMapper.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Models/Geo.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Models/Visitor.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/AppService.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/CacheService.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/GeoService.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/QueueService.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/SocketService.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/StorageService.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/System/Messenger.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Applications/Sonar.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractBaseException.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractMongoMapper.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractQueueMapper.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/ModelInterface.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Db/Mongo/VisitorMapper.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Queue/BeanstalkMapper.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Models/Geo.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Models/Visitor.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/AppService.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/CacheService.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/GeoService.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/QueueService.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/SocketService.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/StorageService.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/System/Messenger.php' => true,
 ));
 
 return $coverage;

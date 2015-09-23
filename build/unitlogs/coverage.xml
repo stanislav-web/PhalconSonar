@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1442913590">
-  <project timestamp="1442913590">
+<coverage generated="1442971467">
+  <project timestamp="1442971467">
     <package name="Sonar\Applications">
-      <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Applications/Sonar.php">
+      <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Applications/Sonar.php">
         <class name="Sonar" namespace="Sonar\Applications" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
           <metrics methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="55" coveredstatements="0" elements="65" coveredelements="0"/>
         </class>
@@ -78,7 +78,7 @@
       </file>
     </package>
     <package name="Sonar\Aware">
-      <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractBaseException.php">
+      <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractBaseException.php">
         <class name="AbstractBaseException" namespace="Sonar\Aware" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
           <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
         </class>
@@ -88,7 +88,7 @@
         <line num="37" type="stmt" count="0"/>
         <metrics loc="37" ncloc="12" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
       </file>
-      <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractMongoMapper.php">
+      <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractMongoMapper.php">
         <class name="AbstractMongoMapper" namespace="Sonar\Aware" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
           <metrics methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="16" coveredelements="0"/>
         </class>
@@ -110,18 +110,18 @@
         <line num="93" type="stmt" count="0"/>
         <metrics loc="103" ncloc="47" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="16" coveredelements="0"/>
       </file>
-      <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractQueueMapper.php">
+      <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractQueueMapper.php">
         <class name="AbstractQueueMapper" namespace="Sonar\Aware" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
           <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
         </class>
         <metrics loc="32" ncloc="8" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
     </package>
-    <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/ModelInterface.php">
+    <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/ModelInterface.php">
       <metrics loc="29" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
     <package name="Sonar\Mappers\Db\Mongo">
-      <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Db/Mongo/VisitorMapper.php">
+      <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Db/Mongo/VisitorMapper.php">
         <class name="VisitorMapper" namespace="Sonar\Mappers\Db\Mongo" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
           <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="8" coveredelements="0"/>
         </class>
@@ -137,7 +137,7 @@
       </file>
     </package>
     <package name="Sonar\Mappers\Queue">
-      <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Queue/BeanstalkMapper.php">
+      <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Queue/BeanstalkMapper.php">
         <class name="BeanstalkMapper" namespace="Sonar\Mappers\Queue" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
           <metrics methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="0" elements="22" coveredelements="0"/>
         </class>
@@ -167,7 +167,7 @@
       </file>
     </package>
     <package name="Sonar\Models">
-      <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Models/Geo.php">
+      <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Models/Geo.php">
         <class name="Geo" namespace="Sonar\Models" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
           <metrics methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="32" coveredstatements="32" elements="40" coveredelements="40"/>
         </class>
@@ -213,7 +213,7 @@
         <line num="185" type="stmt" count="1"/>
         <metrics loc="187" ncloc="93" classes="1" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="32" coveredstatements="32" elements="40" coveredelements="40"/>
       </file>
-      <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Models/Visitor.php">
+      <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Models/Visitor.php">
         <class name="Visitor" namespace="Sonar\Models" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
           <metrics methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="44" elements="56" coveredelements="56"/>
         </class>
@@ -277,7 +277,7 @@
       </file>
     </package>
     <package name="Sonar\Services">
-      <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/AppService.php">
+      <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/AppService.php">
         <class name="AppService" namespace="Sonar\Services" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
           <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="15" coveredelements="0"/>
         </class>
@@ -298,7 +298,7 @@
         <line num="60" type="stmt" count="0"/>
         <metrics loc="61" ncloc="35" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="15" coveredelements="0"/>
       </file>
-      <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/CacheService.php">
+      <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/CacheService.php">
         <class name="CacheService" namespace="Sonar\Services" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
           <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="0" elements="14" coveredelements="0"/>
         </class>
@@ -318,7 +318,7 @@
         <line num="57" type="stmt" count="0"/>
         <metrics loc="58" ncloc="34" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="0" elements="14" coveredelements="0"/>
       </file>
-      <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/GeoService.php">
+      <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/GeoService.php">
         <class name="GeoService" namespace="Sonar\Services" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
           <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="0" elements="16" coveredelements="0"/>
         </class>
@@ -340,7 +340,7 @@
         <line num="67" type="stmt" count="0"/>
         <metrics loc="69" ncloc="41" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="0" elements="16" coveredelements="0"/>
       </file>
-      <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/QueueService.php">
+      <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/QueueService.php">
         <class name="QueueService" namespace="Sonar\Services" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
           <metrics methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="16" coveredelements="0"/>
         </class>
@@ -362,7 +362,7 @@
         <line num="73" type="stmt" count="0"/>
         <metrics loc="74" ncloc="38" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="16" coveredelements="0"/>
       </file>
-      <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/SocketService.php">
+      <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/SocketService.php">
         <class name="SocketService" namespace="Sonar\Services" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
           <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="0" elements="26" coveredelements="0"/>
         </class>
@@ -396,7 +396,7 @@
         <line num="96" type="stmt" count="0"/>
         <metrics loc="96" ncloc="59" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="0" elements="28" coveredelements="0"/>
       </file>
-      <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/StorageService.php">
+      <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/StorageService.php">
         <class name="StorageService" namespace="Sonar\Services" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
           <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="10" coveredelements="0"/>
         </class>
@@ -414,7 +414,7 @@
       </file>
     </package>
     <package name="Sonar\System">
-      <file name="/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/System/Messenger.php">
+      <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/System/Messenger.php">
         <class name="Messenger" namespace="Sonar\System" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
           <metrics methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="12" coveredelements="12"/>
         </class>

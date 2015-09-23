@@ -16,7 +16,7 @@ class VisitorMockup {
      *
      * @return array
      */
-    public function getMockData() {
+    public static function getMockData() {
 
         return [
             'page'      => 'http://redumbrella.com.ua',
@@ -34,7 +34,7 @@ class VisitorMockup {
      *
      * @return array
      */
-    public function getReturnedResultKeys() {
+    public static function getReturnedResultKeys() {
 
         return [
             'ip',

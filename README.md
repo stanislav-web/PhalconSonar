@@ -121,7 +121,7 @@ if you will be making their to global application config. See example:
     ]);
 ```
 
-3. Running socket server using CLI from your project. And tracking user thought web interface:
+3. Running socket server using CLI from your project. And tracking user thought web interface _(not yet implemented)_:
 ```
 php public/cli.php sonar
 ```

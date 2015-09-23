@@ -2,12 +2,13 @@
 namespace Sonar\Tests\Mappers\Db\Mongo;
 
 use Sonar\Mappers\Db\Mongo\VisitorMapper;
+use Sonar\Mockups\MongoMockup;
 
 /**
  * Class TestVisitorMapper
  *
- * @package Sonar\Tests\Models
- * @subpackage Sonar\Tests
+ * @package Sonar\Tests\Mappers\Db\Mongo
+ * @subpackage Sonar\Tests\Mappers\Db
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
  * @filesource /Tests/Mappers/Db/Mongo/TestVisitorMapper.php
@@ -24,7 +25,7 @@ class TestVisitorMapper extends \PHPUnit_Framework_TestCase {
     /**
      * Get geo mockup
      *
-     * @var \Sonar\Mockups\GeoMockup
+     * @var \Sonar\Mockups\MongoMockup
      */
     private $mock;
 
@@ -35,6 +36,7 @@ class TestVisitorMapper extends \PHPUnit_Framework_TestCase {
      */
     public function setUp()
     {
+        $this->mock = new MongoMockup();
     }
 
     /**
@@ -52,6 +54,9 @@ class TestVisitorMapper extends \PHPUnit_Framework_TestCase {
      */
     public function testAdd()
     {
-        $this->assertEquals(true, true);
+        $data = new VisitorMapper($this->mock->getConfig());
+
+        // checking instance object return
+        $this->assertInstanceOf('\MongoId', $data->add(['test' => 'test']));
     }
 }

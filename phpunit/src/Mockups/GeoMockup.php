@@ -59,7 +59,7 @@ class GeoMockup {
      *
      * @return array
      */
-    public function getReturnedResultKeys() {
+    public static function getReturnedResultKeys() {
 
         return [
             'coordinates',
