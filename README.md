@@ -1,4 +1,4 @@
-# Sonar
+# Sonar v1.2-alpha
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/stanislav-web/PhalconSonar/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/stanislav-web/PhalconSonar/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/stanislav-web/PhalconSonar/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/stanislav-web/PhalconSonar/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/stanislav-web/PhalconSonar/badges/build.png?b=master)](https://scrutinizer-ci.com/g/stanislav-web/PhalconSonar/build-status/master)
 
