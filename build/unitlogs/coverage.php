@@ -4,6 +4,362 @@ $coverage->setData(array (
   '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/ModelInterface.php' => 
   array (
   ),
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Models/Visitor.php' => 
+  array (
+    126 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    129 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    130 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    131 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    132 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    133 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    134 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    135 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    136 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    137 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    147 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    149 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    150 => NULL,
+    160 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    162 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    163 => NULL,
+    173 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    175 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    176 => NULL,
+    186 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    188 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    189 => NULL,
+    198 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    200 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    201 => NULL,
+    210 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    213 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    215 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    216 => NULL,
+    225 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    226 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    227 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    229 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    230 => NULL,
+    239 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    241 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    242 => NULL,
+    251 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    253 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    254 => NULL,
+    263 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    264 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    266 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    267 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    268 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    270 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    271 => NULL,
+    280 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    282 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    283 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    284 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    285 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    286 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    288 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    289 => NULL,
+  ),
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Db/Mongo/VisitorMapper.php' => 
+  array (
+    38 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+    ),
+    39 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+    ),
+    41 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+    ),
+    43 => 
+    array (
+    ),
+    44 => 
+    array (
+    ),
+    45 => NULL,
+    46 => 
+    array (
+    ),
+    47 => 
+    array (
+    ),
+    49 => NULL,
+  ),
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractMongoMapper.php' => 
+  array (
+    51 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+    ),
+    53 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+    ),
+    56 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+    ),
+    57 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+    ),
+    60 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+    ),
+    63 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+    ),
+    64 => 
+    array (
+    ),
+    66 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+    ),
+    76 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+    ),
+    77 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+    ),
+    78 => NULL,
+    80 => 
+    array (
+    ),
+    82 => NULL,
+    91 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+    ),
+    93 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+    ),
+    94 => NULL,
+  ),
   '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Models/Geo.php' => 
   array (
     77 => 
@@ -166,233 +522,6 @@ $coverage->setData(array (
       0 => 'Sonar\\Tests\\Models\\GeoTest::testHasAttributes',
     ),
     186 => NULL,
-  ),
-  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Models/Visitor.php' => 
-  array (
-    126 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    129 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    130 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    131 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    132 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    133 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    134 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    135 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    136 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    137 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    147 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    149 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    150 => NULL,
-    160 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    162 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    163 => NULL,
-    173 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    175 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    176 => NULL,
-    186 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    188 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    189 => NULL,
-    198 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    200 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    201 => NULL,
-    210 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    213 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    215 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    216 => NULL,
-    225 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    226 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    227 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    229 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    230 => NULL,
-    239 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    241 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    242 => NULL,
-    251 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    253 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    254 => NULL,
-    263 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    264 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    266 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    267 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    268 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    270 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    271 => NULL,
-    280 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    282 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    283 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    284 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    285 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    286 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    288 => 
-    array (
-      0 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    289 => NULL,
   ),
   '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/System/Messenger.php' => 
   array (
@@ -633,79 +762,8 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractMongoMapper.php' => 
-  array (
-    51 => 
-    array (
-    ),
-    53 => 
-    array (
-    ),
-    56 => 
-    array (
-    ),
-    57 => 
-    array (
-    ),
-    60 => 
-    array (
-    ),
-    63 => 
-    array (
-    ),
-    64 => 
-    array (
-    ),
-    66 => 
-    array (
-    ),
-    76 => 
-    array (
-    ),
-    77 => 
-    array (
-    ),
-    78 => NULL,
-    80 => 
-    array (
-    ),
-    82 => NULL,
-    91 => 
-    array (
-    ),
-    93 => 
-    array (
-    ),
-    94 => NULL,
-  ),
   '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractQueueMapper.php' => 
   array (
-  ),
-  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Db/Mongo/VisitorMapper.php' => 
-  array (
-    38 => 
-    array (
-    ),
-    39 => 
-    array (
-    ),
-    41 => 
-    array (
-    ),
-    43 => 
-    array (
-    ),
-    44 => 
-    array (
-    ),
-    45 => NULL,
-    46 => 
-    array (
-    ),
-    47 => 
-    array (
-    ),
-    49 => NULL,
   ),
   '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Queue/BeanstalkMapper.php' => 
   array (
@@ -799,16 +857,23 @@ $coverage->setData(array (
     46 => 
     array (
     ),
+    54 => 
+    array (
+    ),
     55 => 
     array (
     ),
-    57 => 
-    array (
-    ),
+    56 => NULL,
     58 => 
     array (
     ),
     60 => 
+    array (
+    ),
+    61 => 
+    array (
+    ),
+    63 => 
     array (
     ),
   ),
@@ -1057,6 +1122,11 @@ $coverage->setData(array (
   ),
 ));
 $coverage->setTests(array (
+  'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd' => 
+  array (
+    'size' => 'unknown',
+    'status' => 3,
+  ),
   'Sonar\\Tests\\Models\\GeoTest::testInstance' => 
   array (
     'size' => 'unknown',

@@ -42,7 +42,7 @@ abstract class AbstractMongoMapper {
      * Implement configurations for MongoDB connection
      *
      * @param \Phalcon\Config $config
-     * @throws \Sonar\Exceptions\StorageServiceException
+     * @throws \MongoConnectionException
      */
     public function __construct(\Phalcon\Config $config) {
 
@@ -61,7 +61,7 @@ abstract class AbstractMongoMapper {
 
         }
         catch (\MongoConnectionException $e) {
-            throw new MongoMapperException($e->getMessage());
+            throw new MongoConnectionException($e->getMessage());
         }
     }
 

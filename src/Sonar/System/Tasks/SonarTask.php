@@ -107,10 +107,6 @@ class SonarTask extends Task
         // define error handler
         $this->setSilentErrorHandler();
 
-        if (PHP_SAPI !== 'cli') {
-            echo 'Warning: Script should be invoked via the CLI version of PHP, not the '.PHP_SAPI.' SAPI'.PHP_EOL;
-        }
-
         try {
 
             // init configurations // init logger

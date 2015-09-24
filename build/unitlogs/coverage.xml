@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1442971467">
-  <project timestamp="1442971467">
+<coverage generated="1443055386">
+  <project timestamp="1443055386">
     <package name="Sonar\Applications">
       <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Applications/Sonar.php">
         <class name="Sonar" namespace="Sonar\Applications" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
@@ -90,25 +90,25 @@
       </file>
       <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractMongoMapper.php">
         <class name="AbstractMongoMapper" namespace="Sonar\Aware" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
-          <metrics methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="16" coveredelements="0"/>
+          <metrics methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="11" elements="16" coveredelements="12"/>
         </class>
-        <line num="47" type="method" name="__construct" crap="12" count="0"/>
-        <line num="51" type="stmt" count="0"/>
-        <line num="53" type="stmt" count="0"/>
-        <line num="56" type="stmt" count="0"/>
-        <line num="57" type="stmt" count="0"/>
-        <line num="60" type="stmt" count="0"/>
-        <line num="63" type="stmt" count="0"/>
+        <line num="47" type="method" name="__construct" crap="3.02" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="1"/>
+        <line num="56" type="stmt" count="1"/>
+        <line num="57" type="stmt" count="1"/>
+        <line num="60" type="stmt" count="1"/>
+        <line num="63" type="stmt" count="1"/>
         <line num="64" type="stmt" count="0"/>
-        <line num="66" type="stmt" count="0"/>
-        <line num="74" type="method" name="getConnectUri" crap="12" count="0"/>
-        <line num="76" type="stmt" count="0"/>
-        <line num="77" type="stmt" count="0"/>
+        <line num="66" type="stmt" count="1"/>
+        <line num="74" type="method" name="getConnectUri" crap="3.33" count="1"/>
+        <line num="76" type="stmt" count="1"/>
+        <line num="77" type="stmt" count="1"/>
         <line num="80" type="stmt" count="0"/>
-        <line num="89" type="method" name="setCollection" crap="2" count="0"/>
-        <line num="91" type="stmt" count="0"/>
-        <line num="93" type="stmt" count="0"/>
-        <metrics loc="103" ncloc="47" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="16" coveredelements="0"/>
+        <line num="89" type="method" name="setCollection" crap="1" count="1"/>
+        <line num="91" type="stmt" count="1"/>
+        <line num="93" type="stmt" count="1"/>
+        <metrics loc="103" ncloc="47" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="11" elements="16" coveredelements="12"/>
       </file>
       <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractQueueMapper.php">
         <class name="AbstractQueueMapper" namespace="Sonar\Aware" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
@@ -123,17 +123,17 @@
     <package name="Sonar\Mappers\Db\Mongo">
       <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Db/Mongo/VisitorMapper.php">
         <class name="VisitorMapper" namespace="Sonar\Mappers\Db\Mongo" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
-          <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="8" coveredelements="0"/>
+          <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="3" elements="8" coveredelements="3"/>
         </class>
-        <line num="35" type="method" name="add" crap="12" count="0"/>
-        <line num="38" type="stmt" count="0"/>
-        <line num="39" type="stmt" count="0"/>
-        <line num="41" type="stmt" count="0"/>
+        <line num="35" type="method" name="add" crap="4.68" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
         <line num="43" type="stmt" count="0"/>
         <line num="44" type="stmt" count="0"/>
         <line num="46" type="stmt" count="0"/>
         <line num="47" type="stmt" count="0"/>
-        <metrics loc="49" ncloc="26" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="8" coveredelements="0"/>
+        <metrics loc="49" ncloc="26" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="3" elements="8" coveredelements="3"/>
       </file>
     </package>
     <package name="Sonar\Mappers\Queue">
@@ -217,69 +217,69 @@
         <class name="Visitor" namespace="Sonar\Models" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
           <metrics methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="44" elements="56" coveredelements="56"/>
         </class>
-        <line num="123" type="method" name="__construct" crap="1" count="2"/>
-        <line num="126" type="stmt" count="2"/>
-        <line num="129" type="stmt" count="2"/>
-        <line num="130" type="stmt" count="2"/>
-        <line num="131" type="stmt" count="2"/>
-        <line num="132" type="stmt" count="2"/>
-        <line num="133" type="stmt" count="2"/>
-        <line num="134" type="stmt" count="2"/>
-        <line num="135" type="stmt" count="2"/>
-        <line num="136" type="stmt" count="2"/>
-        <line num="137" type="stmt" count="2"/>
-        <line num="145" type="method" name="setPage" crap="1" count="2"/>
-        <line num="147" type="stmt" count="2"/>
-        <line num="149" type="stmt" count="2"/>
-        <line num="158" type="method" name="setIp" crap="1" count="2"/>
-        <line num="160" type="stmt" count="2"/>
-        <line num="162" type="stmt" count="2"/>
-        <line num="171" type="method" name="setOpenTime" crap="1" count="2"/>
-        <line num="173" type="stmt" count="2"/>
-        <line num="175" type="stmt" count="2"/>
-        <line num="184" type="method" name="setCloseTime" crap="1" count="2"/>
-        <line num="186" type="stmt" count="2"/>
-        <line num="188" type="stmt" count="2"/>
-        <line num="196" type="method" name="setLanguage" crap="1" count="2"/>
-        <line num="198" type="stmt" count="2"/>
-        <line num="200" type="stmt" count="2"/>
-        <line num="208" type="method" name="setUa" crap="1" count="2"/>
-        <line num="210" type="stmt" count="2"/>
-        <line num="213" type="stmt" count="2"/>
-        <line num="215" type="stmt" count="2"/>
-        <line num="223" type="method" name="setBrowser" crap="1" count="2"/>
-        <line num="225" type="stmt" count="2"/>
-        <line num="226" type="stmt" count="2"/>
-        <line num="227" type="stmt" count="2"/>
-        <line num="229" type="stmt" count="2"/>
-        <line num="237" type="method" name="setPlatform" crap="1" count="2"/>
-        <line num="239" type="stmt" count="2"/>
-        <line num="241" type="stmt" count="2"/>
-        <line num="249" type="method" name="setLocation" crap="1" count="2"/>
-        <line num="251" type="stmt" count="2"/>
-        <line num="253" type="stmt" count="2"/>
-        <line num="261" type="method" name="deviceDetect" crap="3" count="2"/>
-        <line num="263" type="stmt" count="2"/>
-        <line num="264" type="stmt" count="2"/>
-        <line num="266" type="stmt" count="2"/>
-        <line num="267" type="stmt" count="2"/>
-        <line num="268" type="stmt" count="2"/>
-        <line num="270" type="stmt" count="2"/>
-        <line num="278" type="method" name="toArray" crap="3" count="1"/>
-        <line num="280" type="stmt" count="1"/>
-        <line num="282" type="stmt" count="1"/>
-        <line num="283" type="stmt" count="1"/>
-        <line num="284" type="stmt" count="1"/>
-        <line num="285" type="stmt" count="1"/>
-        <line num="286" type="stmt" count="1"/>
-        <line num="288" type="stmt" count="1"/>
+        <line num="123" type="method" name="__construct" crap="1" count="3"/>
+        <line num="126" type="stmt" count="3"/>
+        <line num="129" type="stmt" count="3"/>
+        <line num="130" type="stmt" count="3"/>
+        <line num="131" type="stmt" count="3"/>
+        <line num="132" type="stmt" count="3"/>
+        <line num="133" type="stmt" count="3"/>
+        <line num="134" type="stmt" count="3"/>
+        <line num="135" type="stmt" count="3"/>
+        <line num="136" type="stmt" count="3"/>
+        <line num="137" type="stmt" count="3"/>
+        <line num="145" type="method" name="setPage" crap="1" count="3"/>
+        <line num="147" type="stmt" count="3"/>
+        <line num="149" type="stmt" count="3"/>
+        <line num="158" type="method" name="setIp" crap="1" count="3"/>
+        <line num="160" type="stmt" count="3"/>
+        <line num="162" type="stmt" count="3"/>
+        <line num="171" type="method" name="setOpenTime" crap="1" count="3"/>
+        <line num="173" type="stmt" count="3"/>
+        <line num="175" type="stmt" count="3"/>
+        <line num="184" type="method" name="setCloseTime" crap="1" count="3"/>
+        <line num="186" type="stmt" count="3"/>
+        <line num="188" type="stmt" count="3"/>
+        <line num="196" type="method" name="setLanguage" crap="1" count="3"/>
+        <line num="198" type="stmt" count="3"/>
+        <line num="200" type="stmt" count="3"/>
+        <line num="208" type="method" name="setUa" crap="1" count="3"/>
+        <line num="210" type="stmt" count="3"/>
+        <line num="213" type="stmt" count="3"/>
+        <line num="215" type="stmt" count="3"/>
+        <line num="223" type="method" name="setBrowser" crap="1" count="3"/>
+        <line num="225" type="stmt" count="3"/>
+        <line num="226" type="stmt" count="3"/>
+        <line num="227" type="stmt" count="3"/>
+        <line num="229" type="stmt" count="3"/>
+        <line num="237" type="method" name="setPlatform" crap="1" count="3"/>
+        <line num="239" type="stmt" count="3"/>
+        <line num="241" type="stmt" count="3"/>
+        <line num="249" type="method" name="setLocation" crap="1" count="3"/>
+        <line num="251" type="stmt" count="3"/>
+        <line num="253" type="stmt" count="3"/>
+        <line num="261" type="method" name="deviceDetect" crap="3" count="3"/>
+        <line num="263" type="stmt" count="3"/>
+        <line num="264" type="stmt" count="3"/>
+        <line num="266" type="stmt" count="3"/>
+        <line num="267" type="stmt" count="3"/>
+        <line num="268" type="stmt" count="3"/>
+        <line num="270" type="stmt" count="3"/>
+        <line num="278" type="method" name="toArray" crap="3" count="2"/>
+        <line num="280" type="stmt" count="2"/>
+        <line num="282" type="stmt" count="2"/>
+        <line num="283" type="stmt" count="2"/>
+        <line num="284" type="stmt" count="2"/>
+        <line num="285" type="stmt" count="2"/>
+        <line num="286" type="stmt" count="2"/>
+        <line num="288" type="stmt" count="2"/>
         <metrics loc="290" ncloc="139" classes="1" methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="44" elements="56" coveredelements="56"/>
       </file>
     </package>
     <package name="Sonar\Services">
       <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/AppService.php">
         <class name="AppService" namespace="Sonar\Services" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
-          <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="15" coveredelements="0"/>
+          <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="0" elements="17" coveredelements="0"/>
         </class>
         <line num="33" type="method" name="__construct" crap="20" count="0"/>
         <line num="35" type="stmt" count="0"/>
@@ -291,12 +291,14 @@
         <line num="44" type="stmt" count="0"/>
         <line num="45" type="stmt" count="0"/>
         <line num="46" type="stmt" count="0"/>
-        <line num="52" type="method" name="run" crap="6" count="0"/>
+        <line num="52" type="method" name="run" crap="12" count="0"/>
+        <line num="54" type="stmt" count="0"/>
         <line num="55" type="stmt" count="0"/>
-        <line num="57" type="stmt" count="0"/>
         <line num="58" type="stmt" count="0"/>
         <line num="60" type="stmt" count="0"/>
-        <metrics loc="61" ncloc="35" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="15" coveredelements="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="63" type="stmt" count="0"/>
+        <metrics loc="64" ncloc="38" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="0" elements="17" coveredelements="0"/>
       </file>
       <file name="/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/CacheService.php">
         <class name="CacheService" namespace="Sonar\Services" fullPackage="Sonar.Sonar" package="Sonar" subpackage="Sonar">
@@ -433,6 +435,6 @@
         <metrics loc="106" ncloc="45" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="12" coveredelements="12"/>
       </file>
     </package>
-    <metrics files="16" loc="1593" ncloc="807" classes="15" methods="57" coveredmethods="26" conditionals="0" coveredconditionals="0" statements="268" coveredstatements="82" elements="325" coveredelements="108"/>
+    <metrics files="16" loc="1596" ncloc="810" classes="15" methods="57" coveredmethods="27" conditionals="0" coveredconditionals="0" statements="270" coveredstatements="96" elements="327" coveredelements="123"/>
   </project>
 </coverage>

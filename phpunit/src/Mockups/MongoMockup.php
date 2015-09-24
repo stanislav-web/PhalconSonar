@@ -1,6 +1,8 @@
 <?php
 namespace Sonar\Mockups;
 
+use Phalcon\Config;
+
 /**
  * Class MongoMockup
  *
@@ -11,15 +13,41 @@ namespace Sonar\Mockups;
  */
 class MongoMockup {
 
+    /**
+     * Add data
+     *
+     * @var array $addData
+     */
+    private $addData = [];
+
+    /**
+     * @param array $addData
+     */
+    public function __construct(array $addData) {
+        $this->addData = $addData;
+    }
+
+    /**
+     * Get config
+     *
+     * @return \Phalcon\Config
+     */
     public function getConfig() {
 
-        return \Phalcon\Config([
+        return new Config([
             'host'      =>  '127.0.0.1',
             'port'      =>  27017,
             'user'      =>  'root',
             'password'  =>  'root',
             'dbname'    =>  'sonar',
         ]);
+    }
+
+    /**
+     * @return array
+     */
+    public function getAddData() {
+        return $this->addData;
     }
 
 }

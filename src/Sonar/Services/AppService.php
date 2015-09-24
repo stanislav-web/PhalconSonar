@@ -51,6 +51,9 @@ class AppService {
      */
     public function run() {
 
+        if (PHP_SAPI !== 'cli') {
+            throw new AppServiceException('Warning: Script should be invoked via the CLI version of PHP, not the '.PHP_SAPI.' SAPI');
+        }
         try {
             $this->socketService->run();
         }
