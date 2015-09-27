@@ -1,3 +1,7 @@
+#### [v1.2.2-alpha] 2015-09-27
+    - add debugger (show verbose in config)
+    - change cache session (to shared memory)
+
 #### [v1.2-alpha] 2015-09-22
     - configurable error log
     - add cache session (memcache)

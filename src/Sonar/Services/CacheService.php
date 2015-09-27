@@ -2,11 +2,11 @@
 namespace Sonar\Services;
 
 use Sonar\Exceptions\CacheServiceException;
-use Phalcon\Cache\Backend\Memcache;
+use Phalcon\Cache\Backend\Memory;
 use Phalcon\Cache\Frontend\Data;
 use Phalcon\Cache\Exception as CacheException;
 /**
- * Class CacheService. Cache data service
+ * Class CacheService. Cache data service base on Shared Memory
  *
  * @package Sonar\Services
  * @subpackage Sonar
@@ -19,27 +19,22 @@ use Phalcon\Cache\Exception as CacheException;
 class CacheService {
 
     /**
-     * Memcache connect
+     * SharedMemory instance
      *
-     * @var \Phalcon\Cache\Backend\Memcache $connect
+     * @var \Phalcon\Cache\Backend\Memory $instance
      */
-    private $connect;
+    private $instance;
 
     /**
-     * Implement chache configurations
+     * Implement cache configurations
      */
-    public function __construct(\Phalcon\Config $config) {
+    public function __construct() {
 
         try {
 
-            if(!$this->connect) {
+            if(!$this->instance) {
 
-                $this->connect = new Memcache(new Data(['lifetime' => $config->lifetime]), [
-                    'host'      =>  $config->host,
-                    'port'      =>  $config->port,
-                    'prefix'    =>  $config->prefix,
-                    'persistent'=>  $config->persistent,
-                ]);
+                $this->instance = new Memory(new Data());
 
             }
         }
@@ -51,9 +46,9 @@ class CacheService {
     /**
      * Return cache storage instance
      *
-     * @return \Phalcon\Cache\Backend\Memcache
+     * @return \Phalcon\Cache\Backend\Memory
      */
     public function getStorage() {
-        return $this->connect;
+        return $this->instance;
     }
 }

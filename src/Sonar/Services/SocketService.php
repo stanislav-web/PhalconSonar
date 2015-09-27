@@ -10,8 +10,6 @@ use Sonar\Exceptions\SocketServiceException;
 use Sonar\Exceptions\StorageServiceException;
 use Sonar\Exceptions\CacheServiceException;
 
-ini_set('display_errors', 'On');
-error_reporting(E_ALL);
 /**
  * Class SocketService. Client bridge service for locate incoming messages
  *
@@ -69,7 +67,7 @@ class SocketService {
                     new StorageService($this->config->storage),
                     new QueueService($this->config->beanstalk),
                     new GeoService(),
-                    ($this->config->offsetExists('cache') === true && $this->config->cache === true) ? new CacheService($this->config->memcache) : null
+                    new CacheService()
                 );
                 $this->server->route('/sonar', $app, ['*']);
             }

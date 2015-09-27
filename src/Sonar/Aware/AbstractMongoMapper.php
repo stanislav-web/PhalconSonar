@@ -17,6 +17,10 @@ use Sonar\Exceptions\MongoMapperException;
  */
 abstract class AbstractMongoMapper {
 
+    const PROFILE_OFF = 0;
+    const PROFILE_SLOW = 1;
+    const PROFILE_ALL = 2;
+
     /**
      * MongoDB client connection
      *
@@ -91,6 +95,21 @@ abstract class AbstractMongoMapper {
         $this->collection = $this->db->selectCollection(static::COLLECTION);
 
         return $this;
+    }
+
+    /**
+     * Set MongoDb profiler
+     *
+     * @param int $level 0, 1, 2
+     * @param int $slowms slow queries in ms.
+     * @return array
+     */
+    public function setProfiler($level = self::PROFILE_ALL, $slowms = 100) {
+
+        return $this->db->command([
+            'profile' => (int)$level,
+            'slowms'  => (int)$slowms
+        ]);
     }
 
     /**
