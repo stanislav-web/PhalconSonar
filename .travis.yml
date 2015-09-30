@@ -23,6 +23,10 @@ env:
   - PHALCON_VERSION="2.0.7"
 
 before_script:
+
+    - sleep 15
+    - travis_retry "mongo sonar_test --eval 'db.addUser(\"test_user\", \"test_password\");'; sleep 3"
+
     # Update Composer
     - travis_retry composer self-update
 

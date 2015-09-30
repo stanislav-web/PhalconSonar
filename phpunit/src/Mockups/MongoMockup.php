@@ -37,8 +37,8 @@ class MongoMockup {
         return new Config([
             'host'      =>  '127.0.0.1',
             'port'      =>  27017,
-            'user'      =>  '',
-            'password'  =>  '',
+            'user'      =>  'test_user',
+            'password'  =>  'test_password',
             'dbname'    =>  'sonar_test',
         ]);
     }
