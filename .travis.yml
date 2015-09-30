@@ -31,7 +31,6 @@ before_script:
     - (cd cphalcon/ext; export CFLAGS="-g3 -O1 -fno-delete-null-pointer-checks -Wall"; phpize &> /dev/null && ./configure --silent --enable-phalcon &> /dev/null && make --silent -j4 > /dev/null && make --silent install && phpenv config-add ../unit-tests/ci/phalcon.ini &> /dev/null)
     - php -m | grep -i Phalcon
     - echo "extension = mongo.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-    #- mongo --eval 'db.createUser({"user" : "root", "pwd": "root", "roles" : [ { role: "readWrite", db: "sonar" }] })'
 
     # Install dependencies
     - travis_retry composer install -o --no-interaction --prefer-source
@@ -40,3 +39,9 @@ script:
   - phpenv rehash
   - mkdir -p build/unitlogs
   - phpunit --coverage-clover build/unitlogs/coverage.xml
+
+notifications:
+  email:  
+   - stanisov@gmail.com
+  on_success: change
+  on_failure: always
