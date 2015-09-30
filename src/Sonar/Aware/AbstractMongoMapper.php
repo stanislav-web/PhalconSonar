@@ -65,7 +65,7 @@ abstract class AbstractMongoMapper {
 
         }
         catch (\MongoConnectionException $e) {
-            throw new MongoConnectionException($e->getMessage());
+            throw new \MongoConnectionException($e->getMessage());
         }
     }
 
