@@ -1,5 +1,5 @@
 <?php
-namespace Sonar\Tests\Mappers\Db\Mongo;
+namespace Sonar\Tests\Mappers;
 
 use Sonar\Mappers\Db\Mongo\VisitorMapper;
 use Sonar\Mockups\MongoMockup;
@@ -7,11 +7,11 @@ use Sonar\Mockups\MongoMockup;
 /**
  * Class TestVisitorMapper
  *
- * @package Sonar\Tests\Mappers\Db\Mongo
- * @subpackage Sonar\Tests\Mappers\Db
+ * @package Sonar\Tests\Mappers
+ * @subpackage Sonar\Tests
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Tests/Mappers/Db/Mongo/TestVisitorMapper.php
+ * @filesource /Tests/Mappers/TestVisitorMapper.php
  */
 class TestVisitorMapper extends \PHPUnit_Framework_TestCase {
 
