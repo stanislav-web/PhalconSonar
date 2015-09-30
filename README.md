@@ -124,6 +124,22 @@ _(examples of client connect you can see [here](https://github.com/stanislav-web
 
 ## Unit Test
 Also available in /phpunit directory. Run command to start
+
+```php
+// Create mongo user
+mongo
+
+use sonar_test
+
+db.createUser({
+        user: "test_user",
+        pwd: "test_password",
+        roles: [ { role: "userAdmin", db: "sonar_test" } ]
+    }
+)
+
+```
+
 ```php
 phpunit --configuration phpunit.xml.dist --coverage-text
 

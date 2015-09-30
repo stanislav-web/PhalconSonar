@@ -3,6 +3,7 @@ namespace Sonar\Applications;
 
 use Ratchet\MessageComponentInterface;
 use Ratchet\ConnectionInterface;
+use Sonar\Exceptions\GeoServiceException;
 use Sonar\Exceptions\SocketServiceException;
 use Sonar\Services\CacheService;
 use Sonar\Services\GeoService;
@@ -267,11 +268,15 @@ class Sonar implements MessageComponentInterface {
                 $cache->getStorage()->save($ip, $this->geoService->location($ip));
             }
             else {
-                $location = $this->geoService->location($this->getIpAddress($conn));
+                try {
+                    $location = $this->geoService->location($this->getIpAddress($conn));
+                }
+                catch(GeoServiceException $e) {
+                    throw new AppServiceException($e->getMessage());
+                }
             }
-
             return $location;
         }
-        throw new AppServiceException('Language not defined');
+        throw new AppServiceException('Location not defined');
     }
 }

@@ -35,7 +35,9 @@ class VisitorMapper extends AbstractMongoMapper {
     public function add(array $data) {
 
         try {
+
             $document = (new Visitor($data))->toArray();
+
             $this->collection->insert($document, ['w' => true]);
 
             return new \MongoId($document['_id']);

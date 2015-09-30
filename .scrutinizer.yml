@@ -3,18 +3,15 @@ build:
     environment:
         php:
             version: "5.5.25" # Common versions: 5.4.28, 5.5.25, or hhvm
-            ini:
-                'date.timezone': 'UTC'
-        redis: false
 
     dependencies:
 
         before:
-            - composer install --no-dev --prefer-dist -o
+            - composer install --prefer-dist -o
 
 filter:
     paths: [src/*]
-    excluded_paths: [build/*, phpunit/*, vendor/*]
+    excluded_paths: [build/*, phpunit/*, vendor/*, phpunit.xml.dist]
 
 tools:
     php_sim: true

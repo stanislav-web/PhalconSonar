@@ -134,12 +134,13 @@ class Visitor implements ModelInterface {
         $this->setCloseTime($data['close']);
         $this->setLanguage($data['language']);
         $this->deviceDetect();
+
     }
 
     /**
      * Set current page
      *
-     * @param int $page
+     * @param string $page
      * @return Visitor
      */
     public function setPage($page)
@@ -191,6 +192,7 @@ class Visitor implements ModelInterface {
     /**
      * Set user preferred language
      *
+     * @param string $language
      * @return Visitor
      */
     private function setLanguage($language)
@@ -203,6 +205,7 @@ class Visitor implements ModelInterface {
     /**
      * Set user agent
      *
+     * @param string $ua
      * @return Visitor
      */
     public function setUa($ua)
@@ -232,6 +235,7 @@ class Visitor implements ModelInterface {
     /**
      * Set user OS platform
      *
+     * @param string $platform
      * @return Visitor
      */
     private function setPlatform($platform)
@@ -244,11 +248,12 @@ class Visitor implements ModelInterface {
     /**
      * Set location
      *
+     * @param array|null $location
      * @return Visitor
      */
-    private function setLocation(array $location)
+    private function setLocation(array $location = null)
     {
-        $this->location = $location;
+        $this->location = ($location != null) ? 'Undefined' : $location;
 
         return $this;
     }

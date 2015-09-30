@@ -1,15 +1,282 @@
 <?php
 $coverage = new PHP_CodeCoverage;
 $coverage->setData(array (
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/ModelInterface.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/ModelInterface.php' => 
   array (
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Db/Mongo/VisitorMapper.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Models/Visitor.php' => 
   array (
-    38 => 
+    126 => 
     array (
       0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
     ),
+    129 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    130 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    131 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    132 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    133 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    134 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    135 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    136 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    138 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    148 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    150 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    151 => NULL,
+    161 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    163 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    164 => NULL,
+    174 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    176 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    177 => NULL,
+    187 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    189 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    190 => NULL,
+    200 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    202 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    203 => NULL,
+    213 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    216 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    218 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    219 => NULL,
+    228 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    229 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    230 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    232 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    233 => NULL,
+    243 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    245 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    246 => NULL,
+    256 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    258 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    259 => NULL,
+    268 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    269 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    271 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    272 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    273 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    275 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
+      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    276 => NULL,
+    285 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    287 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    288 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    289 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    290 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    291 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    293 => 
+    array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
+      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
+    ),
+    294 => NULL,
+  ),
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Db/Mongo/VisitorMapper.php' => 
+  array (
     39 => 
     array (
       0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
@@ -20,20 +287,24 @@ $coverage->setData(array (
     ),
     43 => 
     array (
+      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
     ),
-    44 => 
+    45 => 
     array (
     ),
-    45 => NULL,
     46 => 
     array (
     ),
-    47 => 
+    47 => NULL,
+    48 => 
     array (
     ),
-    49 => NULL,
+    49 => 
+    array (
+    ),
+    51 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractMongoMapper.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractMongoMapper.php' => 
   array (
     55 => 
     array (
@@ -99,278 +370,7 @@ $coverage->setData(array (
     ),
     113 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Models/Visitor.php' => 
-  array (
-    126 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    129 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    130 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    131 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    132 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    133 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    134 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    135 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    136 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    137 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    147 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    149 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    150 => NULL,
-    160 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    162 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    163 => NULL,
-    173 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    175 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    176 => NULL,
-    186 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    188 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    189 => NULL,
-    198 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    200 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    201 => NULL,
-    210 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    213 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    215 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    216 => NULL,
-    225 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    226 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    227 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    229 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    230 => NULL,
-    239 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    241 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    242 => NULL,
-    251 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    253 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    254 => NULL,
-    263 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    264 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    266 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    267 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    268 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    270 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testInstance',
-      2 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    271 => NULL,
-    280 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    282 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    283 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    284 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    285 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    286 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    288 => 
-    array (
-      0 => 'Sonar\\Tests\\Mappers\\Db\\Mongo\\VisitorMapperTest::testAdd',
-      1 => 'Sonar\\Tests\\Models\\VisitorTest::testHasAttributes',
-    ),
-    289 => NULL,
-  ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Models/Geo.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Models/Geo.php' => 
   array (
     77 => 
     array (
@@ -533,7 +533,7 @@ $coverage->setData(array (
     ),
     186 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/System/Messenger.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/System/Messenger.php' => 
   array (
     49 => 
     array (
@@ -570,7 +570,7 @@ $coverage->setData(array (
     ),
     105 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/System/Color.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/System/Color.php' => 
   array (
     36 => 
     array (
@@ -842,11 +842,8 @@ $coverage->setData(array (
     ),
     89 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Applications/Sonar.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Applications/Sonar.php' => 
   array (
-    77 => 
-    array (
-    ),
     78 => 
     array (
     ),
@@ -859,19 +856,19 @@ $coverage->setData(array (
     81 => 
     array (
     ),
-    83 => 
+    82 => 
     array (
     ),
     84 => 
     array (
     ),
-    94 => 
+    85 => 
     array (
     ),
-    96 => 
+    95 => 
     array (
     ),
-    99 => 
+    97 => 
     array (
     ),
     100 => 
@@ -883,23 +880,23 @@ $coverage->setData(array (
     102 => 
     array (
     ),
-    113 => 
+    103 => 
     array (
     ),
     114 => 
     array (
     ),
-    115 => NULL,
-    116 => 
+    115 => 
     array (
     ),
+    116 => NULL,
     117 => 
     array (
     ),
-    118 => NULL,
-    124 => 
+    118 => 
     array (
     ),
+    119 => NULL,
     125 => 
     array (
     ),
@@ -912,7 +909,7 @@ $coverage->setData(array (
     128 => 
     array (
     ),
-    131 => 
+    129 => 
     array (
     ),
     132 => 
@@ -927,16 +924,16 @@ $coverage->setData(array (
     135 => 
     array (
     ),
-    145 => 
+    136 => 
     array (
     ),
-    148 => 
+    146 => 
     array (
     ),
-    150 => 
+    149 => 
     array (
     ),
-    153 => 
+    151 => 
     array (
     ),
     154 => 
@@ -957,13 +954,13 @@ $coverage->setData(array (
     159 => 
     array (
     ),
-    162 => 
+    160 => 
     array (
     ),
-    164 => 
+    163 => 
     array (
     ),
-    167 => 
+    165 => 
     array (
     ),
     168 => 
@@ -978,74 +975,74 @@ $coverage->setData(array (
     171 => 
     array (
     ),
-    183 => 
+    172 => 
     array (
     ),
-    185 => 
+    184 => 
     array (
     ),
     186 => 
     array (
     ),
-    188 => NULL,
+    187 => 
+    array (
+    ),
     189 => NULL,
     190 => NULL,
     191 => NULL,
-    202 => 
-    array (
-    ),
+    192 => NULL,
     203 => 
     array (
     ),
-    205 => 
+    204 => 
     array (
     ),
-    206 => NULL,
-    207 => 
+    206 => 
     array (
     ),
-    208 => NULL,
-    219 => 
+    207 => NULL,
+    208 => 
     array (
     ),
-    221 => 
+    209 => NULL,
+    220 => 
     array (
     ),
-    223 => 
+    222 => 
     array (
     ),
-    224 => NULL,
-    225 => 
+    224 => 
     array (
     ),
-    226 => NULL,
-    237 => 
+    225 => NULL,
+    226 => 
     array (
     ),
+    227 => NULL,
     238 => 
     array (
     ),
     239 => 
     array (
     ),
-    241 => 
+    240 => 
     array (
     ),
-    242 => NULL,
-    243 => 
+    242 => 
     array (
     ),
-    244 => NULL,
-    255 => 
+    243 => NULL,
+    244 => 
     array (
     ),
-    257 => 
+    245 => NULL,
+    256 => 
     array (
     ),
-    259 => 
+    258 => 
     array (
     ),
-    262 => 
+    260 => 
     array (
     ),
     263 => 
@@ -1054,25 +1051,34 @@ $coverage->setData(array (
     264 => 
     array (
     ),
-    267 => 
+    265 => 
     array (
     ),
     268 => 
     array (
     ),
-    270 => 
+    269 => 
     array (
     ),
-    273 => 
+    272 => 
     array (
     ),
-    274 => NULL,
+    274 => 
+    array (
+    ),
     275 => 
     array (
     ),
-    276 => NULL,
+    278 => 
+    array (
+    ),
+    279 => NULL,
+    280 => 
+    array (
+    ),
+    281 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractBaseException.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractBaseException.php' => 
   array (
     35 => 
     array (
@@ -1084,10 +1090,10 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractQueueMapper.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractQueueMapper.php' => 
   array (
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Queue/BeanstalkMapper.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Queue/BeanstalkMapper.php' => 
   array (
     34 => 
     array (
@@ -1149,7 +1155,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/AppService.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/AppService.php' => 
   array (
     36 => 
     array (
@@ -1199,7 +1205,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/CacheService.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/CacheService.php' => 
   array (
     35 => 
     array (
@@ -1224,7 +1230,7 @@ $coverage->setData(array (
     ),
     53 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/GeoService.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/GeoService.php' => 
   array (
     37 => 
     array (
@@ -1270,7 +1276,7 @@ $coverage->setData(array (
     ),
     69 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/QueueService.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/QueueService.php' => 
   array (
     35 => 
     array (
@@ -1314,7 +1320,7 @@ $coverage->setData(array (
     ),
     74 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/SocketService.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/SocketService.php' => 
   array (
     46 => 
     array (
@@ -1393,7 +1399,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/StorageService.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/StorageService.php' => 
   array (
     37 => 
     array (
@@ -1425,7 +1431,7 @@ $coverage->setData(array (
     ),
     71 => NULL,
   ),
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/System/Profiler.php' => 
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/System/Profiler.php' => 
   array (
     51 => 
     array (
@@ -1638,400 +1644,399 @@ $coverage->setTests(array (
 
 $filter = $coverage->filter();
 $filter->setBlacklistedFiles(array (
-  '/usr/local/bin/phpunit' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-file-iterator/src/Facade.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-file-iterator/src/Factory.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-file-iterator/src/Iterator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/HHVM.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/PHPDBG.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/Xdebug.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Exception.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Exception/UnintentionallyCoveredCode.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Filter.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Clover.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Crap4j.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Factory.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Dashboard.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Directory.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/File.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/Directory.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/File.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/Iterator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/PHP.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Text.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Directory.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Coverage.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Method.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Report.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Unit.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Node.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Project.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Tests.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Totals.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Util.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Util/InvalidArgumentHelper.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-timer/src/Timer.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-token-stream/src/Token.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-token-stream/src/Token/Stream.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-token-stream/src/Token/Stream/CachingFactory.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Exception.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Extensions/GroupTestSuite.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Extensions/PhptTestCase.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Extensions/PhptTestSuite.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Extensions/RepeatedTest.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Extensions/TestDecorator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Extensions/TicketListener.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Assert.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/AssertionFailedError.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/BaseTestListener.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/CodeCoverageException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/And.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/ArrayHasKey.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/ArraySubset.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/Attribute.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/Callback.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/ClassHasAttribute.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/ClassHasStaticAttribute.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/Composite.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/Count.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/Exception.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/ExceptionCode.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/ExceptionMessage.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/ExceptionMessageRegExp.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/FileExists.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/GreaterThan.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsAnything.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsEmpty.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsEqual.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsFalse.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsIdentical.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsInstanceOf.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsJson.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsNull.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsTrue.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsType.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/JsonMatches.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/JsonMatches/ErrorMessageProvider.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/LessThan.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/Not.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/ObjectHasAttribute.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/Or.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/PCREMatch.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/SameSize.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/StringContains.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/StringEndsWith.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/StringMatches.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/StringStartsWith.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/TraversableContains.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/TraversableContainsOnly.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Constraint/Xor.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Error.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Error/Deprecated.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Error/Notice.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Error/Warning.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Exception.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/ExceptionWrapper.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/ExpectationFailedException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/IncompleteTest.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/IncompleteTestCase.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/IncompleteTestError.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/InvalidCoversTargetError.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/InvalidCoversTargetException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/OutputError.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/RiskyTest.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/RiskyTestError.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/SelfDescribing.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/SkippedTest.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/SkippedTestCase.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/SkippedTestError.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/SkippedTestSuiteError.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/SyntheticError.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Test.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/TestCase.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/TestFailure.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/TestListener.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/TestResult.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/TestSuite.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/TestSuite/DataProvider.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/UnintentionallyCoveredCodeError.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Framework/Warning.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Runner/BaseTestRunner.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Runner/Exception.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Runner/Filter/Factory.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Runner/Filter/Group.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Runner/Filter/Group/Exclude.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Runner/Filter/Group/Include.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Runner/Filter/Test.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Runner/StandardTestSuiteLoader.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Runner/TestSuiteLoader.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Runner/Version.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/TextUI/Command.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/TextUI/ResultPrinter.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/TextUI/TestRunner.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/Blacklist.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/Configuration.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/ErrorHandler.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/Fileloader.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/Filesystem.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/Filter.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/Getopt.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/GlobalState.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/InvalidArgumentHelper.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/Log/JSON.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/Log/JUnit.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/Log/TAP.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/PHP.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/PHP/Default.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/PHP/Windows.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/Printer.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/Regex.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/String.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/Test.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/TestDox/NamePrettifier.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter/HTML.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter/Text.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/TestSuiteIterator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/Type.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit/src/Util/XML.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Identity.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/InvocationMocker.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Match.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/MethodNameMatch.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Namespace.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/ParametersMatch.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Stub.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/BadMethodCallException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/Exception.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/RuntimeException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation/Object.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation/Static.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/InvocationMocker.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invokable.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/AnyInvokedCount.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/AnyParameters.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/ConsecutiveParameters.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/Invocation.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtIndex.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtLeastCount.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtLeastOnce.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtMostCount.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedCount.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedRecorder.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/MethodName.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/Parameters.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/StatelessInvocation.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/MockBuilder.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/MockObject.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ConsecutiveCalls.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/Exception.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/MatcherCollection.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/Return.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnArgument.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnCallback.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnSelf.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnValueMap.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Verifiable.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpunit/php-text-template/src/Template.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/symfony/yaml/Dumper.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/symfony/yaml/Escaper.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/symfony/yaml/Exception/DumpException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/symfony/yaml/Exception/ExceptionInterface.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/symfony/yaml/Exception/ParseException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/symfony/yaml/Exception/RuntimeException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/symfony/yaml/Inline.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/symfony/yaml/Parser.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/symfony/yaml/Tests/DumperTest.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/symfony/yaml/Tests/InlineTest.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/symfony/yaml/Tests/ParseExceptionTest.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/symfony/yaml/Tests/ParserTest.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/symfony/yaml/Tests/YamlTest.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/symfony/yaml/Unescaper.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/symfony/yaml/Yaml.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/diff/src/Chunk.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/diff/src/Diff.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/diff/src/Differ.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/diff/src/LCS/LongestCommonSubsequence.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/diff/src/LCS/MemoryEfficientLongestCommonSubsequenceImplementation.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/diff/src/LCS/TimeEfficientLongestCommonSubsequenceImplementation.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/diff/src/Line.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/diff/src/Parser.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/environment/src/Console.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/environment/src/Runtime.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/comparator/src/ArrayComparator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/comparator/src/Comparator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/comparator/src/ComparisonFailure.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/comparator/src/DOMNodeComparator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/comparator/src/DateTimeComparator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/comparator/src/DoubleComparator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/comparator/src/ExceptionComparator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/comparator/src/Factory.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/comparator/src/MockObjectComparator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/comparator/src/NumericComparator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/comparator/src/ObjectComparator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/comparator/src/ResourceComparator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/comparator/src/ScalarComparator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/comparator/src/SplObjectStorageComparator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/comparator/src/TypeComparator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/exporter/src/Exporter.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/global-state/src/Blacklist.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/global-state/src/Exception.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/global-state/src/Restorer.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/global-state/src/RuntimeException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/global-state/src/Snapshot.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/recursion-context/src/Context.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/recursion-context/src/Exception.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/recursion-context/src/InvalidArgumentException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/sebastian/version/src/Version.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/composer/ClassLoader.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/composer/autoload_classmap.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/composer/autoload_files.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/composer/autoload_namespaces.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/composer/autoload_psr4.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/composer/autoload_real.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/ExceptionInterface.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/InvalidArgumentException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/UnexpectedValueException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/doctrine/instantiator/src/Doctrine/Instantiator/InstantiatorInterface.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Context.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Description.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Location.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Serializer.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/AuthorTag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/CoversTag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/DeprecatedTag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/ExampleTag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/LinkTag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/MethodTag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/ParamTag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/PropertyReadTag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/PropertyTag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/PropertyWriteTag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/ReturnTag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/SeeTag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/SinceTag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/SourceTag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/ThrowsTag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/UsesTag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/VarTag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/VersionTag.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Type/Collection.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Argument.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Argument/ArgumentsWildcard.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValueToken.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValuesToken.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ArrayCountToken.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ArrayEntryToken.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ArrayEveryEntryToken.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/CallbackToken.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ExactValueToken.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/IdenticalValueToken.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/LogicalAndToken.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/LogicalNotToken.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ObjectStateToken.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/StringContainsToken.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/TokenInterface.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/TypeToken.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Call/Call.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Call/CallCenter.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Comparator/ClosureComparator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Comparator/Factory.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/CachedDoubler.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/ClassPatchInterface.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/DisableConstructorPatch.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/HhvmExceptionPatch.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/KeywordPatch.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/MagicCallPatch.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/ProphecySubjectPatch.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/ReflectionClassNewInstancePatch.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/SplFileInfoPatch.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/TraversablePatch.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/DoubleInterface.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/Doubler.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ClassCodeGenerator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ClassCreator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ClassMirror.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/ArgumentNode.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/ClassNode.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/MethodNode.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ReflectionInterface.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/LazyDouble.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/NameGenerator.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Call/UnexpectedCallException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/ClassCreatorException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/ClassMirrorException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/ClassNotFoundException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/DoubleException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/DoublerException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/InterfaceNotFoundException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/MethodNotFoundException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/ReturnByReferenceException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Exception.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/InvalidArgumentException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/AggregateException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/FailedPredictionException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/NoCallsException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/PredictionException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/UnexpectedCallsCountException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/UnexpectedCallsException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Prophecy/MethodProphecyException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Prophecy/ObjectProphecyException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Prophecy/ProphecyException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Prediction/CallPrediction.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Prediction/CallTimesPrediction.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Prediction/CallbackPrediction.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Prediction/NoCallsPrediction.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Prediction/PredictionInterface.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Promise/CallbackPromise.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Promise/PromiseInterface.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Promise/ReturnArgumentPromise.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Promise/ReturnPromise.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Promise/ThrowPromise.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Prophecy/MethodProphecy.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Prophecy/ObjectProphecy.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Prophecy/ProphecyInterface.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Prophecy/ProphecySubjectInterface.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Prophecy/Revealer.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Prophecy/RevealerInterface.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Prophet.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Util/ExportUtil.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/phpspec/prophecy/src/Prophecy/Util/StringUtil.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-file-iterator/src/Facade.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-file-iterator/src/Factory.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-file-iterator/src/Iterator.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/HHVM.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/PHPDBG.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/Xdebug.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Exception.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Exception/UnintentionallyCoveredCode.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Filter.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Clover.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Crap4j.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Factory.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Dashboard.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Directory.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/File.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/Directory.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/File.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/Iterator.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/PHP.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Text.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Directory.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Coverage.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Method.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Report.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Unit.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Node.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Project.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Tests.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Totals.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Util.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-code-coverage/src/CodeCoverage/Util/InvalidArgumentHelper.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-timer/src/Timer.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-token-stream/src/Token.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-token-stream/src/Token/Stream.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-token-stream/src/Token/Stream/CachingFactory.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Exception.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Extensions/GroupTestSuite.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Extensions/PhptTestCase.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Extensions/PhptTestSuite.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Extensions/RepeatedTest.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Extensions/TestDecorator.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Extensions/TicketListener.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Assert.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/AssertionFailedError.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/BaseTestListener.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/CodeCoverageException.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/And.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/ArrayHasKey.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/ArraySubset.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/Attribute.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/Callback.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/ClassHasAttribute.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/ClassHasStaticAttribute.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/Composite.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/Count.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/Exception.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/ExceptionCode.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/ExceptionMessage.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/ExceptionMessageRegExp.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/FileExists.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/GreaterThan.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsAnything.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsEmpty.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsEqual.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsFalse.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsIdentical.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsInstanceOf.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsJson.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsNull.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsTrue.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/IsType.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/JsonMatches.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/JsonMatches/ErrorMessageProvider.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/LessThan.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/Not.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/ObjectHasAttribute.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/Or.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/PCREMatch.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/SameSize.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/StringContains.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/StringEndsWith.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/StringMatches.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/StringStartsWith.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/TraversableContains.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/TraversableContainsOnly.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Constraint/Xor.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Error.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Error/Deprecated.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Error/Notice.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Error/Warning.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Exception.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/ExceptionWrapper.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/ExpectationFailedException.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/IncompleteTest.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/IncompleteTestCase.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/IncompleteTestError.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/InvalidCoversTargetError.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/InvalidCoversTargetException.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/OutputError.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/RiskyTest.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/RiskyTestError.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/SelfDescribing.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/SkippedTest.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/SkippedTestCase.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/SkippedTestError.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/SkippedTestSuiteError.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/SyntheticError.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Test.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/TestCase.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/TestFailure.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/TestListener.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/TestResult.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/TestSuite.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/TestSuite/DataProvider.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/UnintentionallyCoveredCodeError.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Framework/Warning.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Runner/BaseTestRunner.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Runner/Exception.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Runner/Filter/Factory.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Runner/Filter/Group.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Runner/Filter/Group/Exclude.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Runner/Filter/Group/Include.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Runner/Filter/Test.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Runner/StandardTestSuiteLoader.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Runner/TestSuiteLoader.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Runner/Version.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/TextUI/Command.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/TextUI/ResultPrinter.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/TextUI/TestRunner.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/Blacklist.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/Configuration.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/ErrorHandler.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/Fileloader.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/Filesystem.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/Filter.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/Getopt.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/GlobalState.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/InvalidArgumentHelper.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/Log/JSON.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/Log/JUnit.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/Log/TAP.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/PHP.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/PHP/Default.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/PHP/Windows.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/Printer.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/Regex.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/String.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/Test.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/TestDox/NamePrettifier.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter/HTML.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter/Text.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/TestSuiteIterator.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/Type.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit/src/Util/XML.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Identity.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/InvocationMocker.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Match.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/MethodNameMatch.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Namespace.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/ParametersMatch.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Builder/Stub.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/BadMethodCallException.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/Exception.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Exception/RuntimeException.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation/Object.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invocation/Static.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/InvocationMocker.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Invokable.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/AnyInvokedCount.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/AnyParameters.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/ConsecutiveParameters.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/Invocation.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtIndex.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtLeastCount.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtLeastOnce.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedAtMostCount.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedCount.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/InvokedRecorder.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/MethodName.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/Parameters.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Matcher/StatelessInvocation.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/MockBuilder.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/MockObject.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ConsecutiveCalls.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/Exception.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/MatcherCollection.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/Return.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnArgument.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnCallback.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnSelf.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Stub/ReturnValueMap.php' => true,
+  '/var/www/backend.local/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Verifiable.php' => true,
+  '/var/www/backend.local/vendor/phpunit/php-text-template/src/Template.php' => true,
+  '/var/www/backend.local/vendor/symfony/yaml/Dumper.php' => true,
+  '/var/www/backend.local/vendor/symfony/yaml/Escaper.php' => true,
+  '/var/www/backend.local/vendor/symfony/yaml/Exception/DumpException.php' => true,
+  '/var/www/backend.local/vendor/symfony/yaml/Exception/ExceptionInterface.php' => true,
+  '/var/www/backend.local/vendor/symfony/yaml/Exception/ParseException.php' => true,
+  '/var/www/backend.local/vendor/symfony/yaml/Exception/RuntimeException.php' => true,
+  '/var/www/backend.local/vendor/symfony/yaml/Inline.php' => true,
+  '/var/www/backend.local/vendor/symfony/yaml/Parser.php' => true,
+  '/var/www/backend.local/vendor/symfony/yaml/Tests/DumperTest.php' => true,
+  '/var/www/backend.local/vendor/symfony/yaml/Tests/InlineTest.php' => true,
+  '/var/www/backend.local/vendor/symfony/yaml/Tests/ParseExceptionTest.php' => true,
+  '/var/www/backend.local/vendor/symfony/yaml/Tests/ParserTest.php' => true,
+  '/var/www/backend.local/vendor/symfony/yaml/Tests/YamlTest.php' => true,
+  '/var/www/backend.local/vendor/symfony/yaml/Unescaper.php' => true,
+  '/var/www/backend.local/vendor/symfony/yaml/Yaml.php' => true,
+  '/var/www/backend.local/vendor/sebastian/diff/src/Chunk.php' => true,
+  '/var/www/backend.local/vendor/sebastian/diff/src/Diff.php' => true,
+  '/var/www/backend.local/vendor/sebastian/diff/src/Differ.php' => true,
+  '/var/www/backend.local/vendor/sebastian/diff/src/LCS/LongestCommonSubsequence.php' => true,
+  '/var/www/backend.local/vendor/sebastian/diff/src/LCS/MemoryEfficientLongestCommonSubsequenceImplementation.php' => true,
+  '/var/www/backend.local/vendor/sebastian/diff/src/LCS/TimeEfficientLongestCommonSubsequenceImplementation.php' => true,
+  '/var/www/backend.local/vendor/sebastian/diff/src/Line.php' => true,
+  '/var/www/backend.local/vendor/sebastian/diff/src/Parser.php' => true,
+  '/var/www/backend.local/vendor/sebastian/environment/src/Console.php' => true,
+  '/var/www/backend.local/vendor/sebastian/environment/src/Runtime.php' => true,
+  '/var/www/backend.local/vendor/sebastian/comparator/src/ArrayComparator.php' => true,
+  '/var/www/backend.local/vendor/sebastian/comparator/src/Comparator.php' => true,
+  '/var/www/backend.local/vendor/sebastian/comparator/src/ComparisonFailure.php' => true,
+  '/var/www/backend.local/vendor/sebastian/comparator/src/DOMNodeComparator.php' => true,
+  '/var/www/backend.local/vendor/sebastian/comparator/src/DateTimeComparator.php' => true,
+  '/var/www/backend.local/vendor/sebastian/comparator/src/DoubleComparator.php' => true,
+  '/var/www/backend.local/vendor/sebastian/comparator/src/ExceptionComparator.php' => true,
+  '/var/www/backend.local/vendor/sebastian/comparator/src/Factory.php' => true,
+  '/var/www/backend.local/vendor/sebastian/comparator/src/MockObjectComparator.php' => true,
+  '/var/www/backend.local/vendor/sebastian/comparator/src/NumericComparator.php' => true,
+  '/var/www/backend.local/vendor/sebastian/comparator/src/ObjectComparator.php' => true,
+  '/var/www/backend.local/vendor/sebastian/comparator/src/ResourceComparator.php' => true,
+  '/var/www/backend.local/vendor/sebastian/comparator/src/ScalarComparator.php' => true,
+  '/var/www/backend.local/vendor/sebastian/comparator/src/SplObjectStorageComparator.php' => true,
+  '/var/www/backend.local/vendor/sebastian/comparator/src/TypeComparator.php' => true,
+  '/var/www/backend.local/vendor/sebastian/exporter/src/Exporter.php' => true,
+  '/var/www/backend.local/vendor/sebastian/global-state/src/Blacklist.php' => true,
+  '/var/www/backend.local/vendor/sebastian/global-state/src/Exception.php' => true,
+  '/var/www/backend.local/vendor/sebastian/global-state/src/Restorer.php' => true,
+  '/var/www/backend.local/vendor/sebastian/global-state/src/RuntimeException.php' => true,
+  '/var/www/backend.local/vendor/sebastian/global-state/src/Snapshot.php' => true,
+  '/var/www/backend.local/vendor/sebastian/recursion-context/src/Context.php' => true,
+  '/var/www/backend.local/vendor/sebastian/recursion-context/src/Exception.php' => true,
+  '/var/www/backend.local/vendor/sebastian/recursion-context/src/InvalidArgumentException.php' => true,
+  '/var/www/backend.local/vendor/sebastian/version/src/Version.php' => true,
+  '/var/www/backend.local/vendor/composer/ClassLoader.php' => true,
+  '/var/www/backend.local/vendor/composer/autoload_classmap.php' => true,
+  '/var/www/backend.local/vendor/composer/autoload_files.php' => true,
+  '/var/www/backend.local/vendor/composer/autoload_namespaces.php' => true,
+  '/var/www/backend.local/vendor/composer/autoload_psr4.php' => true,
+  '/var/www/backend.local/vendor/composer/autoload_real.php' => true,
+  '/var/www/backend.local/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/ExceptionInterface.php' => true,
+  '/var/www/backend.local/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/InvalidArgumentException.php' => true,
+  '/var/www/backend.local/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Exception/UnexpectedValueException.php' => true,
+  '/var/www/backend.local/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php' => true,
+  '/var/www/backend.local/vendor/doctrine/instantiator/src/Doctrine/Instantiator/InstantiatorInterface.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Context.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Description.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Location.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Serializer.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/AuthorTag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/CoversTag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/DeprecatedTag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/ExampleTag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/LinkTag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/MethodTag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/ParamTag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/PropertyReadTag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/PropertyTag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/PropertyWriteTag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/ReturnTag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/SeeTag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/SinceTag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/SourceTag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/ThrowsTag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/UsesTag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/VarTag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/VersionTag.php' => true,
+  '/var/www/backend.local/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Type/Collection.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Argument.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Argument/ArgumentsWildcard.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValueToken.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValuesToken.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ArrayCountToken.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ArrayEntryToken.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ArrayEveryEntryToken.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/CallbackToken.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ExactValueToken.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/IdenticalValueToken.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/LogicalAndToken.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/LogicalNotToken.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ObjectStateToken.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/StringContainsToken.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/TokenInterface.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/TypeToken.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Call/Call.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Call/CallCenter.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Comparator/ClosureComparator.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Comparator/Factory.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/CachedDoubler.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/ClassPatchInterface.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/DisableConstructorPatch.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/HhvmExceptionPatch.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/KeywordPatch.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/MagicCallPatch.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/ProphecySubjectPatch.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/ReflectionClassNewInstancePatch.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/SplFileInfoPatch.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/ClassPatch/TraversablePatch.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/DoubleInterface.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/Doubler.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ClassCodeGenerator.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ClassCreator.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ClassMirror.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/ArgumentNode.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/ClassNode.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/Node/MethodNode.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/Generator/ReflectionInterface.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/LazyDouble.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Doubler/NameGenerator.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Call/UnexpectedCallException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/ClassCreatorException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/ClassMirrorException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/ClassNotFoundException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/DoubleException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/DoublerException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/InterfaceNotFoundException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/MethodNotFoundException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Doubler/ReturnByReferenceException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Exception.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/InvalidArgumentException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/AggregateException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/FailedPredictionException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/NoCallsException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/PredictionException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/UnexpectedCallsCountException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Prediction/UnexpectedCallsException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Prophecy/MethodProphecyException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Prophecy/ObjectProphecyException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Exception/Prophecy/ProphecyException.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Prediction/CallPrediction.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Prediction/CallTimesPrediction.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Prediction/CallbackPrediction.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Prediction/NoCallsPrediction.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Prediction/PredictionInterface.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Promise/CallbackPromise.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Promise/PromiseInterface.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Promise/ReturnArgumentPromise.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Promise/ReturnPromise.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Promise/ThrowPromise.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Prophecy/MethodProphecy.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Prophecy/ObjectProphecy.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Prophecy/ProphecyInterface.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Prophecy/ProphecySubjectInterface.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Prophecy/Revealer.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Prophecy/RevealerInterface.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Prophet.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Util/ExportUtil.php' => true,
+  '/var/www/backend.local/vendor/phpspec/prophecy/src/Prophecy/Util/StringUtil.php' => true,
 ));
 $filter->setWhitelistedFiles(array (
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Applications/Sonar.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractBaseException.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractMongoMapper.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractQueueMapper.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Aware/ModelInterface.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Db/Mongo/VisitorMapper.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Queue/BeanstalkMapper.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Models/Geo.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Models/Visitor.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/AppService.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/CacheService.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/GeoService.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/QueueService.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/SocketService.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/Services/StorageService.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/System/Color.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/System/Messenger.php' => true,
-  '/Users/stanislavmenshykh/phalcon.local/vendor/stanislav-web/sonar/src/Sonar/System/Profiler.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Applications/Sonar.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractBaseException.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractMongoMapper.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/AbstractQueueMapper.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Aware/ModelInterface.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Db/Mongo/VisitorMapper.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Mappers/Queue/BeanstalkMapper.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Models/Geo.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Models/Visitor.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/AppService.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/CacheService.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/GeoService.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/QueueService.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/SocketService.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/Services/StorageService.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/System/Color.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/System/Messenger.php' => true,
+  '/var/www/backend.local/vendor/stanislav-web/sonar/src/Sonar/System/Profiler.php' => true,
 ));
 
 return $coverage;
