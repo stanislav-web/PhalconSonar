@@ -7,11 +7,12 @@ build:
     dependencies:
 
         before:
-            - composer install --no-dev -o
+            - composer self-update
+            - composer install --prefer-source --dev
 
 filter:
     paths: [src/*]
-    excluded_paths: [build/*, phpunit/*, vendor/*, phpunit.xml.dist]
+    excluded_paths: [build/*, phpunit/*, vendor/*]
 
 tools:
     php_sim: true
@@ -25,8 +26,8 @@ tools:
             - phpunit
             - vendor
 
-    external_code_coverage: false
-    php_code_coverage: false
+    external_code_coverage:
+        timeout: 7200    # Timeout in seconds.
 
     php_analyzer:
         enabled: true
@@ -58,6 +59,7 @@ checks:
         duplication: false
         verify_property_names: true
         verify_argument_usable_as_reference: true
+        deadlock_detection_in_loops: true
         verify_access_scope_valid: true
         variable_existence: true
         use_statement_alias_conflict: true
