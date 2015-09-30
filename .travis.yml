@@ -2,8 +2,6 @@
 # see http://about.travis-ci.org/docs/user/languages/php/ for more hints
 language: php
 
-sudo: false
-
 # list any PHP version you want to test against
 php:
     # aliased to a recent 5.5.x version
@@ -25,7 +23,7 @@ env:
 before_script:
 
     - sleep 15
-    - travis_retry "mongo sonar_test --eval 'db.addUser(\"test_user\", \"test_password\");'; sleep 3"
+    - mongo sonar_test --eval 'db.addUser("test_user", "test_password");'
 
     # Update Composer
     - travis_retry composer self-update
