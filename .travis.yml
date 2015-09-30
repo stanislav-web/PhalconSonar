@@ -15,6 +15,9 @@ matrix:
     allow_failures:
         - php: 7.0
 
+services:
+  - mongodb
+
 cache:
   directories:
     - vendor
@@ -30,7 +33,9 @@ before_script:
     # Install Phalcon
     - git clone -q --depth=1 https://github.com/phalcon/cphalcon.git -b phalcon-v${PHALCON_VERSION}
     - (cd cphalcon/ext; export CFLAGS="-g3 -O1 -fno-delete-null-pointer-checks -Wall"; phpize &> /dev/null && ./configure --silent --enable-phalcon &> /dev/null && make --silent -j4 > /dev/null && make --silent install && phpenv config-add ../unit-tests/ci/phalcon.ini &> /dev/null)
-    - php -r 'echo \Phalcon\Version::get()."\n";'
+    - php -m | grep -i Phalcon
+    - echo "extension = mongo.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+    - mongo sonar --eval 'db.createUser({"user" : "root", "pwd": "root", "roles" : [ { role: "readWrite", db: "sonar" }] })'
 
     # Install Nette Tester
     - travis_retry composer install --no-interaction --prefer-source
@@ -40,7 +45,6 @@ before_script:
     - if [ "$TRAVIS_PHP_VERSION" == "5.6" ]; then NTESTER_FLAGS="--coverage ./coverage.xml --coverage-src ./src"; else TESTER_FLAGS=""; fi
 
 script:
-  - echo "extension = mongo.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
   - phpenv rehash
   - mkdir -p build/unitlogs
   - phpunit --coverage-clover build/unitlogs/coverage.xml
