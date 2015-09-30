@@ -10,8 +10,6 @@ build:
     dependencies:
 
         before:
-            - git clone -q --depth=1 https://github.com/phalcon/cphalcon.git -b phalcon-v2.0.7
-            - (cd cphalcon/ext; export CFLAGS="-g3 -O1 -fno-delete-null-pointer-checks -Wall"; phpize &> /dev/null && ./configure --silent --enable-phalcon &> /dev/null && make --silent -j4 > /dev/null && make --silent install && phpenv config-add ../unit-tests/ci/phalcon.ini &> /dev/null)
             - composer install --prefer-dist -o
 
 filter:
@@ -30,7 +28,7 @@ tools:
             - phpunit
             - vendor
 
-    php_code_coverage: true
+    external_code_coverage: true
 
     php_analyzer:
         enabled: true
@@ -95,7 +93,7 @@ checks:
         return_doc_comments: true
         return_doc_comment_if_not_inferrable: true
         php5_style_constructor: true
-        phpunit_assertions: true
+        phpunit_assertions: false
         parameter_doc_comments: true
         param_doc_comment_if_not_inferrable: true
         overriding_private_members: true
