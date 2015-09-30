@@ -10,7 +10,7 @@ build:
     dependencies:
 
         before:
-            - composer install --prefer-dist -o
+            - composer install --no-dev --prefer-dist -o
 
 filter:
     paths: [src/*]
@@ -28,7 +28,8 @@ tools:
             - phpunit
             - vendor
 
-    external_code_coverage: true
+    external_code_coverage: false
+    php_code_coverage: false
 
     php_analyzer:
         enabled: true
