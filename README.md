@@ -1,6 +1,6 @@
-# Sonar v1.2-alpha
+# Sonar v1.2.2-alpha
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/stanislav-web/PhalconSonar/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/stanislav-web/PhalconSonar/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/stanislav-web/PhalconSonar/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/stanislav-web/PhalconSonar/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/stanislav-web/PhalconSonar/badges/build.png?b=master)](https://scrutinizer-ci.com/g/stanislav-web/PhalconSonar/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/stanislav-web/PhalconSonar/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/stanislav-web/PhalconSonar/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/stanislav-web/PhalconSonar/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/stanislav-web/PhalconSonar/?branch=master) [![Build Status](https://travis-ci.org/stanislav-web/PhalconSonar.svg)](https://travis-ci.org/stanislav-web/PhalconSonar)
 
 [![Latest Stable Version](https://poser.pugx.org/stanislav-web/sonar/v/stable)](https://packagist.org/packages/stanislav-web/sonar) [![Total Downloads](https://poser.pugx.org/stanislav-web/sonar/downloads)](https://packagist.org/packages/stanislav-web/sonar) [![Latest Unstable Version](https://poser.pugx.org/stanislav-web/sonar/v/unstable)](https://packagist.org/packages/stanislav-web/sonar) [![License](https://poser.pugx.org/stanislav-web/sonar/license)](https://packagist.org/packages/stanislav-web/sonar)
 
@@ -10,6 +10,10 @@ You can easily integrate this package to track detailed information about your v
 Check the time on each page of the site, determine device, geo location.
 
 ## ChangeLog
+
+#### [v1.2.2-alpha] 2015-09-27
+    - add debugger (show verbose in config)
+    - change cache session (to shared memory)
 
 #### [v1.2-alpha] 2015-09-22
     - configurable error log
@@ -86,15 +90,6 @@ if you will be making their to global application config. See example:
             'socket'        =>  [
                 'host'  =>  '127.0.0.1',
                 'port'  =>  9003,
-            ],
-
-            // memcache server configuration
-            'memcache'     =>  [
-                'lifetime'      => 300,
-                'prefix'        => 'sonar_',
-                'host'          => '127.0.0.1',
-                'port'          => 11211,
-                'persistent'    => false,
             ],
 
             // db storage configuration (Mongo)

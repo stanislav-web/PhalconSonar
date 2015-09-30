@@ -10,7 +10,8 @@ use Sonar\Services\StorageService;
 use Sonar\Services\QueueService;
 use Sonar\System\Messenger;
 use Sonar\Exceptions\AppServiceException;
-use Phalcon\Http\Response\Headers;
+use Sonar\System\Profiler;
+
 /**
  * Class Sonar. App receiver
  *
@@ -93,22 +94,30 @@ class Sonar implements MessageComponentInterface {
         $this->clients->attach($conn);
 
         echo Messenger::open($this->getIpAddress($conn));
+
+        // start profiler
+        if(defined('SONAR_VERBOSE') === true) {
+            Profiler::start();
+        }
     }
 
     /**
      * Push to task event
      *
-     * @param ConnectionInterface $request
-     * @param ConnectionInterface              $conn
-     * @throws \InvalidArgumentException
+     * @param ConnectionInterface           $conn
+     * @param ConnectionInterface           $request
+     * @throws \Sonar\Exceptions\AppServiceException
      */
     public function onMessage(ConnectionInterface $conn, $request) {
 
         if(is_array($request = json_decode($request, true)) === false) {
             throw new AppServiceException('The server received an invalid data format');
         }
+        if(isset($request['page']) === false) {
+            throw new AppServiceException('There is no current page data');
+        }
 
-        $this->queueService->push($request, function() use ($conn) {
+        $this->queueService->push($request, function() use ($request, $conn) {
 
             // process only what is necessary for the subsequent construction of stats
             return [
@@ -117,6 +126,12 @@ class Sonar implements MessageComponentInterface {
                 'open'      =>  time()
             ];
         });
+
+        // send back
+        if(defined('SONAR_VERBOSE') === true) {
+            echo Messenger::message(json_encode($request));
+            $conn->send(json_encode($request));
+        }
     }
 
     /**
@@ -147,6 +162,12 @@ class Sonar implements MessageComponentInterface {
         $this->storageService->add($data);
 
         echo Messenger::close($this->getIpAddress($conn));
+
+        // end profiler
+        if(defined('SONAR_VERBOSE') === true) {
+            Profiler::finish();
+            Profiler::getProfilingData();
+        }
     }
 
     /**

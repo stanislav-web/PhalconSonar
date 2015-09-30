@@ -1,19 +1,20 @@
 <?php
-namespace Sonar\Tests\Mappers;
+namespace Sonar\Tests\Mappers\Db\Mongo;
 
 use Sonar\Mappers\Db\Mongo\VisitorMapper;
 use Sonar\Mockups\MongoMockup;
+use Sonar\Mockups\VisitorMockup;
 
 /**
- * Class TestVisitorMapper
+ * Class VisitorMapperTest
  *
- * @package Sonar\Tests\Mappers
- * @subpackage Sonar\Tests
+ * @package Sonar\Tests\Mappers\Db\Mongo
+ * @subpackage Sonar\Tests\Mappers\Db
  * @author Stanislav WEB | Lugansk <stanisov@gmail.com>
  * @copyright Stanislav WEB
- * @filesource /Tests/Mappers/TestVisitorMapper.php
+ * @filesource /Tests/Mappers/Db/Mongo/VisitorMapperTest.php
  */
-class TestVisitorMapper extends \PHPUnit_Framework_TestCase {
+class VisitorMapperTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * Testing object namespace
@@ -36,7 +37,7 @@ class TestVisitorMapper extends \PHPUnit_Framework_TestCase {
      */
     public function setUp()
     {
-        $this->mock = new MongoMockup();
+        $this->mock = new MongoMockup((new VisitorMockup())->getMockData());
     }
 
     /**
@@ -57,6 +58,6 @@ class TestVisitorMapper extends \PHPUnit_Framework_TestCase {
         $data = new VisitorMapper($this->mock->getConfig());
 
         // checking instance object return
-        $this->assertInstanceOf('\MongoId', $data->add(['test' => 'test']));
+        $this->assertInstanceOf('\MongoId', $data->add($this->mock->getAddData()));
     }
 }

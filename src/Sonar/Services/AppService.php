@@ -3,6 +3,7 @@ namespace Sonar\Services;
 
 use Sonar\Exceptions\AppServiceException;
 use Sonar\Exceptions\SocketServiceException;
+use Sonar\System\Profiler;
 
 /**
  * Class AppService. Application Service
@@ -37,9 +38,8 @@ class AppService {
             if(isset($config->socket) === false) {
                 throw new AppServiceException('There is no option `socket` in your configurations');
             }
-
-            if($config->offsetExists('debug') === true) {
-                define('VERBOSE', $config->debug);
+            if($config->offsetExists('debug') === true && boolval($config->debug) === true) {
+                define('SONAR_VERBOSE', true);
             }
             $this->socketService = new SocketService($config);
         }
@@ -51,8 +51,14 @@ class AppService {
      */
     public function run() {
 
+        if (PHP_SAPI !== 'cli') {
+            throw new AppServiceException('Warning: Script should be invoked via the CLI version of PHP, not the '.PHP_SAPI.' SAPI');
+        }
+
         try {
+
             $this->socketService->run();
+
         }
         catch(SocketServiceException $e) {
             throw new AppServiceException($e->getMessage());

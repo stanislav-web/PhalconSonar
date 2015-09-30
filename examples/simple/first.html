@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First</title>
+</head>
+<script type="text/javascript" src="js/sockets.js"></script>
+<body>
+
+<!-- Body -->
+<h1>First</h1>
+<p>Connection status:</p>
+<ul style="list-style: none; background-color: azure">
+    <li style="color: green;">[OPEN] <span id="open">Wait...</span></li>
+    <li style="color: blue">[MESSAGE] <span id="message">Wait...</span></li>
+    <li style="color: red">[ERROR] <span id="received">Wait...</span></li>
+    <li style="color: black">[CLOSE] <span id="close">Wait...</span></li>
+</ul>
+
+<ul>
+    <li><b><a href="first.html">First page</a></b></li>
+    <li><a href="second.html">Second page</a></li>
+    <li><a href="third.html">Third page</a></li>
+    <li><a href="four.html">Four page</a></li>
+    <li><a href="five.html">Five page</a></li>
+</ul>
+<p>
+    <a href="index.html">Main page</a><button onclick="Socket.send('http://ya.ru');">Click to send</button>
+</p>
+<!-- /Body -->
+
+</body>
+</html>

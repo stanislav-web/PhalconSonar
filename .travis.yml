@@ -1,0 +1,50 @@
+# Required to run your project under the correct environment.
+# see http://about.travis-ci.org/docs/user/languages/php/ for more hints
+language: php
+
+# list any PHP version you want to test against
+php:
+    # aliased to a recent 5.5.x version
+    - 5.5
+    # aliased to a recent 5.6.x version
+    - 5.6
+    # aliased to a recent 7.x version
+    - 7.0
+
+matrix:
+    allow_failures:
+        - php: 7.0
+
+cache:
+  directories:
+    - vendor
+    - $HOME/.composer/cache
+
+env:
+  - PHALCON_VERSION="2.0.7"
+
+before_script:
+    # Update Composer
+    - travis_retry composer self-update
+
+    # Install Phalcon
+    - git clone -q --depth=1 https://github.com/phalcon/cphalcon.git -b phalcon-v${PHALCON_VERSION}
+    - (cd cphalcon/ext; export CFLAGS="-g3 -O1 -fno-delete-null-pointer-checks -Wall"; phpize &> /dev/null && ./configure --silent --enable-phalcon &> /dev/null && make --silent -j4 > /dev/null && make --silent install && phpenv config-add ../unit-tests/ci/phalcon.ini &> /dev/null)
+    - php -r 'echo \Phalcon\Version::get()."\n";'
+
+    # Install Nette Tester
+    - travis_retry composer install --no-interaction --prefer-source
+
+    # Coveralls
+    - if [ "$TRAVIS_PHP_VERSION" == "5.6" ]; then cat ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini >> ./tests/php-unix.ini; fi
+    - if [ "$TRAVIS_PHP_VERSION" == "5.6" ]; then NTESTER_FLAGS="--coverage ./coverage.xml --coverage-src ./src"; else TESTER_FLAGS=""; fi
+
+script:
+  - echo "extension = mongo.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+  - phpenv rehash
+  - mkdir -p build/unitlogs
+  - phpunit --coverage-clover build/unitlogs/coverage.xml
+
+after_failure:
+    # Print *.actual content
+    - 'for i in $(find tests -name \*.actual); do echo "--- $i"; cat $i; echo; echo; done'

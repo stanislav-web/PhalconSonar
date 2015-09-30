@@ -60,4 +60,13 @@ class StorageService {
             throw new StorageServiceException($e->getMessage());
         }
     }
+
+    /**
+     * Enable profiler
+     *
+     * @return array
+     */
+    public function enableProfiler() {
+        return $this->visitorMapper->setProfiler();
+    }
 }
