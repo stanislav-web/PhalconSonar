@@ -7,7 +7,7 @@ build:
     dependencies:
 
         before:
-            - composer install --prefer-dist -o
+            - composer install --no-dev -o
 
 filter:
     paths: [src/*]
